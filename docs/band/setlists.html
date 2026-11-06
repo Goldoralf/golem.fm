@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Setlists — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html">The mixer</a></li>
+      <li><a href="../golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html" class="is-on">Setlists</a></li>
+      <li><a href="../band/arrangement.html">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / Band</div>
+      <h1>Setlists</h1>
+      <span class="docs-badge">golem · golem.fm</span>
+      <div class="docs-body">
+<p>A setlist is one evening: the songs in the order you play them. On the golem it is also <strong>what your feet play</strong> — bank 01 is the first song, bank 02 the second, and the up and down switches walk through it.</p>
+<h2 id="s1">Building a setlist</h2>
+<figure class="doc-screen" id="panel-all" data-panel='{&quot;example&quot;: &quot;factory-setlists&quot;, &quot;id&quot;: &quot;all&quot;}'><div class="gs-stage"></div><figcaption>Songs ▸ Banks &amp; Setlists: the factory lists. Factory Golem is the one on the foot.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p><strong>Songs ▸ Banks &amp; Setlists</strong> shows two kinds of lists:</p>
+<ul><li>a <strong>setlist</strong> (<code>▤ SETLIST</code>) holds <strong>songs</strong> — each line plays a song, with its preset, its tempo, its arrangement;</li><li>a <strong>bank</strong> (<code>⛓ BANK</code>) holds <strong>sounds</strong> — each line plays a patch. The factory banks give each instrument its sounds, one per bank: <em>Factory Guitar</em>, <em>Factory Bass</em>, <em>Factory Keys</em>…</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;all&quot;, &quot;halo&quot;: &quot;setlists.card:factory&quot;}'>Show me</button></p>
+<p>Every golem ships with the <strong>Factory Golem</strong> setlist: nine songs, one per factory preset. Open it.</p>
+<figure class="doc-screen" id="panel-open" data-panel='{&quot;example&quot;: &quot;factory-setlist&quot;, &quot;id&quot;: &quot;open&quot;}'><div class="gs-stage"></div><figcaption>The Factory Golem setlist opened: the songs on the left, in bank order.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>The songs are on the left <strong>in bank order</strong>: the number is the bank. A song line says its preset, its tempo (<code>♩ 120</code>), and small icons for what it carries (an arrangement, stems).</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;open&quot;, &quot;halo&quot;: &quot;setlists.lines&quot;}'>Show me</button></p>
+<p><code>+ Add a song</code> picks a song from your repertoire (Songs ▸ Songs). A setlist never creates a song: a song exists once, and every setlist that plays it follows it.</p>
+<h2 id="s2">Banks on the foot</h2>
+<figure class="doc-screen" id="panel-grid" data-panel='{&quot;example&quot;: &quot;factory-setlist-banks&quot;, &quot;id&quot;: &quot;grid&quot;}'><div class="gs-stage"></div><figcaption>⇅ Banks: the setlist as it sits under your feet — nine songs, ten free banks.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p><strong>⇅ Banks</strong> opens the grid. <strong>The grid is the pedalboard</strong>: bank 01 is the first one you reach.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;grid&quot;, &quot;halo&quot;: &quot;setlists.grid&quot;}'>Show me</button></p>
+<ul><li><strong>19 banks, no more.</strong> A setlist is one gig and must fit the banks your feet reach directly. The golem refuses a twentieth song rather than drop one silently.</li><li><strong>A free bank is real.</strong> Leave a hole on purpose — for an encore you may play. Pressing an empty bank is safe: it never changes what plays.</li><li>Tap a free bank to place a preset there. Tap a filled one, then another bank, to move it (two filled banks swap).</li></ul>
+<p>Only <strong>one list is on the foot</strong> at a time. On a list&#x27;s card, <strong>▶ On the foot</strong> puts it there (tap twice: it changes what your feet do). On the Live screen, tap the list&#x27;s name in the top bar:</p>
+<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-setlist-picker&quot;, &quot;halo&quot;: &quot;live.setlists&quot;}'><div class="gs-stage"></div><figcaption>Live: what the pedalboard plays — a setlist of songs, or a bank of sounds.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>Tap a list, then tap it again to confirm: it goes on the foot and its first song loads. Each mode can also put its own list on the foot when you enter it (Settings ▸ Mode ▸ <em>Foot list</em>).</p>
+<h2 id="s3">Tonight-only changes</h2>
+<figure class="doc-screen" id="panel-line" data-panel='{&quot;example&quot;: &quot;factory-setlist-line&quot;, &quot;id&quot;: &quot;line&quot;}'><div class="gs-stage"></div><figcaption>The Golem Rising line: what the song plays tonight, read from the song.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>Tap a song line: the right side shows what it plays — its preset, tempo, tuning and capo, the players of its preset (Click, Backing, Drums…) and its arrangement.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;line&quot;, &quot;halo&quot;: &quot;setlists.facts&quot;}'>Show me</button></p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;line&quot;, &quot;halo&quot;: &quot;setlists.players&quot;}'>Show me</button></p>
+<p>On the golem, <strong>a song line is read here and changed in the song</strong>. <code>✎ Edit the song ›</code> opens it: change the tempo there, and every setlist that plays Golem Rising follows.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;line&quot;, &quot;halo&quot;: &quot;setlists.edit-song&quot;}'>Show me</button></p>
+<p>An exception for one evening only — tonight in Drop D, tonight at 110 — lives on the <strong>line</strong>, not in the song: the other setlists keep the song as it is. The golem plays the exceptions a setlist brings from golem.fm, where they are made; on the golem itself, every change goes into the song.</p>
+<p>A line can also carry no song at all: a guest, an a cappella moment, a song not written yet. Such a free line is edited right here (preset, tempo, tuning), and <code>◆ Make it a song</code> turns it into a song of your repertoire.</p>
+<h2 id="s4">Playing it on the golem</h2>
+<p>With the setlist on the foot, the <strong>bank switches</strong> change song: the golem loads the song&#x27;s preset with the song&#x27;s tempo, stems and arrangement. On the Live screen, the top bar says <code>Factory Golem 9/9</code> and the song bar shows <code>SETLIST #09 · 9/9</code> above the song&#x27;s title.</p>
+<ul><li><strong>◀ ▶ on the Live screen</strong> do the same as the foot: previous and next song.</li><li><strong>A preset loaded from somewhere else</strong> (the Designer, the preset browser) plays on its own: its sounds, not its song — no parts, no stems, no click. The song bar says <code>no song · sounds only — load it</code>; tap it, or press the bank switch, to load the song.</li><li><strong>During a Gig</strong>, a setlist that arrives from golem.fm and touches the list on the foot waits until you leave the mode: your set never changes under your feet.</li></ul>
+<p>A setlist holds <strong>references</strong>: if you change a preset, the setlist plays the new sound. To freeze the sounds of a set as they are tonight — before you rework your presets — take a <strong>snapshot</strong> (📷); it is the only way back to tonight&#x27;s sounds.</p>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../band/songs.html"><small>Previous</small>Songs</a><a class="docs-pager__next" href="../band/arrangement.html"><small>Next</small>The arrangement</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">Building a setlist</a></li><li><a href="#s2">Banks on the foot</a></li><li><a href="#s3">Tonight-only changes</a></li><li><a href="#s4">Playing it on the golem</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

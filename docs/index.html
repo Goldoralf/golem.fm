@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>golem doc</title>
+  <meta name="description" content="How the golem works, for musicians.">
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../" class="pn__link">The Golem</a><a href="../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="start/first-check.html">The first-install check</a></li>
+      <li><a href="start/tour.html">A tour of the golem</a></li>
+      <li><a href="start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="golem/hardware.html">The machine</a></li>
+      <li><a href="golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="golem/live-screen.html">The live screen</a></li>
+      <li><a href="golem/mixer.html">The mixer</a></li>
+      <li><a href="golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="golem/factory.html">Factory content</a></li>
+      <li><a href="golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="sound/presets.html">Presets and scenes</a></li>
+      <li><a href="sound/patches.html">Patches</a></li>
+      <li><a href="sound/blocks.html">Blocks</a></li>
+      <li><a href="sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="band/songs.html">Songs</a></li>
+      <li><a href="band/setlists.html">Setlists</a></li>
+      <li><a href="band/arrangement.html">The arrangement</a></li>
+      <li><a href="band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="help/no-sound.html">No sound</a></li>
+      <li><a href="help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page docs-home">
+      <h1>golem doc</h1>
+      <p class="docs-lede">How the golem works, for musicians. The screens on these pages are the golem's own interface,
+        on a factory rack: you can look around in them.</p>
+      <div class="docs-cards"><a class="docs-card" href="start/unbox.html"><b>Getting started</b><span>Unbox and plug in the golem · The first-install check · A tour of the golem · Use your phone on stage</span></a><a class="docs-card" href="golem/hardware.html"><b>The golem</b><span>The machine · Modes: Pedalboard, Home, Jam, Rehearsal, Gig · Sound card and inputs · Controllers: keyboards, pads, expression …</span></a><a class="docs-card" href="sound/presets.html"><b>Sound</b><span>Presets and scenes · Patches · Blocks · Captures (NAM) and impulse responses …</span></a><a class="docs-card" href="band/songs.html"><b>Band</b><span>Songs · Setlists · The arrangement · Click and tempo …</span></a><a class="docs-card" href="write/riffs.html"><b>Write</b><span>Riffs</span></a><a class="docs-card" href="account/devices.html"><b>Account</b><span>Devices and access</span></a><a class="docs-card" href="help/no-sound.html"><b>Troubleshooting</b><span>No sound · TONE3000 does not connect · Frequently asked questions</span></a></div>
+    </article>
+  </main>
+  </div>
+  <script type="module">
+    import { mount } from '../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

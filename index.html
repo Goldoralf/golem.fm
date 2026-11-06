@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>golem — a rack for musicians, built on REAPER</title>
+  <meta name="description" content="golem runs REAPER headless as a real-time rack for musicians. Open source, tech preview.">
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href=""><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="" class="pn__link is-on">The Golem</a><a href="docs/" class="pn__link">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <main class="demo">
+    <div class="gs-stage" id="demo-screen"></div>
+    <p class="demo__notice" id="demo-notice" role="status"></p>
+    <pre class="demo__debug" id="demo-debug" hidden></pre>
+    <p class="demo__note">The golem's own interface, running in your browser on a demo golem: browse its presets, patches,
+      songs and settings. Nothing is saved.</p>
+
+    <section class="demo__overview" aria-labelledby="overview-title">
+      <h2 id="overview-title">Quick overview</h2>
+      <div class="demo__tabs" id="demo-tabs" role="tablist" aria-labelledby="overview-title"></div>
+    </section>
+
+    <section class="demo__about">
+      <h2>A stage machine, not a workstation</h2>
+      <p>golem is an open-source rack for musicians. It boots straight into this interface, on its own touch screen or
+        a tablet, and you play it with your feet: presets, scenes and stomps on a MIDI pedalboard, one lane per
+        musician — guitar, bass, voice, keys, drums. Underneath, REAPER runs headless as the audio engine. Everything a
+        set needs is loaded before you play, so changing a scene switches the sound without rebuilding the rig.
+        The repository holds the recipes — presets, setlists, catalogues, scripts — and the sounds themselves
+        (amp captures, impulse responses, samples) are downloaded onto your golem.</p>
+      <p class="demo__get">Download golem and read the code:
+        <a href="https://github.com/Goldoralf/golem">https://github.com/Goldoralf/golem</a></p>
+    </section>
+  </main>
+  <script type="module">
+    import { mount } from './assets/golem-shell.js?v=9c0d45f16a'
+    const TOUR = [{"example": "golem-rising-live", "tab": "Live"}, {"example": "golem-rising-designer", "tab": "Designer"}, {"example": "golem-rising-delay-sheet", "tab": "A block"}, {"example": "golem-rising-song", "tab": "Song"}, {"example": "golem-rising-rehearsal", "tab": "Rehearsal"}, {"example": "library-amps", "tab": "Amps"}, {"example": "library-grooves", "tab": "Drums"}, {"example": "loop-station-live", "tab": "Looper"}, {"example": "companion-now", "tab": "Phone"}, {"example": "first-check-input", "tab": "First check"}]
+    const tabs = document.getElementById('demo-tabs')
+    const box = document.getElementById('demo-screen')
+    const notice = document.getElementById('demo-notice')
+    let timer = 0
+    const onNotice = (t) => { notice.textContent = t; clearTimeout(timer); timer = setTimeout(() => { notice.textContent = '' }, 4000) }
+    const stage = await fetch('demo/stage.json', { cache: 'no-cache' }).then((r) => r.json()).catch(() => null)
+    const first = Math.min(TOUR.length - 1, Math.max(0, Number(new URLSearchParams(location.search).get('tab')) || 0))
+    //: `?debug=1` : chaque écriture que l'app envoie, et ce que la démo en fait.
+    const dbg = document.getElementById('demo-debug')
+    const debug = new URLSearchParams(location.search).has('debug')
+    const onDebug = debug ? (t) => { dbg.hidden = false; dbg.textContent = (t + '\n' + dbg.textContent).slice(0, 4000) } : undefined
+    if (debug) onDebug(`stage: ${stage ? Object.keys(stage.live || {}).length + ' live states' : 'NOT LOADED'} · ${navigator.userAgent}`)
+    const show = (item) => mount(box, { ...item, stage, onNotice, onDebug, controls: true }).catch((e) => { box.dataset.state = 'failed'; console.error(e) })
+    TOUR.forEach((item, i) => {
+      const b = document.createElement('button')
+      b.type = 'button'; b.role = 'tab'; b.textContent = item.tab
+      b.setAttribute('aria-selected', String(i === first))
+      //: Les boutons sont SOUS la tablette : on la ramène à l'écran pour voir le changement.
+      b.onclick = () => { for (const x of tabs.children) x.setAttribute('aria-selected', String(x === b)); show(item); box.scrollIntoView({ behavior: 'smooth', block: 'nearest' }) }
+      tabs.appendChild(b)
+    })
+    show(TOUR[first])
+  </script>
+</body>
+</html>

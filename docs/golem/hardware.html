@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The machine — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html" class="is-on">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html">The mixer</a></li>
+      <li><a href="../golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html">Setlists</a></li>
+      <li><a href="../band/arrangement.html">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / The golem</div>
+      <h1>The machine</h1>
+      <span class="docs-badge">golem</span>
+      <div class="docs-body">
+<p>golem runs on a computer you choose. This page describes the reference machine golem is built and tested on, the sound cards it works with, and how it updates.</p>
+<h2 id="s1">The reference machine</h2>
+<p>The <strong>reference rack</strong> is a 2U rack case holding a small PC (a Mini-ITX board, a Ryzen 5 8500G, 16 GB of memory, an NVMe drive), with:</p>
+<ul><li>the <strong>USB sound card</strong> — a Volt 276 — on its own USB port: inputs 1 and 2 for the instruments, the main outputs and the headphones for the sound, its MIDI ports for the pedalboard;</li><li><strong>USB ports</strong> for a keyboard, a pad controller or an electronic drum kit — up to four, numbered USB 1 to 4 on the Soundcard page;</li><li>an <strong>Ethernet</strong> port — the always-open door to the golem;</li><li>an optional <strong>touch screen</strong> (7 to 10″), and an optional second Wi-Fi dongle.</li></ul>
+<p>A laptop with a USB sound card works the same way.</p>
+<h2 id="s2">Supported sound cards</h2>
+<p>There is no list of supported cards: <strong>any USB audio interface works</strong>. golem reads what the card has — its inputs, its outputs — and shows them on <strong>Settings ▸ Gear ▸ Soundcard</strong>, where you name them (see <a href="../golem/soundcard.html">Sound card and inputs</a>).</p>
+<ul><li><strong>Linux</strong> — USB audio interfaces; the computer&#x27;s built-in sound chip is not offered.</li><li><strong>Windows</strong> — the card&#x27;s own <strong>ASIO</strong> driver. Generic drivers (ASIO4ALL and the like) are not used: they lose inputs.</li><li><strong>Mac</strong> — Core Audio; not yet tested on a real Mac.</li></ul>
+<p>The <strong>Volt 276</strong> is the card golem is tested with every day.</p>
+<h2 id="s3">Updates</h2>
+<p><strong>Settings ▸ About ▸ golem</strong> shows the version you run and the latest release. <strong>⟳ Check for releases</strong>, then <strong>⬆ Update to v…</strong> — with the list of changes. golem updates only to <strong>published releases</strong>.</p>
+<p>On a computer used as a window, golem restarts entirely: the sound stops for about thirty seconds — <strong>never update before a gig</strong>. The audio engine (REAPER) is updated from <strong>Settings ▸ About ▸ REAPER</strong>, to the version validated for your golem release.</p>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../start/phone.html"><small>Previous</small>Use your phone on stage</a><a class="docs-pager__next" href="../golem/modes.html"><small>Next</small>Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">The reference machine</a></li><li><a href="#s2">Supported sound cards</a></li><li><a href="#s3">Updates</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

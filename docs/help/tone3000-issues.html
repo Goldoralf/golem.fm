@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TONE3000 does not connect — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html">The mixer</a></li>
+      <li><a href="../golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html">Setlists</a></li>
+      <li><a href="../band/arrangement.html">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html" class="is-on">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / Troubleshooting</div>
+      <h1>TONE3000 does not connect</h1>
+      <span class="docs-badge">golem · golem.fm</span>
+      <div class="docs-body">
+<p>When the golem cannot download from TONE3000, it says why — on the missing block, in the Factory page, and in Settings ▸ Connect ▸ TONE3000.</p>
+<h2 id="s1">Reconnecting</h2>
+<p>| The golem says | What to do | |---|---| | <em>TONE3000 not signed in</em> | the golem never signed in: tap <strong>📱 Connect</strong> and sign in on your phone | | <em>TONE3000 session expired</em> | sign in again: <strong>↻ Sign in again</strong> | | <em>sign-in refused on TONE3000</em> | the sign-in was cancelled on the phone: tap Connect again | | <em>the sign-in expired</em> | a QR is valid ten minutes: tap Connect again | | <em>golem.fm is not reachable</em> · <em>golem.fm cannot relay TONE3000 sign-ins yet</em> | the golem needs golem.fm to sign in: check its internet, or use your own key under <strong>Advanced</strong> | | <em>TONE3000 key missing</em> | only for a golem without golem.fm: paste your own key (<code>t3k_pub_…</code>, from tone3000.com ▸ Settings ▸ API Keys), save with 💾, then connect |</p>
+<p><strong>With your own key, the golem changed network?</strong> The return address you declared on tone3000.com is the golem&#x27;s address on its network: a new router or the golem&#x27;s own Wi-Fi changes it. Declare the new one, then sign in again. Through golem.fm, nothing to declare: the network does not matter.</p>
+<p>Signing in again never loses what you downloaded: the captures stay on the golem.</p>
+<h2 id="s2">One connection per machine</h2>
+<p>Each golem keeps <strong>its own</strong> TONE3000 session. TONE3000 renews it at each use and accepts one user per session: two programs sharing one sign each other out, and TONE3000 then closes the session for both.</p>
+<ul><li>Do not copy a golem&#x27;s settings to another machine to &quot;share&quot; the connection: sign in on each golem.</li><li>A second golem, a second computer: same account, its own sign-in.</li><li>golem.fm and your golem are separate too: being signed in on golem.fm does not sign your golem in.</li></ul>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../help/no-sound.html"><small>Previous</small>No sound</a><a class="docs-pager__next" href="../help/faq.html"><small>Next</small>Frequently asked questions</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">Reconnecting</a></li><li><a href="#s2">One connection per machine</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

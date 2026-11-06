@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Presets and scenes — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html">The mixer</a></li>
+      <li><a href="../golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html" class="is-on">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html">Setlists</a></li>
+      <li><a href="../band/arrangement.html">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / Sound</div>
+      <h1>Presets and scenes</h1>
+      <span class="docs-badge">golem · golem.fm</span>
+      <div class="docs-body">
+<p>A preset is the sound of the whole band for a song: every instrument, every effect, every scene, and what each footswitch does. You build it in the <strong>Designer</strong>; you play it on the <strong>Live</strong> screen and with your feet.</p>
+<p>This page opens <strong>Ambient Metal</strong>, the preset of <em>Golem Rising</em> in the <strong>Factory Golem</strong> setlist. Load it on your golem (Songs ▸ Banks &amp; Setlists ▸ Factory Golem, line 09, then the Designer) to follow along.</p>
+<h2 id="s1">A preset is your rig</h2>
+<figure class="doc-screen" id="panel-rig" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;rig&quot;}'><div class="gs-stage"></div><figcaption>Ambient Metal in the Designer, scene B — Glass Verse.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<ul><li><strong>One tab per instrument</strong> — a <em>lane</em>. Ambient Metal has five: Guitar 1, Bass 1, Guitar 2, Voice 1 and a Piano. Under each name, the input it plays from (<code>IN 1</code>, <code>USB 1</code>; <code>IN —</code> when this sound card has no input left for it). The ⚙ tab holds what the whole band shares: the click, the recorder, the players, the arrangement.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;rig&quot;, &quot;halo&quot;: &quot;designer.lanes&quot;}'>Show me</button></p>
+<ul><li><strong>The chain of the open lane</strong>, from the input on the left to the output on the right. Guitar 1 here: a gate, a compressor, a drive (switched off in this scene: its tile is dashed), then two amps side by side — a Peavey into a Mesa cabinet on branch A, a Roland on branch B — mixed back together, then EQ, chorus, delay and reverb. Tap a block to open its drawer.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;rig&quot;, &quot;halo&quot;: &quot;designer.chain&quot;}'>Show me</button></p>
+<ul><li><strong>The line above the chain</strong> tells where this preset lives. <code>#09 Factory Golem</code>: it is bank 9 of the setlist on your pedalboard (tap to move it). The small grid is your pedalboard in miniature — tap it to read what each switch does. The song loaded with the preset (its backing, its arrangement) and the tempo follow.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;rig&quot;, &quot;halo&quot;: &quot;designer.bank designer.foot designer.song designer.bpm&quot;}'>Show me</button></p>
+<ul><li><strong>The patch chip</strong> says which patch this lane came from: <em>Ambient Djent</em>. When you change the lane, the chip adds <code>· edited</code> — the lane is no longer exactly that patch.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;rig&quot;, &quot;halo&quot;: &quot;designer.patch&quot;}'>Show me</button></p>
+<h2 id="s2">Scenes</h2>
+<figure class="doc-screen" id="panel-scn" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;scn&quot;}'><div class="gs-stage"></div><figcaption>The scene tabs: five scenes, B is open.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>A scene is a state of the whole preset — not of one instrument. When you step on a scene, every lane changes together: which blocks are on, how the knobs are set, how loud each instrument is.</p>
+<ul><li><strong>The letters at the top</strong> are the scenes: A to E are the five scene switches of the pedalboard (#1 to #5). Tap a letter to edit that scene in the Designer; the chain shows what plays in it. Ambient Metal names them <em>Halo Clean</em>, <em>Glass Verse</em>, <em>Low Riff</em>, <em>Wall Chorus</em> and <em>Soaring Solo</em>.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;scn&quot;, &quot;halo&quot;: &quot;designer.scenes&quot;}'>Show me</button></p>
+<ul><li><strong>The name of the scene you are editing</strong> sits on the line above the chain. Tap it to rename the scene and set the level of each instrument in it.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;scn&quot;, &quot;halo&quot;: &quot;designer.scene-name&quot;}'>Show me</button></p>
+<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-scene-sheet&quot;, &quot;halo&quot;: &quot;designer.scene-sheet&quot;}'><div class="gs-stage"></div><figcaption>Scene B&#x27;s sheet: its name, and the level of each instrument in it.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>The scene sheet says it plainly: <em>blocks on/off, knob overrides and the levels below are recalled together when you step on B</em>. In Glass Verse, the second guitar sits 5 dB under the first.</p>
+<p>A preset can have up to eight scenes; a new one is added from the first empty letter.</p>
+<h2 id="s3">Scenes &amp; sounds</h2>
+<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-scenes-sheet&quot;, &quot;halo&quot;: &quot;designer.scenes-sheet&quot;}'><div class="gs-stage"></div><figcaption>Scenes &amp; sounds: what each instrument plays in each scene of Ambient Metal.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p><strong>Scenes &amp; sounds</strong> (in the <code>⋯</code> menu) is the whole preset on one sheet: one row per instrument, one column per scene. Each cell is the sound that instrument plays in that scene, with a name you choose — <em>Glass Arp</em>, <em>Sub Clean</em>, <em>Close Verse</em>. A dotted cell (<code>same as A</code>) means the instrument does not change in that scene.</p>
+<p>These names are not decoration. They are what the band reads on the Live screen, on their phones and in the arrangement: the singer sees <em>Close Verse</em>, not &quot;compressor on, reverb 30 %&quot;. The row at the bottom shows exactly what the Live screen will show.</p>
+<h2 id="s4">Saving</h2>
+<ul><li><strong>A preset saves itself.</strong> Every change is kept as you make it; the top bar of the Designer says <code>✓ saved</code>. There is no save button to forget before the gig.</li><li><strong>A new preset is not kept until it has a name</strong>: it shows <code>● not saved</code>, and <code>⋯ ▸ Name &amp; save</code> (the <code>⋯</code> button at the top right) keeps it.</li><li><strong><code>⋯ ▸ ⧉ Duplicate</code></strong> makes a copy to try something without touching the original.</li></ul>
+<p><strong>The factory presets are yours to change</strong> — and changing one changes it on your golem. <em>Restore factory content</em> (Settings ▸ Content ▸ Factory) brings back a factory preset you <strong>deleted</strong>, not one you edited. To keep Ambient Metal as it ships, duplicate it first and work on the copy.</p>
+<h2 id="s5">Building a preset on golem.fm</h2>
+<p>You can also wire a preset from golem.fm, away from the rack: <strong>Library ▸ Presets ▸ + Add a preset</strong>.</p>
+<ul><li><strong>Your patches</strong> are listed on the left. Drop one on an input of the row to make it a lane: a guitar patch on <code>IN 1</code>, a keys patch on a USB port. Name the preset and give it a tempo and a genre.</li><li><strong>Card</strong> shows the inputs of your sound card. A lane on an input your card does not have stays in the preset: the rack mounts it where that input exists. A preset can address up to 18 audio inputs and 4 USB ports.</li><li><strong>The screen beside the row is the golem&#x27;s own Designer</strong>, showing your draft as the rack will.</li><li><strong>Create preset</strong>, then <strong>⤴ Push to rack</strong> on the preset&#x27;s page: the rack installs it on its next pass. The preset page then shows its Live grid, and its arrangement once the rack has played it.</li></ul>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../golem/storage-backups.html"><small>Previous</small>Storage and back-ups</a><a class="docs-pager__next" href="../sound/patches.html"><small>Next</small>Patches</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">A preset is your rig</a></li><li><a href="#s2">Scenes</a></li><li><a href="#s3">Scenes &amp;amp; sounds</a></li><li><a href="#s4">Saving</a></li><li><a href="#s5">Building a preset on golem.fm</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

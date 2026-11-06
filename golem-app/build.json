@@ -1,0 +1,14 @@
+{
+ "dir": "c6c9ab9",
+ "commit": "c6c9ab91169aa5b19278521bcf8e4b3fa8ab26a6",
+ "catalog_version": 32,
+ "post_reads": [
+  "/api/backing/drawer",
+  "/api/blocks/status"
+ ],
+ "shell_v": "3907d44791",
+ "snapshots": {
+  "factory": "c6c9ab91169aa5b19278521bcf8e4b3fa8ab26a6"
+ },
+ "main": "factory"
+}

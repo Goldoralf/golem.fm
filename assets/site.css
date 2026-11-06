@@ -1,0 +1,347 @@
+/* Le site temporaire du golem, dans la charte ACTUELLE de golem.fm :
+   - jetons recopiés de maestrium frontend/src/styles/tokens.css (thème sombre) ;
+   - la doc reprend pages/docs/docs.css (mêmes classes `docs-*`, `doc-screen`, `doc-step`).
+   Polices Inter et JetBrains Mono servies d'ici (fontsource, OFL) : rien chez un tiers. */
+
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('fonts/inter-latin-wght-normal.woff2') format('woff2-variations');
+}
+@font-face {
+  font-family: 'JetBrains Mono Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 800;
+  src: url('fonts/jetbrains-mono-latin-wght-normal.woff2') format('woff2-variations');
+}
+
+:root {
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 11px;
+  --radius-pill: 999px;
+  --font-sans: 'Inter Variable', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, 'Fira Code', Consolas, monospace;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-base: 15px;
+  --fs-md: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+  --fs-3xl: 36px;
+  --lh-tight: 1.2;
+  --lh-body: 1.5;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --bg-base: #0d0f12;
+  --bg-surface: #15191f;
+  --bg-elevated: #1c2129;
+  --text-primary: #e7ecf2;
+  --text-secondary: #8a94a3;
+  --text-tertiary: #6e7887;
+  --text-on-accent: #111318;
+  --border-subtle: #262d37;
+  --border-strong: #39424f;
+  --accent: #ff5a3c;
+  --golem: #ffb020;
+  --sticky-top: 56px;
+  --community: #e6a23c;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  font: var(--fs-base) / var(--lh-body) var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+a { color: var(--accent); }
+h1, h2, h3 { line-height: var(--lh-tight); }
+
+/* ── Le menu — repris du site public de golem.fm (layout/publicNav.css, `.pn`) ── */
+.pn {
+  position: sticky; top: 0; z-index: 30;
+  height: var(--sticky-top);
+  padding: 0 var(--space-6);
+  display: flex; align-items: center; gap: var(--space-6);
+  border-bottom: 1px solid var(--border-subtle);
+  background: color-mix(in srgb, var(--bg-base) 92%, transparent);
+  backdrop-filter: blur(8px);
+}
+.pn__wordmark { font-family: var(--font-mono); font-weight: 600; font-size: var(--fs-md); color: var(--text-primary); text-decoration: none; flex: none; }
+.pn__wordmark-s { color: var(--community); }
+.pn__links { display: flex; align-items: center; gap: var(--space-6); font-size: var(--fs-sm); font-weight: 600; }
+.pn__link { position: relative; color: var(--text-secondary); text-decoration: none; }
+.pn__link:hover, .pn__link.is-on { color: var(--text-primary); }
+.pn__link.is-on::after {
+  content: ''; position: absolute; left: 0; right: 0; bottom: -19px; height: 2px; background: var(--community);
+}
+.pn__actions { margin-left: auto; display: flex; align-items: center; gap: 10px; flex: none; }
+.pn__install {
+  height: 38px; padding: 0 16px; display: inline-flex; align-items: center;
+  border-radius: var(--radius-pill); background: var(--community); color: var(--text-on-accent);
+  font-size: var(--fs-sm); font-weight: 700; text-decoration: none; white-space: nowrap;
+}
+.pn__install:hover { filter: brightness(1.08); }
+@media (max-width: 520px) {
+  .pn { padding: 0 var(--space-4); gap: var(--space-4); }
+  .pn__links { gap: var(--space-4); }
+  .pn__install { height: 32px; padding: 0 12px; }
+}
+
+/* ── L'accueil : deux liens, rien d'autre ── */
+.home {
+  min-height: calc(100vh - var(--sticky-top));
+  display: grid; place-content: center; justify-items: center;
+  gap: var(--space-6);
+  padding: var(--space-8) var(--space-4);
+  text-align: center;
+}
+.home h1 { font-family: var(--font-mono); font-size: clamp(44px, 9vw, 72px); margin: 0; letter-spacing: -0.02em; }
+.home h1 b { color: var(--accent); font-weight: inherit; }
+.home p { margin: 0; color: var(--text-secondary); max-width: 46ch; }
+.home__links { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); }
+.home__links a {
+  display: flex; flex-direction: column; gap: 4px;
+  min-width: 220px;
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  text-decoration: none;
+  text-align: left;
+}
+.home__links a:hover { border-color: var(--accent); }
+.home__links b { font-family: var(--font-mono); font-size: var(--fs-lg); }
+.home__links span { font-size: var(--fs-sm); color: var(--text-secondary); }
+.home__foot { font-size: var(--fs-xs); color: var(--text-tertiary); }
+.home__foot a { color: inherit; }
+
+/* ── La démo ── */
+.demo { max-width: 1120px; margin: 0 auto; padding: var(--space-6) var(--space-4) var(--space-12); }
+.demo__tabs { display: flex; gap: 4px; overflow-x: auto; padding-bottom: var(--space-3); }
+.demo__tabs button {
+  flex: none; height: 28px; padding: 0 12px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-strong);
+  background: none; color: var(--text-secondary);
+  font: inherit; font-size: var(--fs-xs); cursor: pointer;
+}
+.demo__tabs button[aria-selected='true'] { color: var(--text-primary); border-color: var(--accent); background: var(--bg-elevated); }
+.demo__caption { color: var(--text-secondary); font-size: var(--fs-sm); margin-top: var(--space-3); }
+.demo__note { color: var(--text-tertiary); font-size: var(--fs-xs); }
+
+/* ═══ La doc — reprise de maestrium pages/docs/docs.css ═══ */
+.docs {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr) 220px;
+  min-height: calc(100vh - var(--sticky-top));
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.docs-nav {
+  position: sticky; top: var(--sticky-top); align-self: start;
+  max-height: calc(100vh - var(--sticky-top)); overflow-y: auto;
+  padding: var(--space-5) var(--space-4) var(--space-8);
+  border-right: 1px solid var(--border-subtle);
+  display: flex; flex-direction: column; gap: var(--space-3);
+}
+.docs-nav__sec { margin-top: var(--space-2); }
+.docs-nav__sec > b {
+  display: block; font-size: var(--fs-xs); font-weight: var(--fw-bold);
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-tertiary); margin-bottom: 4px;
+}
+.docs-nav ul { list-style: none; margin: 0; padding: 0; }
+.docs-nav li a {
+  display: flex; align-items: center; gap: 6px; padding: 5px 8px;
+  border-radius: var(--radius-sm); font-size: var(--fs-sm);
+  color: var(--text-secondary); text-decoration: none; border-left: 2px solid transparent;
+}
+.docs-nav li a:hover { color: var(--text-primary); background: var(--bg-elevated); }
+.docs-nav li a.is-on { color: var(--text-primary); background: var(--bg-elevated); border-left-color: var(--accent); }
+
+.docs-main { min-width: 0; padding: var(--space-6) var(--space-8) var(--space-12); }
+.docs-menu-btn { display: none; }
+.docs-page { max-width: 760px; }
+.docs-crumb { font-size: var(--fs-xs); color: var(--text-tertiary); margin-bottom: var(--space-2); }
+.docs-crumb a { color: inherit; }
+.docs-page h1 { font-size: var(--fs-3xl); margin: 0 0 var(--space-3); text-wrap: balance; }
+.docs-badge {
+  display: inline-block; font-family: var(--font-mono); font-size: 11px; font-weight: var(--fw-semibold);
+  padding: 3px 8px; border-radius: var(--radius-pill);
+  color: var(--golem); border: 1px solid color-mix(in srgb, var(--golem) 45%, transparent);
+}
+.docs-body { margin-top: var(--space-5); line-height: 1.6; }
+.docs-body h2 { font-size: var(--fs-xl); margin: var(--space-8) 0 var(--space-3); scroll-margin-top: calc(var(--sticky-top) + var(--space-4)); }
+.docs-body h3 { font-size: var(--fs-lg); font-weight: var(--fw-bold); margin: var(--space-6) 0 var(--space-2); }
+.docs-body p { margin: 0 0 var(--space-3); }
+.docs-body ul, .docs-body ol { margin: 0 0 var(--space-4); padding-left: var(--space-6); }
+.docs-body li { margin: 0 0 var(--space-2); }
+.docs-body li::marker { color: var(--text-tertiary); }
+.docs-body code, .demo code {
+  font-family: var(--font-mono); font-size: 0.9em; padding: 1px 5px; border-radius: 4px;
+  background: var(--bg-elevated); border: 1px solid var(--border-subtle);
+}
+.docs-body .gone { color: var(--text-primary); }
+
+.docs-pager { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin-top: var(--space-10); }
+.docs-pager a {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);
+  color: var(--text-primary); text-decoration: none; font-weight: var(--fw-semibold);
+}
+.docs-pager a:hover { border-color: var(--accent); }
+.docs-pager small { font-weight: 400; font-size: var(--fs-xs); color: var(--text-tertiary); }
+.docs-pager__next { text-align: right; grid-column: 2; }
+
+.docs-home { max-width: 980px; }
+.docs-lede { font-size: var(--fs-md); color: var(--text-secondary); max-width: 68ch; margin: 0 0 var(--space-6); }
+.docs-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-3); }
+.docs-card {
+  display: flex; flex-direction: column; gap: 6px; padding: var(--space-4);
+  border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);
+  background: var(--bg-surface); color: var(--text-primary); text-decoration: none;
+}
+.docs-card:hover { border-color: var(--accent); }
+.docs-card b { font-size: var(--fs-md); }
+.docs-card span { font-size: var(--fs-sm); color: var(--text-secondary); }
+
+.docs-toc { position: sticky; top: var(--sticky-top); align-self: start; padding: var(--space-6) var(--space-4); font-size: var(--fs-sm); }
+.docs-toc b { display: block; font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-tertiary); margin-bottom: var(--space-2); }
+.docs-toc ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--border-subtle); }
+.docs-toc a { display: block; padding: 4px 10px; color: var(--text-secondary); text-decoration: none; }
+.docs-toc a:hover { color: var(--text-primary); }
+
+.doc-screen { margin: var(--space-4) 0 var(--space-6); }
+.doc-screen figcaption {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3);
+  margin-top: var(--space-2); font-size: var(--fs-sm); color: var(--text-secondary);
+}
+.doc-screen-reset, .doc-step__show {
+  flex: none; border: 1px solid var(--border-subtle); border-radius: var(--radius-md);
+  background: none; color: var(--text-secondary); font: inherit; font-size: var(--fs-xs);
+  padding: 2px var(--space-3); cursor: pointer;
+}
+.doc-screen-reset:hover { color: var(--text-primary); border-color: var(--border-strong); }
+.doc-step { margin: calc(-1 * var(--space-2)) 0 var(--space-3); }
+.doc-step__show { border-color: var(--accent); color: var(--accent); }
+.doc-step__show:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+
+@media (max-width: 1180px) {
+  .docs { grid-template-columns: 260px minmax(0, 1fr); }
+  .docs-toc { display: none; }
+}
+@media (max-width: 760px) {
+  .docs { grid-template-columns: minmax(0, 1fr); }
+  .docs-main { padding: var(--space-4); }
+  .docs-menu-btn {
+    display: inline-flex; align-items: center; height: 32px; padding: 0 12px; margin-bottom: var(--space-4);
+    border-radius: var(--radius-md); border: 1px solid var(--border-strong);
+    background: var(--bg-elevated); color: var(--text-primary); font: inherit;
+  }
+  .docs-nav { display: none; position: static; max-height: none; border-right: none; border-bottom: 1px solid var(--border-subtle); }
+  .docs-nav.is-open { display: flex; }
+  .docs-pager { grid-template-columns: 1fr; }
+  .docs-pager__next { grid-column: 1; }
+}
+
+/* ═══ Les boîtiers — repris de golem.fm (designer-replica.css `.tablet`,
+   golemShell/phone-frame.css `.phone`), eux-mêmes portés de golem app/device.html ═══ */
+.tablet {
+  --tablet-bezel: 26px;
+  position: relative;
+  width: 100%;
+  padding: var(--tablet-bezel);
+  border-radius: 22px;
+  background: linear-gradient(160deg, #26292f 0%, #15171b 45%, #0e1013 100%);
+  box-shadow: 0 0 0 1px #34383f, 0 1px 0 0 rgba(255, 255, 255, 0.06) inset, 0 40px 80px -20px rgba(0, 0, 0, 0.9), 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+.tablet__screen {
+  position: relative;
+  aspect-ratio: 1024 / 600;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #0d0f12;
+  box-shadow: 0 0 0 1px #000, 0 0 0 3px #1b1e23;
+}
+.tablet__cam, .tablet__led { position: absolute; width: 6px; height: 6px; border-radius: 50%; }
+.tablet__cam {
+  top: calc(var(--tablet-bezel) / 2 - 3px); left: 50%; transform: translateX(-50%);
+  background: #0a0c0f; box-shadow: 0 0 0 1px #2c3037, 0 0 3px rgba(120, 180, 255, 0.25) inset;
+}
+.tablet__led { left: calc(var(--tablet-bezel) / 2 - 3px); top: 50%; transform: translateY(-50%); background: #3a3f47; }
+.tablet__mark {
+  position: absolute; bottom: calc((var(--tablet-bezel) - 3px - 11px) / 2); left: 50%; transform: translateX(-50%);
+  font: 700 11px/1 var(--font-mono); letter-spacing: 0.04em; color: #3d434c; user-select: none;
+}
+.tablet__mark s { color: #4a3129; text-decoration: none; }
+.tablet__glare {
+  position: absolute; inset: 0; pointer-events: none; border-radius: inherit; z-index: 50;
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 42%);
+  transition: opacity 0.2s;
+}
+.tablet:hover .tablet__glare { opacity: 0; }
+.tablet__content, .phone__content { transform-origin: top left; will-change: transform; }
+.tablet__content { width: 1024px; height: 600px; }
+.phone {
+  width: min(320px, 100%);
+  padding: 12px;
+  border-radius: 44px;
+  background: linear-gradient(160deg, #22262d, #0b0d10);
+  box-shadow: 0 0 0 1px #2c323b, 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+.phone__screen { position: relative; aspect-ratio: 390 / 844; border-radius: 32px; overflow: hidden; background: #0c0e12; }
+.phone__content { width: 390px; height: 844px; }
+.tablet iframe, .phone iframe { border: 0; display: block; background: #0c0e12; }
+@media (max-width: 760px) {
+  .tablet { --tablet-bezel: 13px; border-radius: 16px; }
+  .tablet__mark { display: none; }
+}
+
+/* L'emplacement d'un écran : centré, avec ses états de chargement. */
+.gs-stage { display: flex; justify-content: center; position: relative; min-height: 120px; }
+.gs-stage[data-app='rack'] { display: block; }
+.gs-stage[data-state='loading']::after,
+.gs-stage[data-state='failed']::after {
+  position: absolute; inset: 0; display: grid; place-items: center;
+  color: var(--text-tertiary); font-size: var(--fs-sm); pointer-events: none;
+  content: 'Loading the golem screen…';
+}
+.gs-stage[data-state='ready']::after { content: none; }
+.gs-stage[data-state='failed']::after { content: 'This golem screen could not be loaded.'; }
+.demo__notice { color: var(--golem); font-size: var(--fs-sm); min-height: 1.4em; margin: var(--space-2) 0 0; }
+
+.demo__debug { font: 11px/1.4 var(--font-mono); color: var(--text-secondary); background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: var(--space-3); max-height: 220px; overflow: auto; white-space: pre-wrap; }
+/* Les onglets de la démo défilent au doigt, sans barre grise sous eux. */
+.demo__tabs { scrollbar-width: none; }
+.demo__tabs::-webkit-scrollbar { display: none; }
+/* Un panneau de la doc pas encore monté garde sa place (proportion de la tablette) :
+   la page ne saute pas quand il arrive, et on voit qu'un écran va venir. */
+.doc-screen .gs-stage:not([data-app]) { aspect-ratio: 1076 / 652; border-radius: 22px; background: var(--bg-surface); }
+
+/* ── L'accueil : la tablette, puis le tour rapide, puis ce qu'est le golem ── */
+.demo__overview { margin-top: var(--space-8); }
+.demo__overview h2, .demo__about h2 { font-size: var(--fs-lg); margin: 0 0 var(--space-3); }
+.demo__tabs { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }
+.demo__about { margin-top: var(--space-10); max-width: 760px; }
+.demo__about p { color: var(--text-secondary); line-height: 1.65; margin: 0 0 var(--space-4); }
+.demo__get { color: var(--text-primary) !important; }
+.demo__get a { font-family: var(--font-mono); font-size: var(--fs-sm); word-break: break-all; }

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The arrangement — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html">The mixer</a></li>
+      <li><a href="../golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html">Setlists</a></li>
+      <li><a href="../band/arrangement.html" class="is-on">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / Band</div>
+      <h1>The arrangement</h1>
+      <span class="docs-badge">golem</span>
+      <div class="docs-body">
+<p>The arrangement is the song&#x27;s map: its parts — intro, verse, chorus, solo — end to end, and the scene each one switches to. Start the song and the golem changes scenes for you at the right bar, starts the drums and the stems with you, and stops them at the end. <strong>It makes no sound itself: it plays your scenes in time.</strong></p>
+<p>The examples use <strong>Golem Rising</strong> (Songs ▸ Songs ▸ Golem Rising): thirteen parts, 57 bars, 1:54 at 120 BPM.</p>
+<h2 id="s1">Sections and bars</h2>
+<figure class="doc-screen" id="panel-arr" data-panel='{&quot;example&quot;: &quot;golem-rising-song&quot;, &quot;id&quot;: &quot;arr&quot;}'><div class="gs-stage"></div><figcaption>Golem Rising&#x27;s arrangement on its song page: thirteen parts, the letter of each scene under it.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>The track lays the parts out <strong>in bars</strong>, one after the other, numbered from bar 1. Each part shows its name, its length and the letter of its scene: Intro is scene <strong>A</strong> for 4 bars, Verse 1 scene <strong>B</strong> for 7, the first Chorus scene <strong>D</strong> for 8.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;arr&quot;, &quot;halo&quot;: &quot;arr.track&quot;}'>Show me</button></p>
+<ul><li><strong>A hatched part has no scene of its own</strong>: the scene before it keeps playing. Golem Rising&#x27;s one-bar <em>Fills</em> do that — they change nothing, they only take their bar.</li><li><strong>Add a part</strong> from the row below the track (intro, verse, chorus, bridge, solo, outro, or <code>+ custom</code>): it lands at the end, 4 bars long; drag it where it belongs.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;arr&quot;, &quot;halo&quot;: &quot;arr.library&quot;}'>Show me</button></p>
+<ul><li><strong><code>Fit</code> / <code>Bars</code></strong> at the right: the whole song in view, or a fixed width per bar to count them.</li></ul>
+<figure class="doc-screen" id="panel-part" data-panel='{&quot;example&quot;: &quot;golem-rising-part-sheet&quot;, &quot;id&quot;: &quot;part&quot;}'><div class="gs-stage"></div><figcaption>The first Chorus opened: 8 bars, scene D — Wall Chorus, and what each instrument plays in every part.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>Tap a part to open it. You set its <strong>name</strong>, its <strong>length in bars</strong>, the <strong>scene</strong> it switches to (one button per scene of the preset, with its name), its time signature, and the drum groove for that part. Under it, a grid reads what every instrument plays in every part — the scene&#x27;s sound, not a copy of it: to change the sound, change the scene.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;part&quot;, &quot;halo&quot;: &quot;arr.part-sheet&quot;}'>Show me</button></p>
+<p>The header of the arrangement adds it up: <code>13 sec · 1:54 · 57 bars @120</code> — thirteen sections, 1 minute 54, 57 bars at 120 BPM.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;arr&quot;, &quot;halo&quot;: &quot;arr.total&quot;}'>Show me</button></p>
+<h2 id="s2">When the song starts: count-in, click</h2>
+<figure class="doc-screen" id="panel-ws" data-panel='{&quot;example&quot;: &quot;golem-rising-song&quot;, &quot;halo&quot;: &quot;arr.start&quot;, &quot;id&quot;: &quot;ws&quot;}'><div class="gs-stage"></div><figcaption>When the song starts: one bar of count-in, then the drum machine with one groove per part.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>The orange row says what happens when you start the song.</p>
+<ul><li><strong>count-in</strong> — bars counted before the song, in the first part&#x27;s meter. You always hear it, even when the click stays silent for the song. Golem Rising counts one bar.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;ws&quot;, &quot;halo&quot;: &quot;arr.count-in&quot;}'>Show me</button></p>
+<ul><li><strong>One box per player that can start with the song</strong>: <em>Backing</em> (the stems, from the top), <em>Click</em> (from the first beat to the end), <em>Record</em> (a take that starts and stops with the song), <em>Drums</em> (the drum machine, on the groove of each part), <em>Sample</em> (the sounds placed on the track). Ticked, it starts with the song; unticked, you start it yourself. The line under each box says what would stop it: Golem Rising has <code>no stems linked</code>, and no sample block (<code>not in this preset</code>). Its Drums box is ticked: <code>7 grooves · one per part</code>.</li><li><strong>The switch</strong> that starts the song — <code>switch 9</code> on Ambient Metal.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;ws&quot;, &quot;halo&quot;: &quot;arr.switch&quot;}'>Show me</button></p>
+<ul><li><strong>next part</strong> — <code>bars</code>: the parts follow each other on their own, at the song&#x27;s tempo; play with the click, the stems or the drums to stay together. <code>foot</code>: each tap on the switch goes to the next part, however long you stay in one.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;ws&quot;, &quot;halo&quot;: &quot;arr.advance&quot;}'>Show me</button></p>
+<p>The switch and <em>next part</em> are marked <code>shared</code>: they belong to the <strong>preset</strong>, so every song on Ambient Metal uses the same ones. Everything else on the page belongs to this song.</p>
+<ul><li><strong>on /live</strong> — while the song plays, the Live screen shows the <strong>Stage board</strong> (the parts, now and next, the count-in) or your <strong>Stomps</strong>.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;ws&quot;, &quot;halo&quot;: &quot;arr.live-view&quot;}'>Show me</button></p>
+<p><strong>Automation on</strong> at the top is the song&#x27;s master switch: off, the song keeps its parts but the scenes stay at your feet. If the mode does not run arrangements (Settings ▸ Mode ▸ <em>Arrangement</em>), it says so here.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;ws&quot;, &quot;halo&quot;: &quot;arr.power&quot;}'>Show me</button></p>
+<p>On the pedalboard, tap the switch: the count-in, then the song. With <code>bars</code>, a second tap stops everything the song started. On the song page, <strong>▶ Play</strong> does the same.</p>
+<h2 id="s3">Rehearsing a section: cue, loop</h2>
+<figure class="doc-screen" id="panel-reh" data-panel='{&quot;example&quot;: &quot;golem-rising-rehearsal-chorus&quot;, &quot;id&quot;: &quot;reh&quot;}'><div class="gs-stage"></div><figcaption>Rehearsal page: the Chorus is tapped — it is where the band starts.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>In rehearsal you work on one part at a time. The <strong>Rehearsal page</strong> of the Live screen (the Live screen of the Rehearsal mode) shows the same parts as cards.</p>
+<ul><li><strong>Tap a part</strong>: it is where you start. The big button says it — <code>▶ FROM CHORUS</code>, the bar and the count-in. Nothing plays until you press it.</li></ul>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;reh&quot;, &quot;halo&quot;: &quot;live.section.4&quot;}'>Show me</button></p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;reh&quot;, &quot;halo&quot;: &quot;live.transport&quot;}'>Show me</button></p>
+<ul><li><strong>While the song plays, tap another part to cue it</strong>: it starts at the end of the current part, on the bar line. The card says <code>NEXT</code>; tap it again to cancel.</li><li><strong><code>⟲ LOOP</code></strong> on the playing card repeats that part until you choose another or stop looping.</li><li><code>■ STOP</code> takes you back to where the run began, ready to go again.</li></ul>
+<p>A cued part arrives with its scene, on the bar line. See <a href="../golem/live-screen.html">The live screen</a> for the whole page.</p>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../band/setlists.html"><small>Previous</small>Setlists</a><a class="docs-pager__next" href="../band/click-tempo.html"><small>Next</small>Click and tempo</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">Sections and bars</a></li><li><a href="#s2">When the song starts: count-in, click</a></li><li><a href="#s3">Rehearsing a section: cue, loop</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,599 @@
+{
+ "name": "golem-rising-songs-picker",
+ "title": "Live: the songs of the setlist on the foot — a tap on the song's title",
+ "route": "#/live",
+ "preset": "factory-ambient-metal",
+ "scene": "B",
+ "click": "live.song",
+ "state": {
+  "health": {
+   "level": "warn",
+   "title": "Playing is safe. One thing to look at.",
+   "bad": 0,
+   "warn": 1,
+   "at": 1793799486.981
+  },
+  "first_check": {
+   "pending": false,
+   "done_at": null,
+   "skipped_at": 1793799208.723,
+   "verdict": null
+  },
+  "startup": {
+   "policy": "bank0",
+   "home": null
+  },
+  "reaper_connected": true,
+  "reaper_running": true,
+  "preset_id": "factory-ambient-metal",
+  "preset_name": "Ambient Metal",
+  "scene_id": "B",
+  "voice_on": false,
+  "whammy_on": false,
+  "whammy_mode": null,
+  "midi_pedals": {},
+  "levels": {
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
+   "in3": 0.7280462980270386
+  },
+  "clip": {},
+  "tempo": 120,
+  "stomps": {
+   "6": false,
+   "7": false,
+   "8": false,
+   "9": true,
+   "10": true
+  },
+  "exp1": 0,
+  "exp2": 0,
+  "exp2_target": "—",
+  "pedals": {
+   "volume": "exp2",
+   "block": "exp1"
+  },
+  "live_lock": false,
+  "latency_ms": null,
+  "audio_metrics": {},
+  "xruns": 0,
+  "xruns_recent": 0,
+  "xruns_last": null,
+  "audio": {
+   "ok": true,
+   "why": ""
+  },
+  "midi": {
+   "ok": true,
+   "issues": [],
+   "fix": "",
+   "ts": "2026-11-04 14:38:06"
+  },
+  "rig_check": {
+   "t": 1793799481,
+   "ok": true,
+   "checked": 0,
+   "issues": []
+  },
+  "rig_unmounted": [
+   {
+    "id": "guitar-2",
+    "name": "Guitar 2",
+    "input": "—",
+    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
+   },
+   {
+    "id": "bass-1",
+    "name": "Bass",
+    "input": "—",
+    "reason": "needs Bass 1, this card has 2 inputs and no Bass 1"
+   },
+   {
+    "id": "voice-1",
+    "name": "Voice",
+    "input": "—",
+    "reason": "needs Voice 1, this card has 2 inputs and no Voice 1"
+   }
+  ],
+  "rig_error": null,
+  "song": {
+   "line": "r:factory:8",
+   "setlist": "factory",
+   "preset": "factory-ambient-metal",
+   "title": "Golem Rising",
+   "slug": null,
+   "bpm": 120,
+   "backing": null,
+   "arrangement": true,
+   "band_song": "rs:f3f0252689f96910f01c81be0325855f"
+  },
+  "cpu_boost": false,
+  "pedalboard": {
+   "id": "unknown",
+   "name": "unknown pedalboard",
+   "source": "fallback",
+   "stale": false
+  },
+  "tuner": {
+   "on": false,
+   "active": false,
+   "note": null,
+   "octave": null,
+   "midi": null,
+   "cents": 0.0,
+   "freq": 0.0,
+   "conf": 0.0
+  },
+  "looper": {
+   "enabled": false,
+   "present": false,
+   "loops": [],
+   "slots": [],
+   "len": 0.0,
+   "pos": 0.0,
+   "t": 1793799453.374623,
+   "countin": null
+  },
+  "backing": {
+   "enabled": false,
+   "songs": [],
+   "slug": null,
+   "present": false,
+   "playing": false,
+   "paused": false,
+   "pos": 0.0,
+   "len": 0.0,
+   "stems": {},
+   "loop": {
+    "on": false,
+    "a": 0.0,
+    "b": 0.0
+   },
+   "t": 0.0
+  },
+  "mode": {
+   "id": "studio",
+   "name": "Home",
+   "icon": "🏠",
+   "order": 2,
+   "desc": "Everything on — the full rig at home (default)",
+   "services": {
+    "voice": true,
+    "keys": true,
+    "pads": true,
+    "looper": true,
+    "backing": true,
+    "perfrec": true,
+    "sample": true,
+    "arrangement": true,
+    "standard": true,
+    "drummachine": true,
+    "compo": true
+   },
+   "ui": {
+    "pages": [
+     "live",
+     "designer",
+     "songs",
+     "library",
+     "system"
+    ],
+    "boot": "live",
+    "locked": false,
+    "live": "pedalboard"
+   },
+   "perfrec_mode": "manual",
+   "click_mode": "manual",
+   "take_kind": "rehearsal",
+   "foot_list": "factory",
+   "perf_boost": false,
+   "_factory": true,
+   "_modified": false,
+   "_custom": false
+  },
+  "sandbox_rev": 0,
+  "sandbox_from": null,
+  "library_rev": 0,
+  "content_rev": 0,
+  "notice": null,
+  "arrangement": {
+   "present": true,
+   "allowed": true,
+   "running": false,
+   "counting": false,
+   "done": false,
+   "mode": "bars",
+   "live_view": null,
+   "index": -1,
+   "count": 13,
+   "marks": 0,
+   "name": null,
+   "next": "Intro",
+   "scene": null,
+   "broken": false,
+   "sig": null,
+   "started_at": null,
+   "count_from": null,
+   "count_to": null,
+   "sec_from": null,
+   "sec_to": null,
+   "bars": null,
+   "parts": [
+    {
+     "name": "Intro",
+     "bars": 4,
+     "scene": "A",
+     "dur": 8.0,
+     "at": 0.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Verse 1",
+     "bars": 7,
+     "scene": "B",
+     "dur": 14.0,
+     "at": 8.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Fill",
+     "bars": 1,
+     "scene": null,
+     "dur": 2.0,
+     "at": 22.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Chorus",
+     "bars": 8,
+     "scene": "D",
+     "dur": 16.0,
+     "at": 24.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Verse 2",
+     "bars": 7,
+     "scene": "C",
+     "dur": 14.0,
+     "at": 40.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Fill",
+     "bars": 1,
+     "scene": null,
+     "dur": 2.0,
+     "at": 54.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Chorus",
+     "bars": 7,
+     "scene": "D",
+     "dur": 14.0,
+     "at": 56.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Fill",
+     "bars": 1,
+     "scene": null,
+     "dur": 2.0,
+     "at": 70.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Solo",
+     "bars": 4,
+     "scene": "E",
+     "dur": 8.0,
+     "at": 72.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Solo · climb",
+     "bars": 4,
+     "scene": null,
+     "dur": 8.0,
+     "at": 80.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Chorus",
+     "bars": 8,
+     "scene": "D",
+     "dur": 16.0,
+     "at": 88.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "Outro",
+     "bars": 4,
+     "scene": "C",
+     "dur": 8.0,
+     "at": 104.0,
+     "num": 4,
+     "den": 4
+    },
+    {
+     "name": "End",
+     "bars": 1,
+     "scene": null,
+     "dur": 2.0,
+     "at": 112.0,
+     "num": 4,
+     "den": 4
+    }
+   ],
+   "by": null,
+   "backing": false,
+   "clock": "server",
+   "starts": {},
+   "bar_map": false,
+   "cue": null,
+   "loop": false,
+   "loops": 0,
+   "from": 0,
+   "song_len": 114.0,
+   "song_t0": null
+  },
+  "inputmap": {
+   "card": "unknown",
+   "inputs": [
+    {
+     "ch": "1",
+     "role": "guitar",
+     "nth": 1,
+     "label": "Guitar",
+     "icon": "🎸",
+     "name": "Guitar 1"
+    },
+    {
+     "ch": "2",
+     "role": "none",
+     "label": "Unassigned",
+     "icon": "·",
+     "name": null
+    }
+   ],
+   "usb": [
+    {
+     "ch": "usb1",
+     "port": 1,
+     "role": "none",
+     "bound": false,
+     "device": null,
+     "kind": null,
+     "label": "Unassigned",
+     "icon": "·",
+     "name": null
+    },
+    {
+     "ch": "usb2",
+     "port": 2,
+     "role": "none",
+     "bound": false,
+     "device": null,
+     "kind": null,
+     "label": "Unassigned",
+     "icon": "·",
+     "name": null
+    },
+    {
+     "ch": "usb3",
+     "port": 3,
+     "role": "none",
+     "bound": false,
+     "device": null,
+     "kind": null,
+     "label": "Unassigned",
+     "icon": "·",
+     "name": null
+    },
+    {
+     "ch": "usb4",
+     "port": 4,
+     "role": "none",
+     "bound": false,
+     "device": null,
+     "kind": null,
+     "label": "Unassigned",
+     "icon": "·",
+     "name": null
+    }
+   ],
+   "outputs": [
+    {
+     "ch": "1-2",
+     "role": "monitors",
+     "label": "Monitors",
+     "icon": "🔊",
+     "name": null
+    }
+   ],
+   "midi": null,
+   "midi_in": {
+    "role": "fcb",
+    "label": "Pedalboard (FCB1010)",
+    "icon": "🦶",
+    "name": null
+   },
+   "midi_out": {
+    "role": "whammy-dt",
+    "label": "Whammy DT",
+    "icon": "Ⓦ",
+    "name": null
+   },
+   "lane_ports": {
+    "keys": null,
+    "drums": null
+   }
+  },
+  "bank_base": 0,
+  "foot_heard": null,
+  "scene_claims": {},
+  "lane_toggles": {},
+  "rig_loading": null,
+  "loaded_by": "Musician A",
+  "rec_with_song": false,
+  "devices_online": [],
+  "sample_switches": {},
+  "samples": {},
+  "drum_switches": {
+   "10": {
+    "block": "drums",
+    "patterns": [
+     "library/grooves/golem-metal-intro.mid",
+     "library/grooves/golem-metal-verse.mid",
+     "library/grooves/golem-metal-chorus.mid",
+     "library/grooves/golem-metal-breakdown.mid",
+     "library/grooves/golem-metal-solo.mid",
+     "library/grooves/golem-metal-fill.mid",
+     "library/grooves/golem-metal-end.mid"
+    ],
+    "fills": [],
+    "kit": "drums-black-pearl",
+    "sequence": [],
+    "seq_mode": "loop"
+   }
+  },
+  "standard_switches": {},
+  "standard_block": null,
+  "standard_meta": {},
+  "standard": {},
+  "drums": {},
+  "perf": {
+   "recording": false,
+   "file": "",
+   "started_at": ""
+  },
+  "perf_error": "",
+  "perf_countin": null,
+  "disk": {
+   "free": 23859998720,
+   "takes": 161572837,
+   "rate": 864000,
+   "lanes": 3,
+   "measured": false,
+   "seconds": 20671,
+   "warn_minutes": 15.0
+  },
+  "transcribe": {
+   "available": false,
+   "current": null,
+   "queue": [],
+   "last": {}
+  },
+  "foot_select": null,
+  "click": {
+   "on": false,
+   "present": true,
+   "bpm": 120.0
+  },
+  "compo": {
+   "targets": {},
+   "last": null
+  },
+  "cards": {
+   "active": "",
+   "candidates": []
+  },
+  "hotplug": {
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    },
+    {
+     "id": "Nitro",
+     "name": "Alesis‭ Alesis Nitro",
+     "usb": "13b2:009c",
+     "kind": "drums",
+     "match": "Alesis Nitro",
+     "label": "drum module — Alesis Nitro",
+     "bound": false,
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-10-23T01:20:17",
+     "ev": "plug",
+     "name": "Alesis‭ Alesis Nitro",
+     "kind": "drums",
+     "label": "drum module — Alesis Nitro"
+    },
+    {
+     "at": "2026-11-04T14:33:27",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
+  },
+  "updated": 1793799487.4806173,
+  "profile": "desktop",
+  "ui": {
+   "windows": 0,
+   "can_show": {
+    "ok": true,
+    "why": null
+   }
+  }
+ },
+ "reads": {},
+ "anchors": [
+  "live.bank",
+  "live.exp",
+  "live.next",
+  "live.prev",
+  "live.scene.A",
+  "live.scene.B",
+  "live.scene.C",
+  "live.scene.D",
+  "live.scene.E",
+  "live.scenes",
+  "live.setlist",
+  "live.song",
+  "live.songs",
+  "live.stomp.10",
+  "live.stomp.6",
+  "live.stomp.7",
+  "live.stomp.8",
+  "live.stomp.9",
+  "live.stomps",
+  "live.tool.assign",
+  "live.tool.mixer",
+  "live.tool.view",
+  "nav.designer",
+  "nav.library",
+  "nav.live",
+  "nav.settings",
+  "nav.songs",
+  "topbar.brand"
+ ],
+ "anchors_hidden": [
+  "live.tool.assign",
+  "live.tool.mixer",
+  "live.tool.view"
+ ]
+}

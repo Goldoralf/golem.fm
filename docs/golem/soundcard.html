@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sound card and inputs — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html" class="is-on">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html">The mixer</a></li>
+      <li><a href="../golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html">Setlists</a></li>
+      <li><a href="../band/arrangement.html">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / The golem</div>
+      <h1>Sound card and inputs</h1>
+      <span class="docs-badge">golem</span>
+      <div class="docs-body">
+<p>Your sound card is where the instruments come in and the sound goes out. <strong>Settings ▸ Gear ▸ Soundcard</strong> draws its back panel and says, for each jack, which instrument is plugged in. That is what lets your presets work on any card: a preset never names a jack, it asks for <em>Guitar 1</em> or <em>Voice 1</em>.</p>
+<h2 id="s1">Inputs and roles</h2>
+<figure class="doc-screen" id="panel-sc" data-panel='{&quot;example&quot;: &quot;reference-soundcard&quot;, &quot;id&quot;: &quot;sc&quot;}'><div class="gs-stage"></div><figcaption>Settings ▸ Gear ▸ Soundcard on the reference rack: a Volt 276, a guitar on input 1.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>The page has two rows. <strong>CARD</strong> is the card you plugged in: its inputs, its outputs, its headphone jack. Above the row, its name and its buffer (<code>Volt 276 · 192 smp · 8 ms</code>).</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;sc&quot;, &quot;halo&quot;: &quot;tab.gear&quot;}'>Show me</button></p>
+<p>Tap an input to say what is plugged into it: a guitar, a bass, a voice, keys, drums, a line. The golem names it for you — <strong>Guitar 1</strong>, <strong>Voice 1</strong>, <strong>Guitar 2</strong> — and you can say who plays it. On the reference rack, input 1 is the guitar and input 2 is free.</p>
+<ul><li><strong>A preset asks for an instrument, never a jack.</strong> Its <em>Guitar 1</em> lane plays whatever input is Guitar 1 on this card. Take the same preset to a 16-input interface: it finds Guitar 1 there too.</li><li><strong>An instrument this card does not have is said, not guessed.</strong> A lane that needs <em>Guitar 2</em> on a card with one guitar waits, greyed, with the reason — it never lands on whatever happens to be input 2 (on a Volt, the microphone).</li><li><strong>The setup belongs to the card.</strong> Plug another card, and the golem loads that card&#x27;s setup; plug the first one back, it is still there.</li></ul>
+<p>The outputs are named the same way: here <code>OUT L</code> and <code>OUT R</code> are the <strong>Monitors</strong>, and the headphone jack <strong>mirrors</strong> them (see <a href="../golem/mixer.html">The mixer</a>).</p>
+<h2 id="s2">Stereo pairs</h2>
+<p>A drum module or a keyboard often comes out on <strong>two jacks, left and right</strong>: one instrument. The ⛓ link between two neighbouring inputs joins them into one stereo instrument; tap it again to split them. Outputs pair the same way: <code>OUT L</code> and <code>OUT R</code> form one pair here.</p>
+<h2 id="s3">USB and MIDI</h2>
+<p>The second row, <strong>RACK</strong>, belongs to the golem itself, whatever the card: <strong>USB 1 to 4</strong> and the <strong>MIDI</strong> jacks. It never moves when you change cards — a keyboard plugged into the golem stays plugged in.</p>
+<ul><li>A USB port carries a <strong>controller</strong>: keys, pads, both, or an electronic drum kit. Bind it here so lanes can play it (<em>Keys + Pads 1</em>). An unbound port is greyed, with what is plugged into it: on the reference rack, <code>USB 1 · Alesis Nitro · unbound</code>.</li><li>When you plug something new, the banner at the top says what was detected and what to do with it.</li><li><strong>MIDI IN</strong> and <strong>MIDI OUT</strong> are for the golem&#x27;s own gear: the pedalboard (here the FCB1010) and a MIDI-controlled pedal (here a Whammy DT). They are not instruments.</li></ul>
+<p>The details of each controller are on the next tab — see <a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a>.</p>
+<h2 id="s4">Card setups</h2>
+<ul><li><strong>A new card</strong> is detected when you plug it: the golem offers to <strong>switch to it</strong>. Switching restarts the audio engine (about ten seconds); the old card&#x27;s setup is kept for when it comes back.</li><li><strong>The card is unplugged?</strong> Every page says so, with a button per card that is plugged in. The golem never switches by itself: a gig output silently moving to another card is worse than a visible silence.</li><li><strong>A card you do not have yet</strong> can be prepared: declare it from Settings ▸ Mode (a mode can wait for a given card), name its inputs at home, and it is ready the day you plug it in.</li><li><strong>The same card on two golems</strong> — your home rig and a second rack, or Windows and Linux on one computer — can be cabled differently. When both are linked to your golem.fm account, a <code>⇄</code> chip appears on this page: compare the two setups, use the other one, offer yours, or keep them separate. A golem is never changed from afar: the setup is applied here, in front of the card.</li></ul>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../golem/modes.html"><small>Previous</small>Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a><a class="docs-pager__next" href="../golem/controllers.html"><small>Next</small>Controllers: keyboards, pads, expression</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">Inputs and roles</a></li><li><a href="#s2">Stereo pairs</a></li><li><a href="#s3">USB and MIDI</a></li><li><a href="#s4">Card setups</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

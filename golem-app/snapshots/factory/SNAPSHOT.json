@@ -1,0 +1,4989 @@
+{
+ "kind": "factory",
+ "name": "factory",
+ "commit": "c6c9ab91169aa5b19278521bcf8e4b3fa8ab26a6",
+ "catalog_version": 32,
+ "made": "2026-11-04",
+ "reads": [
+  "/api/anim-packs",
+  "/api/app-build",
+  "/api/arrangement/stacks-moved",
+  "/api/backing/cache",
+  "/api/backing/catalog",
+  "/api/backups",
+  "/api/backups/overview",
+  "/api/band",
+  "/api/block-defaults",
+  "/api/card-setups?card=unknown",
+  "/api/cards",
+  "/api/catalog",
+  "/api/controllers",
+  "/api/devices",
+  "/api/drumkits",
+  "/api/dx7",
+  "/api/effects",
+  "/api/engines",
+  "/api/factory/captures",
+  "/api/factory/status",
+  "/api/factory/visibility",
+  "/api/foot-list",
+  "/api/genres",
+  "/api/gestures",
+  "/api/golemfm/quotas",
+  "/api/golemfm/status",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-boom-bap.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-bossa.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-four-on-the-floor.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-funk-16.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-half-time.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-house.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-lofi.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-metal-breakdown.mid",
+  "/api/grooves",
+  "/api/health/assistant",
+  "/api/health/facts",
+  "/api/health/fix",
+  "/api/health/incidents",
+  "/api/health/silence",
+  "/api/inputmap",
+  "/api/inputmap?card=unknown",
+  "/api/kits",
+  "/api/knobs/config",
+  "/api/lane/mine?role=Guitar",
+  "/api/library/lent",
+  "/api/loop-peaks/perf-20261104-142828/DI-Sandbox-Input-2.wav",
+  "/api/loop-peaks/perf-20261104-142828/Drums.wav",
+  "/api/loop-peaks/perf-20261104-142828/Input-2merge.wav",
+  "/api/loop-peaks/perf-20261104-142828/Mix.wav",
+  "/api/loop-peaks/perf-20261104-142828/Standard-Bass.wav",
+  "/api/loop-peaks/perf-20261104-142828/Standard-Drums.wav",
+  "/api/loop-peaks/perf-20261104-142828/Standard-Keys.wav",
+  "/api/loops",
+  "/api/mappings",
+  "/api/mixer",
+  "/api/modes",
+  "/api/patches",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F01_kick.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F02_kick_sub.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F03_snare.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F04_clap.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F05_rim.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F06_hat_closed.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F07_hat_pedal.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F08_hat_open.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F09_tom_low.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F10_tom_mid.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F11_tom_high.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F12_ride.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F13_ride_bell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F14_crash.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F15_crash2.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F16_cowbell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F01_kick.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F02_kick_sub.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F03_snare.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F04_clap.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F05_rim.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F06_hat_closed.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F07_hat_pedal.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F08_hat_open.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F09_tom_low.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F10_tom_mid.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F11_tom_high.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F12_ride.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F13_ride_bell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F14_crash.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F15_crash2.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F16_cowbell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F01_kick.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F02_kick_sub.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F03_snare.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F04_clap.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F05_rim.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F06_hat_closed.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F07_hat_pedal.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F08_hat_open.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F09_tom_low.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F10_tom_mid.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F11_tom_high.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F12_ride.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F13_ride_bell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F14_crash.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F15_crash2.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F16_cowbell.wav",
+  "/api/pedalboard",
+  "/api/pedals/catalog",
+  "/api/perf",
+  "/api/plugin-window",
+  "/api/preset/factory-alt-rock",
+  "/api/preset/factory-ambient-metal",
+  "/api/preset/factory-blues-night",
+  "/api/preset/factory-chill-jazz",
+  "/api/preset/factory-funk-session",
+  "/api/preset/factory-indie-pop",
+  "/api/preset/factory-loop-station",
+  "/api/preset/factory-metal-for-all",
+  "/api/preset/factory-rock-classics",
+  "/api/preset/patch%3Afactory-bass-jazz-warm",
+  "/api/preset/patch%3Afactory-bass-vintage-round",
+  "/api/preset/patch%3Afactory-drums-classic-rock",
+  "/api/preset/patch%3Afactory-drums-jazz-brushes",
+  "/api/preset/patch%3Afactory-guitar-jazz-clean",
+  "/api/preset/patch%3Afactory-guitar-singing-clean",
+  "/api/preset/patch%3Afactory-keys-electric-piano",
+  "/api/preset/patch%3Afactory-keys-jazz-piano",
+  "/api/preset/patch%3Afactory-voice-clean",
+  "/api/preset/patch%3Afactory-voice-crooner",
+  "/api/preset/patch:factory-bass-biamp-grit",
+  "/api/preset/patch:factory-bass-funk-slap",
+  "/api/preset/patch:factory-bass-metal",
+  "/api/preset/patch:factory-bass-rock-grind",
+  "/api/preset/patch:factory-bass-synth",
+  "/api/preset/patch:factory-drums-metal",
+  "/api/preset/patch:factory-drums-studio-rock",
+  "/api/preset/patch:factory-guitar-ambient-djent",
+  "/api/preset/patch:factory-guitar-british-crunch",
+  "/api/preset/patch:factory-guitar-brown-lead",
+  "/api/preset/patch:factory-guitar-funk-clean",
+  "/api/preset/patch:factory-guitar-fuzz-wall",
+  "/api/preset/patch:factory-guitar-gypsy-lead",
+  "/api/preset/patch:factory-guitar-hero-lead",
+  "/api/preset/patch:factory-guitar-indie-chime",
+  "/api/preset/patch:factory-guitar-modern-metal",
+  "/api/preset/patch:factory-guitar-soaring-lead",
+  "/api/preset/patch:factory-guitar-texas-blues",
+  "/api/preset/patch:factory-keys-80s-epiano",
+  "/api/preset/patch:factory-keys-cathedral-piano",
+  "/api/preset/patch:factory-keys-loop-bass-beat",
+  "/api/preset/patch:factory-keys-rock-organ",
+  "/api/preset/patch:factory-keys-synth-lead",
+  "/api/preset/patch:factory-keys-warm-pad",
+  "/api/preset/patch:factory-voice-halo",
+  "/api/preset/patch:factory-voice-metal",
+  "/api/preset/patch:factory-voice-pop-tuned",
+  "/api/preset/patch:factory-voice-rock",
+  "/api/presets",
+  "/api/preview/batch",
+  "/api/recorder",
+  "/api/sample-sets",
+  "/api/sandbox",
+  "/api/separation",
+  "/api/separation/batch",
+  "/api/setlists",
+  "/api/sfz",
+  "/api/song-folders",
+  "/api/song-folders/songs",
+  "/api/song/rs%3Af3f0252689f96910f01c81be0325855f",
+  "/api/songs",
+  "/api/songs/rs%3Af3f0252689f96910f01c81be0325855f/files",
+  "/api/soundcard",
+  "/api/standards",
+  "/api/standards/grooves/tree",
+  "/api/standards/state",
+  "/api/standards?limit=0",
+  "/api/state",
+  "/api/storage",
+  "/api/system",
+  "/api/system/autostart",
+  "/api/system/harden",
+  "/api/system/health",
+  "/api/system/libraries",
+  "/api/take/flags",
+  "/api/tones-sync",
+  "/api/tunings",
+  "/api/vital/presets"
+ ],
+ "examples": [
+  "golem-rising-live",
+  "golem-rising-designer",
+  "golem-rising-amp-sheet",
+  "golem-rising-delay-sheet",
+  "golem-rising-scenes-sheet",
+  "golem-rising-scene-sheet",
+  "golem-rising-keys",
+  "reference-controllers",
+  "golem-rising-delay-presets",
+  "golem-rising-delay-assign",
+  "factory-patches",
+  "library-amps",
+  "settings-mode",
+  "reference-soundcard",
+  "reference-pedalboard",
+  "settings-mode-compare",
+  "factory-songs",
+  "factory-content",
+  "metal-for-all-designer",
+  "blues-night-live",
+  "factory-setlist",
+  "factory-setlist-line",
+  "golem-rising-song",
+  "golem-rising-config",
+  "metal-for-all-drums",
+  "loop-station-live",
+  "golem-rising-mixer",
+  "golem-rising-assign",
+  "golem-rising-rehearsal",
+  "golem-rising-concert",
+  "settings-mode-gig",
+  "factory-setlists",
+  "factory-setlist-banks",
+  "golem-rising-songs-picker",
+  "golem-rising-setlist-picker",
+  "golem-rising-part-sheet",
+  "golem-rising-rehearsal-chorus",
+  "library-amp-detail",
+  "factory-health",
+  "factory-storage",
+  "factory-backups",
+  "factory-standards",
+  "standard-rooftop-prowl",
+  "library-keys",
+  "library-grooves",
+  "library-kits",
+  "library-samples",
+  "library-backings",
+  "library-vocals",
+  "library-recordings",
+  "connect-tone3000",
+  "connect-golemfm",
+  "connect-devices",
+  "engines-separation",
+  "golem-rising-riff",
+  "first-check",
+  "first-check-input",
+  "first-check-done",
+  "companion-now",
+  "companion-song",
+  "companion-rec",
+  "reference-drums",
+  "reference-drums-bound"
+ ],
+ "assets": {
+  "/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/cover": {
+   "file": "assets/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/cover",
+   "type": "image/jpeg"
+  },
+  "/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/photo": {
+   "file": "assets/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/photo",
+   "type": "image/jpeg"
+  }
+ },
+ "media": {
+  "/library/previews/patch-factory-drums-classic-rock-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-drums-classic-rock-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-classic-rock-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-drums-classic-rock-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-classic-rock-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-drums-classic-rock-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-classic-rock-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-drums-classic-rock-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-jazz-brushes-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-drums-jazz-brushes-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-jazz-brushes-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-drums-jazz-brushes-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-jazz-brushes-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-drums-jazz-brushes-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-jazz-brushes-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-drums-jazz-brushes-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-metal-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-drums-metal-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-metal-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-drums-metal-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-metal-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-drums-metal-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-metal-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-drums-metal-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-studio-rock-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-drums-studio-rock-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-studio-rock-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-drums-studio-rock-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-studio-rock-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-drums-studio-rock-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-drums-studio-rock-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-drums-studio-rock-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-ambient-djent-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-ambient-djent-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-ambient-djent-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-ambient-djent-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-ambient-djent-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-ambient-djent-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-ambient-djent-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-ambient-djent-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-ambient-djent-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-ambient-djent-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-british-crunch-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-british-crunch-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-british-crunch-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-british-crunch-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-british-crunch-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-british-crunch-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-british-crunch-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-british-crunch-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-brown-lead-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-brown-lead-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-brown-lead-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-brown-lead-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-brown-lead-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-brown-lead-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-brown-lead-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-brown-lead-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-brown-lead-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-brown-lead-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-funk-clean-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-funk-clean-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-funk-clean-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-funk-clean-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-funk-clean-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-funk-clean-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-funk-clean-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-funk-clean-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-funk-clean-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-funk-clean-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-fuzz-wall-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-fuzz-wall-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-fuzz-wall-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-fuzz-wall-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-fuzz-wall-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-fuzz-wall-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-fuzz-wall-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-fuzz-wall-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-fuzz-wall-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-fuzz-wall-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-gypsy-lead-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-gypsy-lead-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-gypsy-lead-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-gypsy-lead-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-gypsy-lead-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-gypsy-lead-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-gypsy-lead-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-gypsy-lead-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-gypsy-lead-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-gypsy-lead-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-hero-lead-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-hero-lead-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-hero-lead-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-hero-lead-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-hero-lead-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-hero-lead-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-hero-lead-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-hero-lead-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-indie-chime-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-indie-chime-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-indie-chime-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-indie-chime-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-indie-chime-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-indie-chime-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-indie-chime-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-indie-chime-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-indie-chime-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-indie-chime-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-jazz-clean-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-jazz-clean-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-jazz-clean-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-jazz-clean-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-jazz-clean-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-jazz-clean-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-jazz-clean-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-jazz-clean-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-jazz-clean-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-jazz-clean-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-modern-metal-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-modern-metal-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-modern-metal-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-modern-metal-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-modern-metal-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-modern-metal-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-modern-metal-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-modern-metal-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-modern-metal-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-modern-metal-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-singing-clean-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-singing-clean-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-singing-clean-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-singing-clean-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-singing-clean-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-singing-clean-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-singing-clean-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-singing-clean-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-singing-clean-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-singing-clean-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-soaring-lead-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-soaring-lead-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-soaring-lead-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-soaring-lead-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-soaring-lead-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-soaring-lead-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-soaring-lead-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-soaring-lead-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-soaring-lead-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-soaring-lead-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-texas-blues-in2/A.opus": {
+   "file": "media/library/previews/patch-factory-guitar-texas-blues-in2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-texas-blues-in2/B.opus": {
+   "file": "media/library/previews/patch-factory-guitar-texas-blues-in2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-texas-blues-in2/C.opus": {
+   "file": "media/library/previews/patch-factory-guitar-texas-blues-in2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-texas-blues-in2/D.opus": {
+   "file": "media/library/previews/patch-factory-guitar-texas-blues-in2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-guitar-texas-blues-in2/E.opus": {
+   "file": "media/library/previews/patch-factory-guitar-texas-blues-in2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-80s-epiano-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-keys-80s-epiano-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-80s-epiano-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-keys-80s-epiano-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-80s-epiano-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-keys-80s-epiano-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-80s-epiano-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-keys-80s-epiano-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-cathedral-piano-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-keys-cathedral-piano-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-cathedral-piano-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-keys-cathedral-piano-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-cathedral-piano-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-keys-cathedral-piano-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-cathedral-piano-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-keys-cathedral-piano-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-electric-piano-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-keys-electric-piano-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-electric-piano-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-keys-electric-piano-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-electric-piano-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-keys-electric-piano-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-electric-piano-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-keys-electric-piano-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-electric-piano-ink/E.opus": {
+   "file": "media/library/previews/patch-factory-keys-electric-piano-ink/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-jazz-piano-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-keys-jazz-piano-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-jazz-piano-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-keys-jazz-piano-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-jazz-piano-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-keys-jazz-piano-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-jazz-piano-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-keys-jazz-piano-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-rock-organ-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-keys-rock-organ-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-rock-organ-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-keys-rock-organ-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-rock-organ-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-keys-rock-organ-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-rock-organ-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-keys-rock-organ-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-rock-organ-ink/E.opus": {
+   "file": "media/library/previews/patch-factory-keys-rock-organ-ink/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-synth-lead-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-keys-synth-lead-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-synth-lead-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-keys-synth-lead-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-synth-lead-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-keys-synth-lead-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-synth-lead-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-keys-synth-lead-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-synth-lead-ink/E.opus": {
+   "file": "media/library/previews/patch-factory-keys-synth-lead-ink/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-warm-pad-ink/A.opus": {
+   "file": "media/library/previews/patch-factory-keys-warm-pad-ink/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-warm-pad-ink/B.opus": {
+   "file": "media/library/previews/patch-factory-keys-warm-pad-ink/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-warm-pad-ink/C.opus": {
+   "file": "media/library/previews/patch-factory-keys-warm-pad-ink/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/patch-factory-keys-warm-pad-ink/D.opus": {
+   "file": "media/library/previews/patch-factory-keys-warm-pad-ink/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/drums-1/A.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/drums-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/drums-1/B.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/drums-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/drums-1/C.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/drums-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/drums-1/D.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/drums-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/drums-1/E.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/drums-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-alt-rock/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-alt-rock/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-2/A.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-2/B.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-2/C.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-2/D.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/guitar-2/E.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/guitar-2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-ambient-metal/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-ambient-metal/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/drums-1/A.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/drums-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/drums-1/B.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/drums-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/drums-1/C.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/drums-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/drums-1/D.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/drums-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/drums-1/E.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/drums-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-2/A.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-2/B.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-2/C.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-2/D.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/guitar-2/E.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/guitar-2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-blues-night/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-blues-night/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/drums-1/A.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/drums-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/drums-1/B.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/drums-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/drums-1/C.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/drums-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/drums-1/D.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/drums-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/drums-1/E.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/drums-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-2/A.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-2/B.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-2/C.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-2/D.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/guitar-2/E.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/guitar-2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-chill-jazz/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-chill-jazz/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/drums-1/A.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/drums-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/drums-1/B.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/drums-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/drums-1/C.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/drums-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/drums-1/D.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/drums-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/drums-1/E.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/drums-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-funk-session/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-funk-session/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/drums-1/A.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/drums-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/drums-1/B.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/drums-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/drums-1/C.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/drums-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/drums-1/D.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/drums-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/drums-1/E.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/drums-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-indie-pop/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-indie-pop/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-loop-station/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-loop-station/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/drums-1/A.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/drums-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/drums-1/B.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/drums-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/drums-1/C.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/drums-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/drums-1/D.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/drums-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/drums-1/E.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/drums-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-2/A.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-2/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-2/B.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-2/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-2/C.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-2/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-2/D.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-2/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/guitar-2/E.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/guitar-2/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-metal-for-all/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-metal-for-all/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/drums-1/A.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/drums-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/drums-1/B.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/drums-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/drums-1/C.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/drums-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/drums-1/D.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/drums-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/drums-1/E.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/drums-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/guitar-1/A.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/guitar-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/guitar-1/B.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/guitar-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/guitar-1/C.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/guitar-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/guitar-1/D.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/guitar-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/guitar-1/E.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/guitar-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/keys-1/A.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/keys-1/A.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/keys-1/B.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/keys-1/B.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/keys-1/C.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/keys-1/C.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/keys-1/D.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/keys-1/D.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/preset-factory-rock-classics/keys-1/E.opus": {
+   "file": "media/library/previews/preset-factory-rock-classics/keys-1/E.opus",
+   "type": "audio/ogg"
+  },
+  "/api/loop/perf-20261104-142828/DI-Sandbox-Input-2.wav": {
+   "file": "media/api/loop/perf-20261104-142828/DI-Sandbox-Input-2.wav",
+   "type": "audio/ogg"
+  },
+  "/api/loop/perf-20261104-142828/Drums.wav": {
+   "file": "media/api/loop/perf-20261104-142828/Drums.wav",
+   "type": "audio/ogg"
+  },
+  "/api/loop/perf-20261104-142828/Input-2merge.wav": {
+   "file": "media/api/loop/perf-20261104-142828/Input-2merge.wav",
+   "type": "audio/ogg"
+  },
+  "/api/loop/perf-20261104-142828/Mix.wav": {
+   "file": "media/api/loop/perf-20261104-142828/Mix.wav",
+   "type": "audio/ogg"
+  },
+  "/api/loop/perf-20261104-142828/Standard-Bass.wav": {
+   "file": "media/api/loop/perf-20261104-142828/Standard-Bass.wav",
+   "type": "audio/ogg"
+  },
+  "/api/loop/perf-20261104-142828/Standard-Drums.wav": {
+   "file": "media/api/loop/perf-20261104-142828/Standard-Drums.wav",
+   "type": "audio/ogg"
+  },
+  "/api/loop/perf-20261104-142828/Standard-Keys.wav": {
+   "file": "media/api/loop/perf-20261104-142828/Standard-Keys.wav",
+   "type": "audio/ogg"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F01_kick.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/01_kick.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F02_kick_sub.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/02_kick_sub.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F03_snare.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/03_snare.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F04_clap.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/04_clap.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F05_rim.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/05_rim.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F06_hat_closed.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/06_hat_closed.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F07_hat_pedal.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/07_hat_pedal.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F08_hat_open.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/08_hat_open.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F09_tom_low.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/09_tom_low.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F10_tom_mid.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/10_tom_mid.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F11_tom_high.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/11_tom_high.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F12_ride.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/12_ride.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F13_ride_bell.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/13_ride_bell.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F14_crash.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/14_crash.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F15_crash2.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/15_crash2.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-house%2F16_cowbell.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-house/16_cowbell.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F01_kick.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/01_kick.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F02_kick_sub.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/02_kick_sub.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F03_snare.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/03_snare.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F04_clap.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/04_clap.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F05_rim.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/05_rim.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F06_hat_closed.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/06_hat_closed.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F07_hat_pedal.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/07_hat_pedal.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F08_hat_open.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/08_hat_open.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F09_tom_low.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/09_tom_low.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F10_tom_mid.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/10_tom_mid.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F11_tom_high.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/11_tom_high.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F12_ride.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/12_ride.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F13_ride_bell.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/13_ride_bell.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F14_crash.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/14_crash.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F15_crash2.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/15_crash2.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F16_cowbell.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-lofi/16_cowbell.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F01_kick.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/01_kick.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F02_kick_sub.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/02_kick_sub.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F03_snare.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/03_snare.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F04_clap.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/04_clap.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F05_rim.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/05_rim.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F06_hat_closed.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/06_hat_closed.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F07_hat_pedal.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/07_hat_pedal.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F08_hat_open.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/08_hat_open.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F09_tom_low.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/09_tom_low.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F10_tom_mid.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/10_tom_mid.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F11_tom_high.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/11_tom_high.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F12_ride.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/12_ride.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F13_ride_bell.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/13_ride_bell.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F14_crash.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/14_crash.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F15_crash2.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/15_crash2.wav",
+   "type": "audio/wav"
+  },
+  "/api/sample?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F16_cowbell.wav": {
+   "file": "media/api/sample/assets/samples/kits/pads-trap/16_cowbell.wav",
+   "type": "audio/wav"
+  }
+ },
+ "machine": [
+  "/api/backups",
+  "/api/backups/overview",
+  "/api/card-setups?card=unknown",
+  "/api/cards",
+  "/api/controllers",
+  "/api/devices",
+  "/api/engines",
+  "/api/inputmap",
+  "/api/inputmap?card=unknown",
+  "/api/pedalboard",
+  "/api/soundcard",
+  "/api/state",
+  "/api/storage",
+  "/api/system",
+  "/api/system/health",
+  "/api/system/libraries"
+ ],
+ "rack": {
+  "reference": {
+   "card": "Volt 276",
+   "pedalboard": "fcb1010",
+   "variants": {
+    "drums": [
+     "Nitro"
+    ],
+    "keys": [
+     "MPK Mini"
+    ]
+   }
+  },
+  "variant": "drums+keys",
+  "seen": [
+   "MPK Mini",
+   "Nitro",
+   "Volt 276",
+   "fcb1010"
+  ],
+  "missing": [],
+  "complete": true
+ },
+ "post_reads": [
+  "/api/blocks/status",
+  "/api/backing/drawer"
+ ],
+ "load_writes": {
+  "#/system/connect/golemfm": [
+   "POST /api/services/check"
+  ],
+  "#/system/connect/tone3000": [
+   "POST /api/services/check"
+  ]
+ },
+ "pages": {
+  "#/live": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/foot-list",
+   "/api/perf",
+   "/api/presets"
+  ],
+  "#/designer": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/block-defaults",
+   "/api/catalog",
+   "/api/drumkits",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/foot-list",
+   "/api/mappings",
+   "/api/patches",
+   "/api/plugin-window",
+   "/api/presets",
+   "/api/recorder",
+   "/api/sandbox",
+   "/api/setlists"
+  ],
+  "#/designer/config": [
+   "/api/app-build",
+   "/api/arrangement/stacks-moved",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/block-defaults",
+   "/api/catalog",
+   "/api/drumkits",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/foot-list",
+   "/api/mappings",
+   "/api/patches",
+   "/api/plugin-window",
+   "/api/presets",
+   "/api/recorder",
+   "/api/sandbox",
+   "/api/setlists"
+  ],
+  "#/songs": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/cover",
+   "/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/photo",
+   "/api/factory/captures",
+   "/api/presets",
+   "/api/songs"
+  ],
+  "#/songs/patches": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/presets": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/foot-list",
+   "/api/presets",
+   "/api/setlists",
+   "/api/songs"
+  ],
+  "#/songs/setlists": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/library/tones/amps": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/catalog",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/library/lent",
+   "/api/tones-sync"
+  ],
+  "#/library/tones/pedals": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/catalog",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/library/lent",
+   "/api/tones-sync"
+  ],
+  "#/library/tones/cabs": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/catalog",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/library/lent",
+   "/api/tones-sync"
+  ],
+  "#/library/tones/outboard": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/catalog",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/library/lent",
+   "/api/tones-sync"
+  ],
+  "#/library/keys/synth": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/library/lent",
+   "/api/tones-sync",
+   "/api/vital/presets"
+  ],
+  "#/library/keys/instruments": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/dx7",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/library/lent",
+   "/api/sfz",
+   "/api/tones-sync"
+  ],
+  "#/library/drums/drums": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/kits",
+   "/api/library/lent",
+   "/api/tones-sync"
+  ],
+  "#/library/drums/kits": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/kits",
+   "/api/library/lent",
+   "/api/tones-sync"
+  ],
+  "#/library/drums/grooves": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/genres",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-boom-bap.mid",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-bossa.mid",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-four-on-the-floor.mid",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-funk-16.mid",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-half-time.mid",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-house.mid",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-lofi.mid",
+   "/api/groove-notes?file=library%2Fgrooves%2Fgolem-metal-breakdown.mid",
+   "/api/grooves",
+   "/api/library/lent",
+   "/api/tones-sync"
+  ],
+  "#/library/samples/short": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/kits",
+   "/api/library/lent",
+   "/api/sample-sets",
+   "/api/tones-sync"
+  ],
+  "#/library/samples/songs": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/kits",
+   "/api/library/lent",
+   "/api/sample-sets",
+   "/api/tones-sync"
+  ],
+  "#/library/tracks/backing": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/backing/cache",
+   "/api/backing/catalog",
+   "/api/factory/captures",
+   "/api/genres",
+   "/api/golemfm/status",
+   "/api/library/lent",
+   "/api/presets",
+   "/api/tones-sync"
+  ],
+  "#/library/tracks/vocals": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/backing/cache",
+   "/api/backing/catalog",
+   "/api/factory/captures",
+   "/api/genres",
+   "/api/golemfm/status",
+   "/api/library/lent",
+   "/api/presets",
+   "/api/tones-sync"
+  ],
+  "#/library/tracks/standards": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/golemfm/status",
+   "/api/library/lent",
+   "/api/presets",
+   "/api/standards?limit=0",
+   "/api/tones-sync"
+  ],
+  "#/library/tracks/recordings": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/factory/captures",
+   "/api/library/lent",
+   "/api/loops",
+   "/api/modes",
+   "/api/perf",
+   "/api/state",
+   "/api/tones-sync"
+  ],
+  "#/system/mode": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/cards",
+   "/api/factory/captures",
+   "/api/inputmap?card=unknown",
+   "/api/modes",
+   "/api/recorder",
+   "/api/setlists",
+   "/api/system",
+   "/api/system/update"
+  ],
+  "#/system/mode/compare": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/cards",
+   "/api/factory/captures",
+   "/api/inputmap?card=unknown",
+   "/api/modes",
+   "/api/recorder",
+   "/api/setlists",
+   "/api/system",
+   "/api/system/update"
+  ],
+  "#/system/sys": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/health/facts",
+   "/api/system",
+   "/api/system/autostart",
+   "/api/system/harden",
+   "/api/system/health",
+   "/api/system/update"
+  ],
+  "#/system/sys/health": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/health/assistant",
+   "/api/health/facts",
+   "/api/health/fix",
+   "/api/health/incidents",
+   "/api/health/silence",
+   "/api/system",
+   "/api/system/update"
+  ],
+  "#/system/gear/sound": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/card-setups?card=unknown",
+   "/api/devices",
+   "/api/drumkits",
+   "/api/factory/captures",
+   "/api/inputmap",
+   "/api/soundcard",
+   "/api/system/update"
+  ],
+  "#/system/gear/controllers": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/controllers",
+   "/api/factory/captures",
+   "/api/system/update"
+  ],
+  "#/system/gear/pedals": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/mappings",
+   "/api/system/update"
+  ],
+  "#/system/gear/board": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/pedalboard",
+   "/api/system/update"
+  ],
+  "#/system/gear/drums": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/devices",
+   "/api/factory/captures",
+   "/api/system/update"
+  ],
+  "#/system/engines/audio": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/engines",
+   "/api/factory/captures",
+   "/api/system/update"
+  ],
+  "#/system/engines/separation": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/separation",
+   "/api/separation/batch",
+   "/api/system/update"
+  ],
+  "#/system/content/storage": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/song-folders",
+   "/api/storage",
+   "/api/system/update"
+  ],
+  "#/system/content/factory": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/status",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preview/batch",
+   "/api/system/update"
+  ],
+  "#/system/connect/wifi": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/network",
+   "/api/network/known",
+   "/api/network/open-qr?v=0",
+   "/api/network/qr?v=0",
+   "/api/network/scan",
+   "/api/system/update"
+  ],
+  "#/system/connect/devices": [
+   "/api/app-build",
+   "/api/auth/devices",
+   "/api/auth/whoami",
+   "/api/band",
+   "/api/factory/captures",
+   "/api/inputmap",
+   "/api/system/update"
+  ],
+  "#/system/connect/golemfm": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/connect",
+   "/api/connect/where",
+   "/api/diag",
+   "/api/factory/captures",
+   "/api/golemfm/status",
+   "/api/health/assistant",
+   "/api/integrations",
+   "/api/system/update",
+   "/api/t3k/auth/status"
+  ],
+  "#/system/connect/tone3000": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/integrations",
+   "/api/system/update",
+   "/api/t3k/auth/status"
+  ],
+  "#/system/about/golem": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/system/update"
+  ],
+  "#/system/about/libs": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/system/libraries",
+   "/api/system/update"
+  ],
+  "#/songs/songs/rs%3Af3f0252689f96910f01c81be0325855f": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/inputmap",
+   "/api/kits",
+   "/api/preset/factory-ambient-metal",
+   "/api/presets",
+   "/api/song/rs%3Af3f0252689f96910f01c81be0325855f",
+   "/api/songs"
+  ],
+  "#/songs/setlists/factory": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory/r:factory:0": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/factory-chill-jazz",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory/r:factory:1": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/factory-blues-night",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-bass": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-bass/r:factory-bass:750e6d4a": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-bass-jazz-warm",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-bass/r:factory-bass:a17fdc40": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-bass-vintage-round",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-drums": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-drums/r:factory-drums:06d62477": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-drums-jazz-brushes",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-drums/r:factory-drums:4b76da22": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-drums-classic-rock",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-guitar": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-guitar/r:factory-guitar:aaf34f6b": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-guitar-jazz-clean",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-guitar/r:factory-guitar:c6a7f9fc": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-guitar-singing-clean",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-keys": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-keys/r:factory-keys:9977416c": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-keys-jazz-piano",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-keys/r:factory-keys:34496e36": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-keys-electric-piano",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-voice": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-voice/r:factory-voice:bc153439": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-voice-clean",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "#/songs/setlists/factory-voice/r:factory-voice:ec1cbc93": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/factory/visibility",
+   "/api/patches",
+   "/api/preset/patch%3Afactory-voice-crooner",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "/app/m.html?tab=now": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/lane/mine?role=Guitar",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "/app/m.html?tab=song": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/lane/mine?role=Guitar",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "/app/m.html?tab=rec": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/lane/mine?role=Guitar",
+   "/api/loops",
+   "/api/presets",
+   "/api/setlists",
+   "/api/take/flags"
+  ]
+ },
+ "anchors": {
+  "pages": {
+   "#/live": [
+    "live.bank",
+    "live.exp",
+    "live.next",
+    "live.prev",
+    "live.scene.A",
+    "live.scene.B",
+    "live.scene.C",
+    "live.scene.D",
+    "live.scene.E",
+    "live.scenes",
+    "live.setlist",
+    "live.song",
+    "live.stomp.10",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "#/designer": [
+    "designer.bank",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:config",
+    "designer.lane:guitar",
+    "designer.lane:keys",
+    "designer.lane:voice",
+    "designer.lanes",
+    "designer.menu",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scenes",
+    "designer.song",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "#/designer/config": [
+    "designer.bank",
+    "designer.bpm",
+    "designer.foot",
+    "designer.info",
+    "designer.lane:config",
+    "designer.lane:guitar",
+    "designer.lane:keys",
+    "designer.lane:voice",
+    "designer.lanes",
+    "designer.menu",
+    "designer.out",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scenes",
+    "designer.song",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "#/songs": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "songs.facets",
+    "songs.song:rs:f3f0252689f96910f01c81be0325855f",
+    "songs.sources",
+    "topbar.brand"
+   ],
+   "#/songs/patches": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "songs.patch:factory-bass-biamp-grit",
+    "songs.patch:factory-bass-funk-slap",
+    "songs.patch:factory-bass-jazz-warm",
+    "songs.patch:factory-bass-metal",
+    "songs.patch:factory-bass-rock-grind",
+    "songs.patch:factory-bass-synth",
+    "songs.patch:factory-bass-vintage-round",
+    "songs.patch:factory-drums-classic-rock",
+    "songs.patch:factory-drums-jazz-brushes",
+    "songs.patch:factory-drums-metal",
+    "songs.patch:factory-drums-studio-rock",
+    "songs.patch:factory-guitar-ambient-djent",
+    "songs.patch:factory-guitar-british-crunch",
+    "songs.patch:factory-guitar-brown-lead",
+    "songs.patch:factory-guitar-funk-clean",
+    "songs.patch:factory-guitar-fuzz-wall",
+    "songs.patch:factory-guitar-gypsy-lead",
+    "songs.patch:factory-guitar-hero-lead",
+    "songs.patch:factory-guitar-indie-chime",
+    "songs.patch:factory-guitar-jazz-clean",
+    "songs.patch:factory-guitar-modern-metal",
+    "songs.patch:factory-guitar-singing-clean",
+    "songs.patch:factory-guitar-soaring-lead",
+    "songs.patch:factory-guitar-texas-blues",
+    "songs.patch:factory-keys-80s-epiano",
+    "songs.patch:factory-keys-cathedral-piano",
+    "songs.patch:factory-keys-electric-piano",
+    "songs.patch:factory-keys-jazz-piano",
+    "songs.patch:factory-keys-loop-bass-beat",
+    "songs.patch:factory-keys-rock-organ",
+    "songs.patch:factory-keys-synth-lead",
+    "songs.patch:factory-keys-warm-pad",
+    "songs.patch:factory-voice-clean",
+    "songs.patch:factory-voice-crooner",
+    "songs.patch:factory-voice-halo",
+    "songs.patch:factory-voice-metal",
+    "songs.patch:factory-voice-pop-tuned",
+    "songs.patch:factory-voice-rock",
+    "topbar.brand"
+   ],
+   "#/songs/presets": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "#/songs/setlists": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.card:factory",
+    "setlists.card:factory-bass",
+    "setlists.card:factory-drums",
+    "setlists.card:factory-guitar",
+    "setlists.card:factory-keys",
+    "setlists.card:factory-voice",
+    "topbar.brand"
+   ],
+   "#/library/tones/amps": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "tones.amp:5150",
+    "tones.amp:ac30",
+    "tones.amp:bogner",
+    "tones.amp:bogner-uberschall",
+    "tones.amp:deluxe-reverb",
+    "tones.amp:diezel-herbert",
+    "tones.amp:diezel-vh4",
+    "tones.amp:dr-z",
+    "tones.amp:dual-rectifier",
+    "tones.amp:engl-powerball",
+    "tones.amp:engl-savage",
+    "tones.amp:fender-princeton",
+    "tones.amp:framus-cobra",
+    "tones.amp:friedman-be",
+    "tones.amp:jc-120",
+    "tones.amp:jcm800",
+    "tones.amp:jtm45",
+    "tones.amp:marshall-jubilee",
+    "tones.amp:marshall-jvm",
+    "tones.amp:matchless",
+    "tones.amp:mesa-mark",
+    "tones.amp:orange",
+    "tones.amp:peavey-6505",
+    "tones.amp:plexi",
+    "tones.amp:prs-archon",
+    "tones.amp:revv",
+    "tones.amp:soldano-slo",
+    "tones.amp:supro",
+    "tones.amp:twin-reverb",
+    "tones.amp:two-rock",
+    "tones.amp:wizard",
+    "tones.amps",
+    "tones.type",
+    "topbar.brand"
+   ],
+   "#/library/tones/pedals": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/tones/cabs": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/tones/outboard": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/keys/synth": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/keys/instruments": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/drums/drums": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/drums/kits": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/drums/grooves": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/samples/short": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/samples/songs": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/tracks/backing": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/tracks/vocals": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/tracks/standards": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "standards.card:crooked-lantern",
+    "standards.card:rented-room-blues",
+    "standards.card:rooftop-prowl",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/library/tracks/recordings": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "#/system/mode": [
+    "mode.compare",
+    "mode.detail",
+    "mode.group.stage",
+    "mode.group.time",
+    "mode.group.who",
+    "mode.item:accompaniment",
+    "mode.item:gig",
+    "mode.item:pedalboard",
+    "mode.item:rehearsal",
+    "mode.item:studio",
+    "mode.list",
+    "mode.row.arrangement",
+    "mode.row.card",
+    "mode.row.click",
+    "mode.row.foot-list",
+    "mode.row.inputs",
+    "mode.row.live-screen",
+    "mode.row.rec",
+    "mode.row.tools",
+    "mode.state",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/mode/compare": [
+    "mode.table",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/sys": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/sys/health": [
+    "health.checks",
+    "health.fact:audio",
+    "health.fact:disk",
+    "health.fact:dropouts",
+    "health.fact:engine",
+    "health.fact:environment",
+    "health.fact:golemfm",
+    "health.fact:pedalboard",
+    "health.fact:playing",
+    "health.fact:plugins",
+    "health.fact:scripts",
+    "health.fact:setlist",
+    "health.guard",
+    "health.incidents",
+    "health.now",
+    "health.verdict",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/gear/sound": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/gear/controllers": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/gear/pedals": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/gear/board": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/gear/drums": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/engines/audio": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/engines/separation": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/content/storage": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "storage.backup",
+    "storage.disk",
+    "storage.folders",
+    "storage.music",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/content/factory": [
+    "factory.kind:grooves",
+    "factory.kind:kits",
+    "factory.kind:patches",
+    "factory.kind:presets",
+    "factory.kind:setlists",
+    "factory.kind:standards",
+    "factory.restore",
+    "factory.show",
+    "factory.sounds",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/connect/wifi": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/connect/devices": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/connect/golemfm": [
+    "connect.golemfm",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/connect/tone3000": [
+    "connect.tone3000",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/about/golem": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/about/libs": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/songs/songs/rs%3Af3f0252689f96910f01c81be0325855f": [
+    "arr.advance",
+    "arr.count-in",
+    "arr.library",
+    "arr.live-view",
+    "arr.part.1",
+    "arr.part.10",
+    "arr.part.11",
+    "arr.part.12",
+    "arr.part.13",
+    "arr.part.2",
+    "arr.part.3",
+    "arr.part.4",
+    "arr.part.5",
+    "arr.part.6",
+    "arr.part.7",
+    "arr.part.8",
+    "arr.part.9",
+    "arr.play",
+    "arr.power",
+    "arr.start",
+    "arr.switch",
+    "arr.total",
+    "arr.track",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "song.arrangement",
+    "song.file",
+    "song.footer",
+    "song.head",
+    "song.kind",
+    "song.setlists",
+    "song.sheet",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.kind",
+    "setlists.line.1",
+    "setlists.line.2",
+    "setlists.line.3",
+    "setlists.line.4",
+    "setlists.line.5",
+    "setlists.line.6",
+    "setlists.line.7",
+    "setlists.line.8",
+    "setlists.line.9",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory/r:factory:0": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.line.1",
+    "setlists.line.2",
+    "setlists.line.3",
+    "setlists.line.4",
+    "setlists.line.5",
+    "setlists.line.6",
+    "setlists.line.7",
+    "setlists.line.8",
+    "setlists.line.9",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory/r:factory:1": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.line.1",
+    "setlists.line.2",
+    "setlists.line.3",
+    "setlists.line.4",
+    "setlists.line.5",
+    "setlists.line.6",
+    "setlists.line.7",
+    "setlists.line.8",
+    "setlists.line.9",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-bass": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.kind",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-bass/r:factory-bass:750e6d4a": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-bass/r:factory-bass:a17fdc40": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-drums": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.kind",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-drums/r:factory-drums:06d62477": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-drums/r:factory-drums:4b76da22": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-guitar": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.kind",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-guitar/r:factory-guitar:aaf34f6b": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-guitar/r:factory-guitar:c6a7f9fc": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-keys": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.kind",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-keys/r:factory-keys:9977416c": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-keys/r:factory-keys:34496e36": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-voice": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.kind",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-voice/r:factory-voice:bc153439": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "#/songs/setlists/factory-voice/r:factory-voice:ec1cbc93": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ]
+  },
+  "examples": {
+   "golem-rising-live": [
+    "live.bank",
+    "live.exp",
+    "live.next",
+    "live.prev",
+    "live.scene.A",
+    "live.scene.B",
+    "live.scene.C",
+    "live.scene.D",
+    "live.scene.E",
+    "live.scenes",
+    "live.setlist",
+    "live.song",
+    "live.stomp.10",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-designer": [
+    "designer.bank",
+    "designer.block:chorus",
+    "designer.block:comp",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:jc",
+    "designer.block:peavey",
+    "designer.block:ts",
+    "designer.block:v30",
+    "designer.block:verb",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-amp-sheet": [
+    "designer.bank",
+    "designer.block-status",
+    "designer.block:chorus",
+    "designer.block:comp",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:jc",
+    "designer.block:peavey",
+    "designer.block:ts",
+    "designer.block:v30",
+    "designer.block:verb",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-delay-sheet": [
+    "designer.bank",
+    "designer.block:chorus",
+    "designer.block:comp",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:jc",
+    "designer.block:peavey",
+    "designer.block:ts",
+    "designer.block:v30",
+    "designer.block:verb",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.sheet",
+    "designer.sheet.assign",
+    "designer.sheet.presets",
+    "designer.sheet.settings",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-scenes-sheet": [
+    "designer.bank",
+    "designer.block:chorus",
+    "designer.block:comp",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:jc",
+    "designer.block:peavey",
+    "designer.block:ts",
+    "designer.block:v30",
+    "designer.block:verb",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.menu.scenes",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.scenes-sheet",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-scene-sheet": [
+    "designer.bank",
+    "designer.block:chorus",
+    "designer.block:comp",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:jc",
+    "designer.block:peavey",
+    "designer.block:ts",
+    "designer.block:v30",
+    "designer.block:verb",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene-sheet",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-keys": [
+    "designer.bank",
+    "designer.block:comp-4",
+    "designer.block:dly-3",
+    "designer.block:eq-4",
+    "designer.block:piano",
+    "designer.block:shim-2",
+    "designer.block:verb-3",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.song",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "reference-controllers": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "golem-rising-delay-presets": [
+    "designer.bank",
+    "designer.block:chorus",
+    "designer.block:comp",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:jc",
+    "designer.block:peavey",
+    "designer.block:ts",
+    "designer.block:v30",
+    "designer.block:verb",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.sheet",
+    "designer.sheet.assign",
+    "designer.sheet.presets",
+    "designer.sheet.settings",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-delay-assign": [
+    "designer.bank",
+    "designer.block:chorus",
+    "designer.block:comp",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:jc",
+    "designer.block:peavey",
+    "designer.block:ts",
+    "designer.block:v30",
+    "designer.block:verb",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.sheet",
+    "designer.sheet.assign",
+    "designer.sheet.presets",
+    "designer.sheet.settings",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "factory-patches": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "songs.patch:factory-bass-biamp-grit",
+    "songs.patch:factory-bass-funk-slap",
+    "songs.patch:factory-bass-jazz-warm",
+    "songs.patch:factory-bass-metal",
+    "songs.patch:factory-bass-rock-grind",
+    "songs.patch:factory-bass-synth",
+    "songs.patch:factory-bass-vintage-round",
+    "songs.patch:factory-drums-classic-rock",
+    "songs.patch:factory-drums-jazz-brushes",
+    "songs.patch:factory-drums-metal",
+    "songs.patch:factory-drums-studio-rock",
+    "songs.patch:factory-guitar-ambient-djent",
+    "songs.patch:factory-guitar-british-crunch",
+    "songs.patch:factory-guitar-brown-lead",
+    "songs.patch:factory-guitar-funk-clean",
+    "songs.patch:factory-guitar-fuzz-wall",
+    "songs.patch:factory-guitar-gypsy-lead",
+    "songs.patch:factory-guitar-hero-lead",
+    "songs.patch:factory-guitar-indie-chime",
+    "songs.patch:factory-guitar-jazz-clean",
+    "songs.patch:factory-guitar-modern-metal",
+    "songs.patch:factory-guitar-singing-clean",
+    "songs.patch:factory-guitar-soaring-lead",
+    "songs.patch:factory-guitar-texas-blues",
+    "songs.patch:factory-keys-80s-epiano",
+    "songs.patch:factory-keys-cathedral-piano",
+    "songs.patch:factory-keys-electric-piano",
+    "songs.patch:factory-keys-jazz-piano",
+    "songs.patch:factory-keys-loop-bass-beat",
+    "songs.patch:factory-keys-rock-organ",
+    "songs.patch:factory-keys-synth-lead",
+    "songs.patch:factory-keys-warm-pad",
+    "songs.patch:factory-voice-clean",
+    "songs.patch:factory-voice-crooner",
+    "songs.patch:factory-voice-halo",
+    "songs.patch:factory-voice-metal",
+    "songs.patch:factory-voice-pop-tuned",
+    "songs.patch:factory-voice-rock",
+    "topbar.brand"
+   ],
+   "library-amps": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "tones.amp:5150",
+    "tones.amp:ac30",
+    "tones.amp:bogner",
+    "tones.amp:bogner-uberschall",
+    "tones.amp:deluxe-reverb",
+    "tones.amp:diezel-herbert",
+    "tones.amp:diezel-vh4",
+    "tones.amp:dr-z",
+    "tones.amp:dual-rectifier",
+    "tones.amp:engl-powerball",
+    "tones.amp:engl-savage",
+    "tones.amp:fender-princeton",
+    "tones.amp:framus-cobra",
+    "tones.amp:friedman-be",
+    "tones.amp:jc-120",
+    "tones.amp:jcm800",
+    "tones.amp:jtm45",
+    "tones.amp:marshall-jubilee",
+    "tones.amp:marshall-jvm",
+    "tones.amp:matchless",
+    "tones.amp:mesa-mark",
+    "tones.amp:orange",
+    "tones.amp:peavey-6505",
+    "tones.amp:plexi",
+    "tones.amp:prs-archon",
+    "tones.amp:revv",
+    "tones.amp:soldano-slo",
+    "tones.amp:supro",
+    "tones.amp:twin-reverb",
+    "tones.amp:two-rock",
+    "tones.amp:wizard",
+    "tones.amps",
+    "tones.type",
+    "topbar.brand"
+   ],
+   "settings-mode": [
+    "mode.compare",
+    "mode.detail",
+    "mode.group.stage",
+    "mode.group.time",
+    "mode.group.who",
+    "mode.item:accompaniment",
+    "mode.item:gig",
+    "mode.item:pedalboard",
+    "mode.item:rehearsal",
+    "mode.item:studio",
+    "mode.list",
+    "mode.row.arrangement",
+    "mode.row.card",
+    "mode.row.click",
+    "mode.row.foot-list",
+    "mode.row.inputs",
+    "mode.row.live-screen",
+    "mode.row.rec",
+    "mode.row.tools",
+    "mode.state",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "reference-soundcard": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "reference-pedalboard": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "settings-mode-compare": [
+    "mode.table",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "factory-songs": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "songs.facets",
+    "songs.song:rs:f3f0252689f96910f01c81be0325855f",
+    "songs.sources",
+    "topbar.brand"
+   ],
+   "factory-content": [
+    "factory.kind:grooves",
+    "factory.kind:kits",
+    "factory.kind:patches",
+    "factory.kind:presets",
+    "factory.kind:setlists",
+    "factory.kind:standards",
+    "factory.restore",
+    "factory.show",
+    "factory.sounds",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "metal-for-all-designer": [
+    "designer.bank",
+    "designer.block:boost",
+    "designer.block:clean",
+    "designer.block:dly",
+    "designer.block:eq",
+    "designer.block:gate",
+    "designer.block:kill",
+    "designer.block:stealth",
+    "designer.block:v30",
+    "designer.block:v30b",
+    "designer.block:verb",
+    "designer.block:volume-sys",
+    "designer.block:whammy",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:drums-1",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.merge",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.song",
+    "designer.split",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "blues-night-live": [
+    "live.bank",
+    "live.exp",
+    "live.next",
+    "live.prev",
+    "live.scene.A",
+    "live.scene.B",
+    "live.scene.C",
+    "live.scene.D",
+    "live.scene.E",
+    "live.scenes",
+    "live.setlist",
+    "live.song",
+    "live.stomp.10",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "factory-setlist": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.kind",
+    "setlists.line.1",
+    "setlists.line.2",
+    "setlists.line.3",
+    "setlists.line.4",
+    "setlists.line.5",
+    "setlists.line.6",
+    "setlists.line.7",
+    "setlists.line.8",
+    "setlists.line.9",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "factory-setlist-line": [
+    "arr.read",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.edit-song",
+    "setlists.facts",
+    "setlists.kind",
+    "setlists.line.1",
+    "setlists.line.2",
+    "setlists.line.3",
+    "setlists.line.4",
+    "setlists.line.5",
+    "setlists.line.6",
+    "setlists.line.7",
+    "setlists.line.8",
+    "setlists.line.9",
+    "setlists.lines",
+    "setlists.players",
+    "topbar.brand"
+   ],
+   "golem-rising-song": [
+    "arr.advance",
+    "arr.count-in",
+    "arr.library",
+    "arr.live-view",
+    "arr.part.1",
+    "arr.part.10",
+    "arr.part.11",
+    "arr.part.12",
+    "arr.part.13",
+    "arr.part.2",
+    "arr.part.3",
+    "arr.part.4",
+    "arr.part.5",
+    "arr.part.6",
+    "arr.part.7",
+    "arr.part.8",
+    "arr.part.9",
+    "arr.play",
+    "arr.power",
+    "arr.start",
+    "arr.switch",
+    "arr.total",
+    "arr.track",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "song.arrangement",
+    "song.file",
+    "song.footer",
+    "song.head",
+    "song.kind",
+    "song.setlists",
+    "song.sheet",
+    "topbar.brand"
+   ],
+   "golem-rising-config": [
+    "designer.bank",
+    "designer.block:click-global",
+    "designer.block:compo-global",
+    "designer.block:drums",
+    "designer.block:rec-global",
+    "designer.bpm",
+    "designer.foot",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.missing",
+    "designer.out",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.song",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "metal-for-all-drums": [
+    "designer.bank",
+    "designer.block:comp-3",
+    "designer.block:eq-5",
+    "designer.block:kit",
+    "designer.block:verb-4",
+    "designer.bpm",
+    "designer.chain",
+    "designer.foot",
+    "designer.in",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:drums-1",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.missing",
+    "designer.out",
+    "designer.patch",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.song",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "loop-station-live": [
+    "live.bank",
+    "live.exp",
+    "live.next",
+    "live.prev",
+    "live.scenes",
+    "live.setlist",
+    "live.song",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-mixer": [
+    "live.bank",
+    "live.exp",
+    "live.mixer",
+    "live.next",
+    "live.prev",
+    "live.scene.A",
+    "live.scene.B",
+    "live.scene.C",
+    "live.scene.D",
+    "live.scene.E",
+    "live.scenes",
+    "live.setlist",
+    "live.song",
+    "live.stomp.10",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-assign": [
+    "live.assign",
+    "live.bank",
+    "live.exp",
+    "live.next",
+    "live.prev",
+    "live.scene.A",
+    "live.scene.B",
+    "live.scene.C",
+    "live.scene.D",
+    "live.scene.E",
+    "live.scenes",
+    "live.setlist",
+    "live.song",
+    "live.stomp.10",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-rehearsal": [
+    "live.map",
+    "live.now",
+    "live.rehearsal",
+    "live.rehearsal.song",
+    "live.section.1",
+    "live.section.2",
+    "live.section.3",
+    "live.section.4",
+    "live.section.5",
+    "live.sections",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "live.transport",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand",
+    "topbar.mode"
+   ],
+   "golem-rising-concert": [
+    "live.concert",
+    "live.concert.section",
+    "live.concert.setlist",
+    "live.map",
+    "live.tool.mixer",
+    "live.tool.view",
+    "live.transport",
+    "nav.live",
+    "topbar.brand",
+    "topbar.mode"
+   ],
+   "settings-mode-gig": [
+    "mode.compare",
+    "mode.detail",
+    "mode.group.stage",
+    "mode.group.time",
+    "mode.group.who",
+    "mode.item:accompaniment",
+    "mode.item:gig",
+    "mode.item:pedalboard",
+    "mode.item:rehearsal",
+    "mode.item:studio",
+    "mode.list",
+    "mode.row.arrangement",
+    "mode.row.card",
+    "mode.row.click",
+    "mode.row.foot-list",
+    "mode.row.inputs",
+    "mode.row.live-screen",
+    "mode.row.rec",
+    "mode.row.tools",
+    "mode.state",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "factory-setlists": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.card:factory",
+    "setlists.card:factory-bass",
+    "setlists.card:factory-drums",
+    "setlists.card:factory-guitar",
+    "setlists.card:factory-keys",
+    "setlists.card:factory-voice",
+    "topbar.brand"
+   ],
+   "factory-setlist-banks": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "setlists.banks",
+    "setlists.detail",
+    "setlists.grid",
+    "setlists.kind",
+    "setlists.line.1",
+    "setlists.line.2",
+    "setlists.line.3",
+    "setlists.line.4",
+    "setlists.line.5",
+    "setlists.line.6",
+    "setlists.line.7",
+    "setlists.line.8",
+    "setlists.line.9",
+    "setlists.lines",
+    "topbar.brand"
+   ],
+   "golem-rising-songs-picker": [
+    "live.bank",
+    "live.exp",
+    "live.next",
+    "live.prev",
+    "live.scene.A",
+    "live.scene.B",
+    "live.scene.C",
+    "live.scene.D",
+    "live.scene.E",
+    "live.scenes",
+    "live.setlist",
+    "live.song",
+    "live.songs",
+    "live.stomp.10",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-setlist-picker": [
+    "live.bank",
+    "live.exp",
+    "live.next",
+    "live.prev",
+    "live.scene.A",
+    "live.scene.B",
+    "live.scene.C",
+    "live.scene.D",
+    "live.scene.E",
+    "live.scenes",
+    "live.setlist",
+    "live.setlists",
+    "live.song",
+    "live.stomp.10",
+    "live.stomp.6",
+    "live.stomp.7",
+    "live.stomp.8",
+    "live.stomp.9",
+    "live.stomps",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "golem-rising-part-sheet": [
+    "arr.advance",
+    "arr.count-in",
+    "arr.library",
+    "arr.live-view",
+    "arr.part-sheet",
+    "arr.part.1",
+    "arr.part.10",
+    "arr.part.11",
+    "arr.part.12",
+    "arr.part.13",
+    "arr.part.2",
+    "arr.part.3",
+    "arr.part.4",
+    "arr.part.5",
+    "arr.part.6",
+    "arr.part.7",
+    "arr.part.8",
+    "arr.part.9",
+    "arr.play",
+    "arr.power",
+    "arr.start",
+    "arr.switch",
+    "arr.total",
+    "arr.track",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "song.arrangement",
+    "song.file",
+    "song.footer",
+    "song.head",
+    "song.kind",
+    "song.setlists",
+    "song.sheet",
+    "topbar.brand"
+   ],
+   "golem-rising-rehearsal-chorus": [
+    "live.map",
+    "live.now",
+    "live.rehearsal",
+    "live.rehearsal.song",
+    "live.section.1",
+    "live.section.2",
+    "live.section.3",
+    "live.section.4",
+    "live.section.5",
+    "live.sections",
+    "live.tool.assign",
+    "live.tool.mixer",
+    "live.tool.view",
+    "live.transport",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand",
+    "topbar.mode"
+   ],
+   "library-amp-detail": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "tones.amp-detail",
+    "tones.amp:5150",
+    "tones.amp:ac30",
+    "tones.amp:bogner",
+    "tones.amp:bogner-uberschall",
+    "tones.amp:deluxe-reverb",
+    "tones.amp:diezel-herbert",
+    "tones.amp:diezel-vh4",
+    "tones.amp:dr-z",
+    "tones.amp:dual-rectifier",
+    "tones.amp:engl-powerball",
+    "tones.amp:engl-savage",
+    "tones.amp:fender-princeton",
+    "tones.amp:framus-cobra",
+    "tones.amp:friedman-be",
+    "tones.amp:jc-120",
+    "tones.amp:jcm800",
+    "tones.amp:jtm45",
+    "tones.amp:marshall-jubilee",
+    "tones.amp:marshall-jvm",
+    "tones.amp:matchless",
+    "tones.amp:mesa-mark",
+    "tones.amp:orange",
+    "tones.amp:peavey-6505",
+    "tones.amp:plexi",
+    "tones.amp:prs-archon",
+    "tones.amp:revv",
+    "tones.amp:soldano-slo",
+    "tones.amp:supro",
+    "tones.amp:twin-reverb",
+    "tones.amp:two-rock",
+    "tones.amp:wizard",
+    "tones.amps",
+    "tones.type",
+    "topbar.brand"
+   ],
+   "factory-health": [
+    "health.checks",
+    "health.fact:audio",
+    "health.fact:disk",
+    "health.fact:dropouts",
+    "health.fact:engine",
+    "health.fact:environment",
+    "health.fact:golemfm",
+    "health.fact:pedalboard",
+    "health.fact:playing",
+    "health.fact:plugins",
+    "health.fact:scripts",
+    "health.fact:setlist",
+    "health.guard",
+    "health.incidents",
+    "health.now",
+    "health.verdict",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "factory-storage": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "storage.backup",
+    "storage.disk",
+    "storage.folders",
+    "storage.music",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "factory-backups": [
+    "backups",
+    "backups.export",
+    "backups.import",
+    "backups.vault",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "storage.backup",
+    "storage.disk",
+    "storage.folders",
+    "storage.music",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "factory-standards": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "standards.card:crooked-lantern",
+    "standards.card:rented-room-blues",
+    "standards.card:rooftop-prowl",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "standard-rooftop-prowl": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "standards.card:crooked-lantern",
+    "standards.card:rented-room-blues",
+    "standards.card:rooftop-prowl",
+    "standards.chart",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "library-keys": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "library-grooves": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "library-kits": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "library-samples": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "library-backings": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "library-vocals": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "library-recordings": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.drums",
+    "tab.keys",
+    "tab.samples",
+    "tab.tones",
+    "tab.tracks",
+    "topbar.brand"
+   ],
+   "connect-tone3000": [
+    "connect.tone3000",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "connect-golemfm": [
+    "connect.golemfm",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "connect-devices": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "engines-separation": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "golem-rising-riff": [
+    "designer.bank",
+    "designer.block:click-global",
+    "designer.block:compo-global",
+    "designer.block:drums",
+    "designer.block:rec-global",
+    "designer.bpm",
+    "designer.foot",
+    "designer.info",
+    "designer.lane:bass-1",
+    "designer.lane:config",
+    "designer.lane:guitar-1",
+    "designer.lane:guitar-2",
+    "designer.lane:keys-1",
+    "designer.lane:voice-1",
+    "designer.lanes",
+    "designer.menu",
+    "designer.missing",
+    "designer.out",
+    "designer.preset",
+    "designer.rig",
+    "designer.saved",
+    "designer.scene-name",
+    "designer.scene.A",
+    "designer.scene.B",
+    "designer.scene.C",
+    "designer.scene.D",
+    "designer.scene.E",
+    "designer.scenes",
+    "designer.sheet",
+    "designer.sheet.assign",
+    "designer.sheet.settings",
+    "designer.song",
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "topbar.brand"
+   ],
+   "first-check": [],
+   "first-check-input": [],
+   "first-check-done": [],
+   "companion-now": [],
+   "companion-song": [],
+   "companion-rec": [],
+   "reference-drums": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "reference-drums-bound": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ]
+  }
+ },
+ "written": [
+  "/api/anim-packs",
+  "/api/app-build",
+  "/api/arrangement/stacks-moved",
+  "/api/backing/cache",
+  "/api/backing/catalog",
+  "/api/backups",
+  "/api/backups/overview",
+  "/api/band",
+  "/api/block-defaults",
+  "/api/card-setups?card=unknown",
+  "/api/cards",
+  "/api/catalog",
+  "/api/controllers",
+  "/api/devices",
+  "/api/drumkits",
+  "/api/dx7",
+  "/api/effects",
+  "/api/engines",
+  "/api/factory/captures",
+  "/api/factory/status",
+  "/api/factory/visibility",
+  "/api/foot-list",
+  "/api/genres",
+  "/api/gestures",
+  "/api/golemfm/quotas",
+  "/api/golemfm/status",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-boom-bap.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-bossa.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-four-on-the-floor.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-funk-16.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-half-time.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-house.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-lofi.mid",
+  "/api/groove-notes?file=library%2Fgrooves%2Fgolem-metal-breakdown.mid",
+  "/api/grooves",
+  "/api/health/assistant",
+  "/api/health/facts",
+  "/api/health/fix",
+  "/api/health/incidents",
+  "/api/health/silence",
+  "/api/inputmap",
+  "/api/inputmap?card=unknown",
+  "/api/kits",
+  "/api/knobs/config",
+  "/api/lane/mine?role=Guitar",
+  "/api/library/lent",
+  "/api/loop-peaks/perf-20261104-142828/DI-Sandbox-Input-2.wav",
+  "/api/loop-peaks/perf-20261104-142828/Drums.wav",
+  "/api/loop-peaks/perf-20261104-142828/Input-2merge.wav",
+  "/api/loop-peaks/perf-20261104-142828/Mix.wav",
+  "/api/loop-peaks/perf-20261104-142828/Standard-Bass.wav",
+  "/api/loop-peaks/perf-20261104-142828/Standard-Drums.wav",
+  "/api/loop-peaks/perf-20261104-142828/Standard-Keys.wav",
+  "/api/loops",
+  "/api/mappings",
+  "/api/mixer",
+  "/api/modes",
+  "/api/patches",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F01_kick.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F02_kick_sub.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F03_snare.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F04_clap.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F05_rim.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F06_hat_closed.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F07_hat_pedal.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F08_hat_open.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F09_tom_low.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F10_tom_mid.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F11_tom_high.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F12_ride.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F13_ride_bell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F14_crash.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F15_crash2.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-house%2F16_cowbell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F01_kick.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F02_kick_sub.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F03_snare.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F04_clap.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F05_rim.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F06_hat_closed.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F07_hat_pedal.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F08_hat_open.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F09_tom_low.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F10_tom_mid.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F11_tom_high.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F12_ride.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F13_ride_bell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F14_crash.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F15_crash2.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-lofi%2F16_cowbell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F01_kick.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F02_kick_sub.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F03_snare.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F04_clap.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F05_rim.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F06_hat_closed.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F07_hat_pedal.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F08_hat_open.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F09_tom_low.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F10_tom_mid.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F11_tom_high.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F12_ride.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F13_ride_bell.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F14_crash.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F15_crash2.wav",
+  "/api/peaks?file=assets%2Fsamples%2Fkits%2Fpads-trap%2F16_cowbell.wav",
+  "/api/pedalboard",
+  "/api/pedals/catalog",
+  "/api/perf",
+  "/api/plugin-window",
+  "/api/preset/factory-alt-rock",
+  "/api/preset/factory-ambient-metal",
+  "/api/preset/factory-blues-night",
+  "/api/preset/factory-chill-jazz",
+  "/api/preset/factory-funk-session",
+  "/api/preset/factory-indie-pop",
+  "/api/preset/factory-loop-station",
+  "/api/preset/factory-metal-for-all",
+  "/api/preset/factory-rock-classics",
+  "/api/preset/patch%3Afactory-bass-jazz-warm",
+  "/api/preset/patch%3Afactory-bass-vintage-round",
+  "/api/preset/patch%3Afactory-drums-classic-rock",
+  "/api/preset/patch%3Afactory-drums-jazz-brushes",
+  "/api/preset/patch%3Afactory-guitar-jazz-clean",
+  "/api/preset/patch%3Afactory-guitar-singing-clean",
+  "/api/preset/patch%3Afactory-keys-electric-piano",
+  "/api/preset/patch%3Afactory-keys-jazz-piano",
+  "/api/preset/patch%3Afactory-voice-clean",
+  "/api/preset/patch%3Afactory-voice-crooner",
+  "/api/preset/patch:factory-bass-biamp-grit",
+  "/api/preset/patch:factory-bass-funk-slap",
+  "/api/preset/patch:factory-bass-metal",
+  "/api/preset/patch:factory-bass-rock-grind",
+  "/api/preset/patch:factory-bass-synth",
+  "/api/preset/patch:factory-drums-metal",
+  "/api/preset/patch:factory-drums-studio-rock",
+  "/api/preset/patch:factory-guitar-ambient-djent",
+  "/api/preset/patch:factory-guitar-british-crunch",
+  "/api/preset/patch:factory-guitar-brown-lead",
+  "/api/preset/patch:factory-guitar-funk-clean",
+  "/api/preset/patch:factory-guitar-fuzz-wall",
+  "/api/preset/patch:factory-guitar-gypsy-lead",
+  "/api/preset/patch:factory-guitar-hero-lead",
+  "/api/preset/patch:factory-guitar-indie-chime",
+  "/api/preset/patch:factory-guitar-modern-metal",
+  "/api/preset/patch:factory-guitar-soaring-lead",
+  "/api/preset/patch:factory-guitar-texas-blues",
+  "/api/preset/patch:factory-keys-80s-epiano",
+  "/api/preset/patch:factory-keys-cathedral-piano",
+  "/api/preset/patch:factory-keys-loop-bass-beat",
+  "/api/preset/patch:factory-keys-rock-organ",
+  "/api/preset/patch:factory-keys-synth-lead",
+  "/api/preset/patch:factory-keys-warm-pad",
+  "/api/preset/patch:factory-voice-halo",
+  "/api/preset/patch:factory-voice-metal",
+  "/api/preset/patch:factory-voice-pop-tuned",
+  "/api/preset/patch:factory-voice-rock",
+  "/api/presets",
+  "/api/preview/batch",
+  "/api/recorder",
+  "/api/sample-sets",
+  "/api/sandbox",
+  "/api/separation",
+  "/api/separation/batch",
+  "/api/setlists",
+  "/api/sfz",
+  "/api/song-folders",
+  "/api/song-folders/songs",
+  "/api/song/rs%3Af3f0252689f96910f01c81be0325855f",
+  "/api/songs",
+  "/api/songs/rs%3Af3f0252689f96910f01c81be0325855f/files",
+  "/api/soundcard",
+  "/api/standards",
+  "/api/standards/grooves/tree",
+  "/api/standards/state",
+  "/api/standards?limit=0",
+  "/api/state",
+  "/api/storage",
+  "/api/system",
+  "/api/system/autostart",
+  "/api/system/harden",
+  "/api/system/health",
+  "/api/system/libraries",
+  "/api/take/flags",
+  "/api/tones-sync",
+  "/api/tunings",
+  "/api/vital/presets"
+ ],
+ "skipped": [],
+ "failed": [],
+ "refused": [],
+ "grafted": {
+  "hardware_from": "90d0e67bafd1272333f0e620a46e902ce5d5b2ff",
+  "device": "Alesis Nitro 13b2:009c",
+  "examples": [
+   "reference-drums",
+   "reference-drums-bound"
+  ],
+  "why": "one gear side: the keyboard and the drum module plugged together; the drum module's reads come from the last valid drums snapshot (same hardware)"
+ }
+}

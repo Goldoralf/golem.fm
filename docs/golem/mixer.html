@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The mixer — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html" class="is-on">The mixer</a></li>
+      <li><a href="../golem/health.html">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html">Setlists</a></li>
+      <li><a href="../band/arrangement.html">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / The golem</div>
+      <h1>The mixer</h1>
+      <span class="docs-badge">golem</span>
+      <div class="docs-body">
+<p>The mixer balances what leaves the golem: each instrument, the backing tracks, the samples, the drum machine, the looper and the click. It is the last stage before your sound card — after your presets, after your scenes.</p>
+<h2 id="s1">Output trims</h2>
+<figure class="doc-screen" id="panel-mx" data-panel='{&quot;example&quot;: &quot;golem-rising-mixer&quot;, &quot;halo&quot;: &quot;live.mixer&quot;, &quot;id&quot;: &quot;mx&quot;}'><div class="gs-stage"></div><figcaption>The mixer on Golem Rising: the guitar, the players of the preset, the click.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>Open it from the Live screen&#x27;s toolbar (<strong>Mixer</strong>). There is one strip per source:</p>
+<ul><li><strong>each instrument plugged into the card</strong> — here <em>Guitar 1</em>, on <code>IN 1</code>;</li><li><strong>the players</strong> — <em>Backing</em>, <em>Sample</em>, <em>Drums</em>, <em>Looper</em>. A player the current preset does not have is greyed out, never removed: its level is kept for the next song that has it;</li><li><strong>the click</strong>, always there.</li></ul>
+<p>A song with a Standard adds a strip per part it plays (piano, bass, drums…); a looper adds one per loop.</p>
+<p><strong>A trim only attenuates.</strong> The top of the fader is <code>0</code> — the sound as your preset makes it — and you pull it down from there, to −60 dB. There is no boost: gain added right before the converter is how you clip. <code>MUTE</code> silences the strip.</p>
+<p><strong>Trims belong to the golem, not to the song.</strong> Loading the next song never moves them: your balance stays the balance. They work with the rest of the rig, they replace nothing:</p>
+<ul><li>the <strong>scene level</strong> (each scene&#x27;s level per instrument, in the preset) still says how loud a part is;</li><li>the <strong>volume pedal</strong> is still a playing control, inside your chain;</li><li>the mixer sets how loud each source leaves, all evening.</li></ul>
+<p><strong>Linking strips.</strong> Each strip has a box under its fader, next to its level: tick two or more, drag one of their faders, and they all move together, keeping their gaps. Untick to free them; closing the mixer forgets the group.</p>
+<p><code>REC MIX FOLLOWS</code>: the recording of the processed sound follows the same trims. The DI recordings stay raw — the mixer never touches them.</p>
+<h2 id="s2">Headphones and the PA</h2>
+<p>The header says where the mix goes: <code>→ OUT 1-2 · Monitors</code> on the reference rack. On a card with <strong>one output pair</strong> — a Volt 276, a Scarlett 2i2 — the headphone jack plays the same thing as the main outputs: one mix, for the room and for you.</p>
+<p>On a card with more outputs, each pair is declared in Settings ▸ Gear ▸ Soundcard. Today one trim applies to all of them: a separate headphone mix per musician is not built yet. A digital console (an XR18, an X32) mixes better than the golem and has its own app; how the golem hands its sources over to one is not decided yet.</p>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../golem/live-screen.html"><small>Previous</small>The live screen</a><a class="docs-pager__next" href="../golem/health.html"><small>Next</small>Health: checks and fixes</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">Output trims</a></li><li><a href="#s2">Headphones and the PA</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>

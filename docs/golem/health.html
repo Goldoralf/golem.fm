@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health: checks and fixes — golem doc</title>
+  <meta name="theme-color" content="#0d0f12">
+  <link rel="icon" href="../../golem-app/c6c9ab9/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+</head>
+<body>
+  <header class="pn">
+    <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest">Download</a></div>
+  </header>
+  <div class="docs">
+  <aside class="docs-nav" aria-label="Documentation">
+    <div class="docs-nav__sec"><b>Getting started</b><ul>
+      <li><a href="../start/unbox.html">Unbox and plug in the golem</a></li>
+      <li><a href="../start/first-check.html">The first-install check</a></li>
+      <li><a href="../start/tour.html">A tour of the golem</a></li>
+      <li><a href="../start/phone.html">Use your phone on stage</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>The golem</b><ul>
+      <li><a href="../golem/hardware.html">The machine</a></li>
+      <li><a href="../golem/modes.html">Modes: Pedalboard, Home, Jam, Rehearsal, Gig</a></li>
+      <li><a href="../golem/soundcard.html">Sound card and inputs</a></li>
+      <li><a href="../golem/controllers.html">Controllers: keyboards, pads, expression</a></li>
+      <li><a href="../golem/pedalboard.html">The pedalboard and footswitches</a></li>
+      <li><a href="../golem/lanes.html">Lanes: one per musician</a></li>
+      <li><a href="../golem/live-screen.html">The live screen</a></li>
+      <li><a href="../golem/mixer.html">The mixer</a></li>
+      <li><a href="../golem/health.html" class="is-on">Health: checks and fixes</a></li>
+      <li><a href="../golem/factory.html">Factory content</a></li>
+      <li><a href="../golem/storage-backups.html">Storage and back-ups</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Sound</b><ul>
+      <li><a href="../sound/presets.html">Presets and scenes</a></li>
+      <li><a href="../sound/patches.html">Patches</a></li>
+      <li><a href="../sound/blocks.html">Blocks</a></li>
+      <li><a href="../sound/captures.html">Captures (NAM) and impulse responses</a></li>
+      <li><a href="../sound/tone3000.html">Connect TONE3000</a></li>
+      <li><a href="../sound/keys-drums.html">Keys, drums and samples</a></li>
+      <li><a href="../sound/drums-lane.html">The drum lane</a></li>
+      <li><a href="../sound/looper.html">The looper</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Band</b><ul>
+      <li><a href="../band/songs.html">Songs</a></li>
+      <li><a href="../band/setlists.html">Setlists</a></li>
+      <li><a href="../band/arrangement.html">The arrangement</a></li>
+      <li><a href="../band/click-tempo.html">Click and tempo</a></li>
+      <li><a href="../band/standards.html">Standards: playing along a grid</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Write</b><ul>
+      <li><a href="../write/riffs.html">Riffs</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Account</b><ul>
+      <li><a href="../account/devices.html">Devices and access</a></li>
+    </ul></div>
+    <div class="docs-nav__sec"><b>Troubleshooting</b><ul>
+      <li><a href="../help/no-sound.html">No sound</a></li>
+      <li><a href="../help/tone3000-issues.html">TONE3000 does not connect</a></li>
+      <li><a href="../help/faq.html">Frequently asked questions</a></li>
+    </ul></div>
+  </aside>
+  <main class="docs-main">
+    <button type="button" class="docs-menu-btn" aria-expanded="false">Menu</button>
+    <article class="docs-page">
+      <div class="docs-crumb"><a href="../">Doc</a> / The golem</div>
+      <h1>Health: checks and fixes</h1>
+      <span class="docs-badge">golem</span>
+      <div class="docs-body">
+<p>Health is the golem&#x27;s own check-up: what is fine, what is not, and the gesture that fixes it — on the same line. It lives in <strong>Settings ▸ System ▸ Health</strong>. Open it when something sounds wrong, or when the Live screen shows a warning: a tap on that warning opens Health on the right line.</p>
+<h2 id="s1">What Health checks</h2>
+<figure class="doc-screen" id="panel-h" data-panel='{&quot;example&quot;: &quot;factory-health&quot;, &quot;id&quot;: &quot;h&quot;}'><div class="gs-stage"></div><figcaption>Health on a new golem: it plays, and the banner says what deserves a look.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>The banner at the top gives the verdict in one sentence — <em>Playing is safe</em>, then what to look at — and counts the facts that are green, orange and red.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;h&quot;, &quot;halo&quot;: &quot;health.verdict&quot;}'>Show me</button></p>
+<p><strong>Now</strong> lists eleven facts, read every five seconds, touching nothing:</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;h&quot;, &quot;halo&quot;: &quot;health.now&quot;}'>Show me</button></p>
+<p>| Fact | What it says | |---|---| | <strong>Engine</strong> | the audio engine is running and talks to the golem | | <strong>Sound card</strong> | the card is there and its audio really moves | | <strong>Dropouts</strong> | clicks in the sound in the last ten minutes — a few is orange, many is red | | <strong>Pedalboard &amp; MIDI</strong> | the pedalboard and your MIDI devices answer | | <strong>Playing</strong> | the preset that plays has all its files loaded | | <strong>Setlist on the foot</strong> | the blocks of your setlist that will not play on this golem, and why | | <strong>Plugins</strong> | what the engine found installed | | <strong>Disk</strong> | the free space — orange under 20 GB, red under 5 GB | | <strong>golem.fm</strong> | paired, and reachable | | <strong>Scripts</strong> | no error in the golem&#x27;s own scripts since it started | | <strong>Since last boot</strong> | what changed on the machine since it started |</p>
+<p>Grey means <em>not measured yet</em>, or <em>does not apply</em>: it never alarms. On a new golem, <em>Setlist on the foot</em> is orange — the factory presets need their captures from TONE3000 — and its <strong>Patches →</strong> button goes where they are downloaded.</p>
+<h2 id="s2">Fixing from Health</h2>
+<p>When the golem knows the answer to an orange or red line, the line carries a <strong>Fix</strong> button: raise the audio buffer after dropouts, reopen the sound card, reopen the MIDI devices after a cable was replugged, pose the preset again when files did not load, restart the engine.</p>
+<p>Nothing runs on the first tap. The sheet first says <strong>what will change</strong> (before → after), what it costs, how the golem will check that it worked, and how to undo it. Confirm, and the golem runs it, then <strong>verifies</strong>: the line turns green, or the sheet says it did not work.</p>
+<p>Health never fixes anything while a take records, a song plays or the screen is locked: the line says so and waits. The bottom of the column says whether the golem is free for a check.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;h&quot;, &quot;halo&quot;: &quot;health.guard&quot;}'>Show me</button></p>
+<p><strong>Check now</strong> runs a check on demand, each one with what it costs:</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;h&quot;, &quot;halo&quot;: &quot;health.checks&quot;}'>Show me</button></p>
+<ul><li><strong>Why no sound?</strong> — read-only: you play, the golem follows the signal along the chain and names the first place where it goes silent;</li><li><strong>Inputs, output, pedalboard</strong> — the first-install check again (about two minutes): play, listen to the click, press a switch.</li></ul>
+<h2 id="s3">Ask golem</h2>
+<p>When your golem is paired with golem.fm, the banner has an <strong>✦ Ask golem</strong> field: say what happens in your own words — <em>it crackles</em>, <em>no sound from the keys</em>. The question goes to golem.fm with the state of the golem; the answer comes back with the help pages that apply and, at most, <strong>one</strong> proposed fix — which opens the same sheet as the Fix button, and is verified the same way. Your golem asks for your consent once, before the first question.</p>
+<h2 id="s4">Incidents and reports</h2>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;h&quot;, &quot;halo&quot;: &quot;health.incidents&quot;}'>Show me</button></p>
+<p><strong>Incidents</strong> keeps the last 30 days. A line that stays red opens an incident; when it turns green again, the incident closes with how it ended — by a fix, by a restart, or by itself. When it came back by itself, the golem may ask <em>What fixed it?</em> — a cable, the gain, the power — so the next person with the same problem gets a better answer.</p>
+<p>Incidents travel with the golem&#x27;s diagnostic reports to golem.fm: what happened and how it ended, never your song titles or your names.</p>
+      </div>
+      <nav class="docs-pager" aria-label="Previous and next page"><a class="docs-pager__prev" href="../golem/mixer.html"><small>Previous</small>The mixer</a><a class="docs-pager__next" href="../golem/factory.html"><small>Next</small>Factory content</a></nav>
+    </article>
+  </main>
+  <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">What Health checks</a></li><li><a href="#s2">Fixing from Health</a></li><li><a href="#s3">Ask golem</a></li><li><a href="#s4">Incidents and reports</a></li></ul></aside>
+  </div>
+  <script type="module">
+    import { mount } from '../../assets/golem-shell.js?v=9c0d45f16a'
+    const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}
+    // Les panneaux se montent quand ils approchent de l'écran : une page en compte jusqu'à six.
+    const controls = {}
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue
+        io.unobserve(e.target)
+        load(e.target)
+      }
+    }, { rootMargin: '400px' })
+    function load(fig) {
+      const box = fig.querySelector('.gs-stage')
+      const opts = { ...JSON.parse(fig.dataset.panel), lock: true, fresh: FRESH }
+      const p = mount(box, opts).catch((err) => { box.dataset.state = 'failed'; console.error(err) })
+      if (opts.id) controls[opts.id] = p
+    }
+    for (const fig of document.querySelectorAll('figure[data-panel]')) {
+      io.observe(fig)
+      fig.querySelector('.doc-screen-reset').onclick = () => load(fig)
+    }
+    for (const b of document.querySelectorAll('[data-step]')) {
+      b.onclick = async () => {
+        const a = JSON.parse(b.dataset.step)
+        const fig = document.getElementById('panel-' + a.of)
+        if (!fig) return
+        fig.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        if (!controls[a.of]) { io.unobserve(fig); load(fig) }
+        const c = await controls[a.of]
+        c?.show(a.halo, a.click)
+      }
+    }
+    const menu = document.querySelector('.docs-menu-btn')
+    menu?.addEventListener('click', () => {
+      const nav = document.querySelector('.docs-nav')
+      menu.setAttribute('aria-expanded', String(nav.classList.toggle('is-open')))
+    })
+  </script>
+</body>
+</html>
