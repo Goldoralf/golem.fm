@@ -135,6 +135,10 @@ function sceneTracks(assets, reads, presetId, scene) {
     .filter((t) => t.src)
 }
 
+//: Ce que la doc reprend du golem en service (`demo/owned.json`, build_site.py) — chargé une fois.
+let ownedP
+const ownedData = () => (ownedP ??= json(new URL('demo/owned.json', SITE)).catch(() => ({ reads: {}, blocks_status: {} })))
+
 const APPS = {
   rack: { page: 'shell.html', w: 1024, h: 600 },
   phone: { page: 'shell-m.html', w: 390, h: 844 },
@@ -235,6 +239,8 @@ let round = 0
  */
 export async function mount(box, opts) {
   const { example, halo, click, stage, lock, onNotice, fresh } = opts
+  //: Un golem qui A tout ce qu'il montre (la démo, et la doc sauf ses pages « golem neuf »).
+  const owned = stage ? true : opts.owned !== false
   box.dataset.state = 'loading'
   //: Un nouvel écran : ce qui jouait sur le précédent se tait.
   hush()
@@ -243,10 +249,11 @@ export async function mount(box, opts) {
   //: par import_shell.py) — `factory-keys` tant que le rack de référence a le
   //: MPK branché (2026-11-04), pas un `factory` qui n'existe pas.
   const kind = opts.snapshot ?? (await build()).main ?? 'factory'
-  const [b, snap, ex] = await Promise.all([
+  const [b, snap, ex, have] = await Promise.all([
     build(),
     snapshot(kind),
     json(new URL(`snapshots/${kind}/examples/${example}.json`, BASE)),
+    owned && !stage ? ownedData() : null,
   ])
   const screen = screenOf(ex.route)
   if (!screen) throw new Error(`route ${ex.route}`)
@@ -268,13 +275,13 @@ export async function mount(box, opts) {
   //: `fresh` : les lectures de la MACHINE que l'instantané ne relève jamais (des clés,
   //: le réseau), dans la forme qu'un golem jamais configuré rend (doc) — sinon
   //: l'écran attend une réponse qui ne viendra pas (« Loading… »).
-  const reads = { ...(fresh || {}), ...snap.reads, ...ex.reads, ...(stage?.reads || {}), '/api/state': state }
+  const reads = { ...(fresh || {}), ...snap.reads, ...ex.reads, ...(have?.reads || {}), ...(stage?.reads || {}), '/api/state': state }
   //: « ⚠ No amp sound yet » (CapturesMissing, main.js du rack) dit à un golem NEUF qu'il lui manque
   //: les captures d'usine — vrai sur le banc qui a fait l'instantané, faux pour un visiteur : la démo
   //: et la doc montrent un golem qui SONNE (2026-11-06). La démo le posait déjà (stage.json) ;
   //: la doc servait l'état brut et le bandeau couvrait ses écrans. Un exemple qui fournit le sien le garde.
   const caps = reads['/api/factory/captures']
-  if (caps?.total && !ex.reads?.['/api/factory/captures'])
+  if (owned && caps?.total && !ex.reads?.['/api/factory/captures'])
     reads['/api/factory/captures'] = { ...caps, present: caps.total, missing: [] }
   const now = Date.now() / 1000
   for (const k of stage?.now || []) if (reads[k]) reads[k] = { ...reads[k], at: now, ...('now' in reads[k] ? { now } : {}) }
@@ -452,16 +459,32 @@ export async function mount(box, opts) {
   //: L'état des blocs selon le preset que le Designer envoie : ce qu'un golem en
   //: service a relevé (`tools/read_rack.py`). Un preset inconnu → la réponse de
   //: l'instantané, comme avant.
-  const onRead = stage?.blocks_status
-    ? (method, path, body) => {
+  //: L'ÉTAT DES BLOCS (`POST /api/blocks/status`) : la démo et la doc montrent un golem qui A tout
+  //: (2026-11-06 : « 9 blocks missing on this rack » sur l'onglet A block). Les exemples du Designer
+  //: emportent la réponse du BANC, un golem neuf sans captures (`download`) — elle passait avant tout
+  //: le reste. On la retire ; on répond par ce qu'un golem en service a relevé pour CE preset
+  //: (`stage.blocks_status`, tools/read_rack.py), sinon par la réponse de l'exemple, tout `ready`.
+  //: Seules gardent le manque les pages de la doc qui le MONTRENT (`owned: false`, build_site.py
+  //: NEW_GOLEM_PAGES : « Captures », « Blocks »).
+  const ready = (r) =>
+    r && {
+      ...r,
+      blocks: (r.blocks || []).map((x) => ({ ...x, state: 'ready', why: null, reason: null })),
+      summary: { ...(r.summary || {}), missing: 0, download: { n: 0, bytes: 0, unknown: 0 }, unavailable: 0, empty: 0 },
+    }
+  const showMissing = !owned
+  const exStatus = reads['POST /api/blocks/status']
+  if (!showMissing) delete reads['POST /api/blocks/status']
+  const onRead = showMissing
+    ? undefined
+    : (method, path, body) => {
         if (path !== '/api/blocks/status') return undefined
         let p = null
-        try { p = JSON.parse(body || '{}').preset } catch { return undefined }
-        const pid = p && (p.id || '')
-        return stage.blocks_status[pid] || stage.blocks_status[String(pid).replace(/^patch:/, '')] ||
-          stage.blocks_status[`patch:${pid}`] || undefined
+        try { p = JSON.parse(body || '{}').preset } catch { /* corps illisible */ }
+        const pid = (p && p.id) || ''
+        const bs = stage?.blocks_status || have?.blocks_status || {}
+        return bs[pid] || bs[String(pid).replace(/^patch:/, '')] || bs[`patch:${pid}`] || ready(exStatus) || undefined
       }
-    : undefined
 
   ;(window.__golemShell ??= {})[id] = {
     reads,
