@@ -11,12 +11,12 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1793799507.09
+   "at": 1793971246.767
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1793799208.723,
+   "skipped_at": 1793970906.666,
    "verdict": null
   },
   "startup": {
@@ -37,7 +37,7 @@
    "voice": 0.0,
    "in1": 0.0,
    "in2": 0.0,
-   "in3": 0.7280462980270386
+   "in3": 0.7294409275054932
   },
   "clip": {},
   "tempo": 120,
@@ -49,14 +49,14 @@
    "10": true
   },
   "exp1": 0,
-  "exp2": 0,
+  "exp2": 127,
   "exp2_target": "—",
   "pedals": {
    "volume": "exp2",
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": null,
+  "latency_ms": 8.0,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -69,10 +69,10 @@
    "ok": true,
    "issues": [],
    "fix": "",
-   "ts": "2026-11-04 14:38:26"
+   "ts": "2026-11-06 14:20:45"
   },
   "rig_check": {
-   "t": 1793799505,
+   "t": 1793971246,
    "ok": true,
    "checked": 0,
    "issues": []
@@ -133,7 +133,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1793799453.374623,
+   "t": 1793971186.971855,
    "countin": null
   },
   "backing": {
@@ -484,12 +484,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 23858520064,
+   "free": 26815913984,
    "takes": 161572837,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 12401,
+   "seconds": 14455,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -521,28 +521,11 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
-    },
-    {
-     "id": "Nitro",
-     "name": "Alesis‭ Alesis Nitro",
-     "usb": "13b2:009c",
-     "kind": "drums",
-     "match": "Alesis Nitro",
-     "label": "drum module — Alesis Nitro",
-     "bound": false,
-     "propose": true
     }
    ],
    "events": [
     {
-     "at": "2026-10-23T01:20:17",
-     "ev": "plug",
-     "name": "Alesis‭ Alesis Nitro",
-     "kind": "drums",
-     "label": "drum module — Alesis Nitro"
-    },
-    {
-     "at": "2026-11-04T14:33:27",
+     "at": "2026-11-06T14:15:05",
      "ev": "plug",
      "name": "AKAI MPK Mini Mk II",
      "kind": "unknown",
@@ -550,7 +533,7 @@
     }
    ]
   },
-  "updated": 1793799508.76959,
+  "updated": 1793971246.3498566,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -562,12 +545,12 @@
  },
  "reads": {
   "/api/health/facts": {
-   "at": 1793799507.09,
-   "since_start_s": 303.2,
+   "at": 1793971246.767,
+   "since_start_s": 344.9,
    "verdict": {
     "level": "warn",
     "title": "Playing is safe. One thing to look at.",
-    "text": "Setlist on the foot: “Factory Golem” · 71 blocks will not play here across 9 of 9 presets: 7 need a plugin not installed on this Linux machine, 64 to download",
+    "text": "Setlist on the foot: “Factory Golem” · 65 blocks will not play here across 9 of 9 presets: 1 need a plugin not installed on this Linux machine, 64 to download",
     "counts": {
      "ok": 8,
      "warn": 1,
@@ -588,7 +571,7 @@
      "id": "audio",
      "name": "Sound card",
      "level": "ok",
-     "text": "Audio · 192 samples",
+     "text": "V276 · 192 samples · 8.0 ms",
      "source": "audio_metrics · .clock.json"
     },
     {
@@ -610,13 +593,13 @@
      "name": "Playing",
      "level": "ok",
      "text": "“Ambient Metal” · 0 files loaded and checked",
-     "source": ".rig-check.json 14:38 · .livemap.json"
+     "source": ".rig-check.json 14:20 · .livemap.json"
     },
     {
      "id": "setlist",
      "name": "Setlist on the foot",
      "level": "warn",
-     "text": "“Factory Golem” · 71 blocks will not play here across 9 of 9 presets: 7 need a plugin not installed on this Linux machine, 64 to download",
+     "text": "“Factory Golem” · 65 blocks will not play here across 9 of 9 presets: 1 need a plugin not installed on this Linux machine, 64 to download",
      "source": "blocks/status · setlist",
      "fix": {
       "label": "Patches →",
@@ -625,39 +608,39 @@
      "detail": [
       {
        "preset": "Chill Jazz",
-       "missing": 11,
+       "missing": 10,
        "download": 10,
-       "unavailable": 1
+       "unavailable": 0
       },
       {
        "preset": "Blues Night",
-       "missing": 10,
+       "missing": 9,
        "download": 9,
-       "unavailable": 1
+       "unavailable": 0
       },
       {
        "preset": "Funk Session",
-       "missing": 6,
+       "missing": 5,
        "download": 5,
-       "unavailable": 1
+       "unavailable": 0
       },
       {
        "preset": "Rock Classics",
-       "missing": 6,
+       "missing": 5,
        "download": 5,
-       "unavailable": 1
+       "unavailable": 0
       },
       {
        "preset": "Indie Pop",
-       "missing": 5,
+       "missing": 4,
        "download": 4,
-       "unavailable": 1
+       "unavailable": 0
       },
       {
        "preset": "Alt Rock",
-       "missing": 8,
+       "missing": 7,
        "download": 7,
-       "unavailable": 1
+       "unavailable": 0
       },
       {
        "preset": "Metal for all",
@@ -684,7 +667,7 @@
      "id": "disk",
      "name": "Disk",
      "level": "ok",
-     "text": "24 GB free of 205 GB",
+     "text": "27 GB free of 205 GB",
      "source": "disk"
     },
     {
@@ -715,14 +698,14 @@
    ],
    "guard": {
     "free": false,
-    "why": "in use (signal, 3 s ago)",
-    "idle_s": 3.2,
+    "why": "in use (signal, 2 s ago)",
+    "idle_s": 2.2,
     "src": "signal"
    },
    "first_check": {
     "pending": false,
     "done_at": null,
-    "skipped_at": 1793799208.723,
+    "skipped_at": 1793970906.666,
     "verdict": null
    }
   },
@@ -734,7 +717,7 @@
    "report": null,
    "error": null,
    "at": null,
-   "now": 1793799510.52
+   "now": 1793971246.941
   }
  },
  "anchors": [

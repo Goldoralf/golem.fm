@@ -1,9 +1,9 @@
 {
  "kind": "factory",
  "name": "factory",
- "commit": "c6c9ab91169aa5b19278521bcf8e4b3fa8ab26a6",
+ "commit": "be5e330bafb9e87c190d9893d79fcb2940bacd18",
  "catalog_version": 32,
- "made": "2026-11-04",
+ "made": "2026-11-06",
  "reads": [
   "/api/anim-packs",
   "/api/app-build",
@@ -269,6 +269,166 @@
   }
  },
  "media": {
+  "/library/previews/block-factory-ambient-metal/10/drums.opus": {
+   "file": "media/library/previews/block-factory-ambient-metal/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-factory-blues-night/10/standard.opus": {
+   "file": "media/library/previews/block-factory-blues-night/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-factory-chill-jazz/9/standard.opus": {
+   "file": "media/library/previews/block-factory-chill-jazz/9/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-factory-funk-session/10/drums.opus": {
+   "file": "media/library/previews/block-factory-funk-session/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-bass-biamp-grit/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-bass-biamp-grit/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-bass-funk-slap/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-bass-funk-slap/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-bass-jazz-warm/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-bass-jazz-warm/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-bass-metal/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-bass-metal/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-bass-rock-grind/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-bass-rock-grind/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-bass-synth/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-bass-synth/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-bass-vintage-round/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-bass-vintage-round/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-drums-classic-rock/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-drums-classic-rock/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-drums-jazz-brushes/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-drums-jazz-brushes/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-drums-studio-rock/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-drums-studio-rock/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-ambient-djent/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-ambient-djent/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-british-crunch/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-british-crunch/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-brown-lead/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-brown-lead/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-funk-clean/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-funk-clean/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-fuzz-wall/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-fuzz-wall/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-gypsy-lead/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-gypsy-lead/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-hero-lead/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-hero-lead/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-indie-chime/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-indie-chime/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-jazz-clean/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-jazz-clean/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-modern-metal/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-modern-metal/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-singing-clean/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-singing-clean/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-soaring-lead/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-soaring-lead/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-guitar-texas-blues/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-guitar-texas-blues/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-keys-80s-epiano/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-keys-80s-epiano/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-keys-cathedral-piano/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-keys-cathedral-piano/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-keys-electric-piano/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-keys-electric-piano/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-keys-jazz-piano/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-keys-jazz-piano/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-keys-rock-organ/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-keys-rock-organ/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-keys-synth-lead/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-keys-synth-lead/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-keys-warm-pad/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-keys-warm-pad/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-voice-clean/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-voice-clean/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-voice-crooner/10/standard.opus": {
+   "file": "media/library/previews/block-patch-factory-voice-crooner/10/standard.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-voice-halo/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-voice-halo/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-voice-metal/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-voice-metal/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-voice-pop-tuned/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-voice-pop-tuned/10/drums.opus",
+   "type": "audio/ogg"
+  },
+  "/library/previews/block-patch-factory-voice-rock/10/drums.opus": {
+   "file": "media/library/previews/block-patch-factory-voice-rock/10/drums.opus",
+   "type": "audio/ogg"
+  },
   "/library/previews/patch-factory-drums-classic-rock-ink/A.opus": {
    "file": "media/library/previews/patch-factory-drums-classic-rock-ink/A.opus",
    "type": "audio/ogg"
@@ -2265,44 +2425,6 @@
     "nav.live",
     "nav.settings",
     "nav.songs",
-    "songs.patch:factory-bass-biamp-grit",
-    "songs.patch:factory-bass-funk-slap",
-    "songs.patch:factory-bass-jazz-warm",
-    "songs.patch:factory-bass-metal",
-    "songs.patch:factory-bass-rock-grind",
-    "songs.patch:factory-bass-synth",
-    "songs.patch:factory-bass-vintage-round",
-    "songs.patch:factory-drums-classic-rock",
-    "songs.patch:factory-drums-jazz-brushes",
-    "songs.patch:factory-drums-metal",
-    "songs.patch:factory-drums-studio-rock",
-    "songs.patch:factory-guitar-ambient-djent",
-    "songs.patch:factory-guitar-british-crunch",
-    "songs.patch:factory-guitar-brown-lead",
-    "songs.patch:factory-guitar-funk-clean",
-    "songs.patch:factory-guitar-fuzz-wall",
-    "songs.patch:factory-guitar-gypsy-lead",
-    "songs.patch:factory-guitar-hero-lead",
-    "songs.patch:factory-guitar-indie-chime",
-    "songs.patch:factory-guitar-jazz-clean",
-    "songs.patch:factory-guitar-modern-metal",
-    "songs.patch:factory-guitar-singing-clean",
-    "songs.patch:factory-guitar-soaring-lead",
-    "songs.patch:factory-guitar-texas-blues",
-    "songs.patch:factory-keys-80s-epiano",
-    "songs.patch:factory-keys-cathedral-piano",
-    "songs.patch:factory-keys-electric-piano",
-    "songs.patch:factory-keys-jazz-piano",
-    "songs.patch:factory-keys-loop-bass-beat",
-    "songs.patch:factory-keys-rock-organ",
-    "songs.patch:factory-keys-synth-lead",
-    "songs.patch:factory-keys-warm-pad",
-    "songs.patch:factory-voice-clean",
-    "songs.patch:factory-voice-crooner",
-    "songs.patch:factory-voice-halo",
-    "songs.patch:factory-voice-metal",
-    "songs.patch:factory-voice-pop-tuned",
-    "songs.patch:factory-voice-rock",
     "topbar.brand"
    ],
    "#/songs/presets": [
@@ -2319,12 +2441,6 @@
     "nav.live",
     "nav.settings",
     "nav.songs",
-    "setlists.card:factory",
-    "setlists.card:factory-bass",
-    "setlists.card:factory-drums",
-    "setlists.card:factory-guitar",
-    "setlists.card:factory-keys",
-    "setlists.card:factory-voice",
     "topbar.brand"
    ],
    "#/library/tones/amps": [
@@ -4752,37 +4868,7 @@
    "first-check-done": [],
    "companion-now": [],
    "companion-song": [],
-   "companion-rec": [],
-   "reference-drums": [
-    "nav.designer",
-    "nav.library",
-    "nav.live",
-    "nav.settings",
-    "nav.songs",
-    "tab.about",
-    "tab.connect",
-    "tab.content",
-    "tab.engines",
-    "tab.gear",
-    "tab.mode",
-    "tab.sys",
-    "topbar.brand"
-   ],
-   "reference-drums-bound": [
-    "nav.designer",
-    "nav.library",
-    "nav.live",
-    "nav.settings",
-    "nav.songs",
-    "tab.about",
-    "tab.connect",
-    "tab.content",
-    "tab.engines",
-    "tab.gear",
-    "tab.mode",
-    "tab.sys",
-    "topbar.brand"
-   ]
+   "companion-rec": []
   }
  },
  "written": [

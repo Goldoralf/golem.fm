@@ -11,12 +11,12 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1793799375.406
+   "at": 1793971094.677
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1793799208.723,
+   "skipped_at": 1793970906.666,
    "verdict": null
   },
   "startup": {
@@ -37,7 +37,7 @@
    "voice": 0.0,
    "in1": 0.0,
    "in2": 0.0,
-   "in3": 0.7280462980270386
+   "in3": 0.7294409275054932
   },
   "clip": {},
   "tempo": 120,
@@ -49,14 +49,14 @@
    "10": true
   },
   "exp1": 0,
-  "exp2": 0,
+  "exp2": 127,
   "exp2_target": "—",
   "pedals": {
    "volume": "exp2",
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": null,
+  "latency_ms": 8.0,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -69,10 +69,10 @@
    "ok": true,
    "issues": [],
    "fix": "",
-   "ts": "2026-11-04 14:36:11"
+   "ts": "2026-11-06 14:18:14"
   },
   "rig_check": {
-   "t": 1793799372,
+   "t": 1793971091,
    "ok": true,
    "checked": 0,
    "issues": []
@@ -483,12 +483,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 23861600256,
+   "free": 26921369600,
    "takes": 161572837,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 12403,
+   "seconds": 14528,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -520,28 +520,11 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
-    },
-    {
-     "id": "Nitro",
-     "name": "Alesis‭ Alesis Nitro",
-     "usb": "13b2:009c",
-     "kind": "drums",
-     "match": "Alesis Nitro",
-     "label": "drum module — Alesis Nitro",
-     "bound": false,
-     "propose": true
     }
    ],
    "events": [
     {
-     "at": "2026-10-23T01:20:17",
-     "ev": "plug",
-     "name": "Alesis‭ Alesis Nitro",
-     "kind": "drums",
-     "label": "drum module — Alesis Nitro"
-    },
-    {
-     "at": "2026-11-04T14:33:27",
+     "at": "2026-11-06T14:15:05",
      "ev": "plug",
      "name": "AKAI MPK Mini Mk II",
      "kind": "unknown",
@@ -549,7 +532,7 @@
     }
    ]
   },
-  "updated": 1793799375.3281343,
+  "updated": 1793971096.5778604,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -2417,6 +2400,47 @@
    "scene": "B",
    "edit_rev": 5
   },
+  "POST /api/backing/drawer": {
+   "own": {
+    "guitar": "Guitar 1",
+    "piano": "Piano"
+   },
+   "song": {
+    "slug": null,
+    "title": "Golem Rising",
+    "id": "rs:f3f0252689f96910f01c81be0325855f",
+    "stems": [],
+    "muted": [],
+    "from": null,
+    "no_backing": true
+   },
+   "used_by": {
+    "songs": [
+     {
+      "song": "rs:f3f0252689f96910f01c81be0325855f",
+      "title": "Golem Rising",
+      "artist": "golem",
+      "lines": [
+       {
+        "setlist": "factory",
+        "name": "Factory Golem",
+        "bank": 8,
+        "line": "r:factory:8"
+       }
+      ]
+     }
+    ],
+    "lines": []
+   },
+   "families": [
+    "guitar",
+    "bass",
+    "piano",
+    "drums",
+    "vocals",
+    "other"
+   ]
+  },
   "POST /api/blocks/status": {
    "preset": "factory-ambient-metal",
    "blocks": [
@@ -2884,47 +2908,6 @@
    "caps": {
     "inventory": true
    }
-  },
-  "POST /api/backing/drawer": {
-   "own": {
-    "guitar": "Guitar 1",
-    "piano": "Piano"
-   },
-   "song": {
-    "slug": null,
-    "title": "Golem Rising",
-    "id": "rs:f3f0252689f96910f01c81be0325855f",
-    "stems": [],
-    "muted": [],
-    "from": null,
-    "no_backing": true
-   },
-   "used_by": {
-    "songs": [
-     {
-      "song": "rs:f3f0252689f96910f01c81be0325855f",
-      "title": "Golem Rising",
-      "artist": "golem",
-      "lines": [
-       {
-        "setlist": "factory",
-        "name": "Factory Golem",
-        "bank": 8,
-        "line": "r:factory:8"
-       }
-      ]
-     }
-    ],
-    "lines": []
-   },
-   "families": [
-    "guitar",
-    "bass",
-    "piano",
-    "drums",
-    "vocals",
-    "other"
-   ]
   }
  },
  "anchors": [

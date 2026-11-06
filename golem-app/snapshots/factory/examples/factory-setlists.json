@@ -11,12 +11,12 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1793799476.893
+   "at": 1793971211.551
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1793799208.723,
+   "skipped_at": 1793970906.666,
    "verdict": null
   },
   "startup": {
@@ -37,7 +37,7 @@
    "voice": 0.0,
    "in1": 0.0,
    "in2": 0.0,
-   "in3": 0.7475736737251282
+   "in3": 0.7470434308052063
   },
   "clip": {},
   "tempo": 180,
@@ -49,14 +49,14 @@
    "10": true
   },
   "exp1": 0,
-  "exp2": 0,
+  "exp2": 127,
   "exp2_target": "—",
   "pedals": {
    "volume": "exp2",
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": null,
+  "latency_ms": 8.0,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -69,10 +69,10 @@
    "ok": true,
    "issues": [],
    "fix": "",
-   "ts": "2026-11-04 14:37:56"
+   "ts": "2026-11-06 14:20:05"
   },
   "rig_check": {
-   "t": 1793799473,
+   "t": 1793971206,
    "ok": true,
    "checked": 0,
    "issues": []
@@ -126,7 +126,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1793799453.374623,
+   "t": 1793971186.971855,
    "countin": null
   },
   "backing": {
@@ -383,12 +383,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 23859998720,
+   "free": 26859298816,
    "takes": 161572837,
-   "rate": 864000,
-   "lanes": 3,
+   "rate": 1440000,
+   "lanes": 5,
    "measured": false,
-   "seconds": 20671,
+   "seconds": 14485,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -420,28 +420,11 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
-    },
-    {
-     "id": "Nitro",
-     "name": "Alesis‭ Alesis Nitro",
-     "usb": "13b2:009c",
-     "kind": "drums",
-     "match": "Alesis Nitro",
-     "label": "drum module — Alesis Nitro",
-     "bound": false,
-     "propose": true
     }
    ],
    "events": [
     {
-     "at": "2026-10-23T01:20:17",
-     "ev": "plug",
-     "name": "Alesis‭ Alesis Nitro",
-     "kind": "drums",
-     "label": "drum module — Alesis Nitro"
-    },
-    {
-     "at": "2026-11-04T14:33:27",
+     "at": "2026-11-06T14:15:05",
      "ev": "plug",
      "name": "AKAI MPK Mini Mk II",
      "kind": "unknown",
@@ -449,7 +432,7 @@
     }
    ]
   },
-  "updated": 1793799479.1492784,
+  "updated": 1793971212.70986,
   "profile": "desktop",
   "ui": {
    "windows": 0,

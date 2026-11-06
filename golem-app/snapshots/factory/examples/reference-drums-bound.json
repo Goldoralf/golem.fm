@@ -49,7 +49,7 @@
    "10": true
   },
   "exp1": 0,
-  "exp2": 0,
+  "exp2": 127,
   "exp2_target": "—",
   "pedals": {
    "volume": "exp2",
