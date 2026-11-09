@@ -199,6 +199,8 @@ h1, h2, h3 { line-height: var(--lh-tight); }
   font-family: var(--font-mono); font-size: 0.9em; padding: 1px 5px; border-radius: 4px;
   background: var(--bg-elevated); border: 1px solid var(--border-subtle);
 }
+/* Une longue commande dans le texte (ligne d'installation) revient à la ligne sur un téléphone. */
+.docs-body p code, .docs-body li code { overflow-wrap: anywhere; }
 .docs-body .gone { color: var(--text-primary); }
 
 .docs-pager { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin-top: var(--space-10); }
@@ -339,9 +341,94 @@ h1, h2, h3 { line-height: var(--lh-tight); }
 
 /* ── L'accueil : la tablette, puis le tour rapide, puis ce qu'est le golem ── */
 .demo__overview { margin-top: var(--space-8); }
-.demo__overview h2, .demo__about h2 { font-size: var(--fs-lg); margin: 0 0 var(--space-3); }
+.demo__overview h2 { font-size: var(--fs-lg); margin: 0 0 var(--space-3); }
 .demo__tabs { flex-wrap: wrap; overflow: visible; padding-bottom: 0; }
-.demo__about { margin-top: var(--space-10); max-width: 760px; }
-.demo__about p { color: var(--text-secondary); line-height: 1.65; margin: 0 0 var(--space-4); }
+/* « A stage machine » : la même coquille que « The golem's effects » (sur-titre, grand titre, chapeau). */
+.demo__about { margin-top: var(--space-10); }
+.demo__head { display: flex; flex-direction: column; gap: var(--space-3); }
+.demo__head h2 { max-width: 30ch; }
+.demo__about p { margin: 0; max-width: 72ch; font-size: var(--fs-base); line-height: 1.6; color: var(--text-secondary); }
 .demo__get { color: var(--text-primary) !important; }
 .demo__get a { font-family: var(--font-mono); font-size: var(--fs-sm); word-break: break-all; }
+
+/* ═══ « The golem's effects » — la section de golem.fm (assets/effects/, rendue par
+   maestrium, tools/import_effects.py). Sa feuille vient avec elle ; il ne manque ici que
+   les jetons qu'elle cite et la coquille `.ph-sec` de l'accueil de golem.fm
+   (publicHome.css), recopiés tels quels. ═══ */
+:root {
+  --ok: #2ecc71;
+  --sect-rack: #b06cf0;
+  --sect-community: #e6a23c;
+}
+.demo__effects { margin-top: var(--space-10); }
+.ph-sec { box-sizing: border-box; width: 100%; display: flex; flex-direction: column; gap: var(--space-5); }
+.ph-sec h2 { margin: 0; font-family: var(--font-sans); font-weight: 700; letter-spacing: -0.01em; font-size: 34px; }
+.ph-sec__eyebrow {
+  display: block; font-family: var(--font-mono); font-size: 15px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--sect-community);
+}
+.ph-sec__eyebrow--purple { color: var(--sect-rack); }
+@media (max-width: 760px) { .ph-sec h2 { font-size: 26px; } .ph-sec__eyebrow { font-size: 13px; } }
+
+/* ═══ « Start on a laptop tonight » et le pied de page — recopiés de golem.fm
+   (publicHome.css `.ph-btn`, `.ph-cta`, `.ph-foot` ; copyField.css `.cpf`), à la largeur
+   de ce site (`.demo`, 1120px). ═══ */
+.ph-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 48px; padding: 0 22px; border-radius: var(--radius-pill);
+  font-weight: 700; font-size: var(--fs-base); text-decoration: none;
+  border: 1px solid transparent; cursor: pointer; font-family: inherit; white-space: nowrap;
+}
+.ph-btn--amber { background: var(--sect-community); color: var(--text-on-accent); }
+.ph-btn--amber:hover { background: color-mix(in srgb, var(--sect-community) 85%, #fff); }
+
+.ph-cta {
+  box-sizing: border-box; margin-top: var(--space-12); padding: var(--space-8);
+  border-radius: 16px; border: 1px solid var(--border-strong);
+  background: radial-gradient(800px 300px at 20% 0%, color-mix(in srgb, var(--sect-community) 18%, transparent), var(--bg-surface) 70%);
+  display: flex; align-items: center; justify-content: space-between; gap: var(--space-6); flex-wrap: wrap;
+}
+.ph-cta h2 { margin: 0; font-family: var(--font-sans); font-weight: var(--fw-bold); letter-spacing: -0.01em; font-size: 32px; }
+.ph-cta p { margin: 6px 0 0; font-size: var(--fs-base); color: var(--text-secondary); }
+.ph-cta p a { color: var(--text-primary); }
+.ph-cta__actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+.ph-foot {
+  box-sizing: border-box; margin-top: var(--space-10); width: 100%;
+  padding: var(--space-8) max(var(--space-4), calc((100% - 1120px) / 2 + var(--space-4)));
+  display: grid; grid-template-columns: 1.4fr 1fr 1.6fr; gap: var(--space-6);
+  border-top: 1px solid var(--border-subtle); font-size: 13px; color: var(--text-secondary);
+}
+.ph-foot__brand { display: flex; flex-direction: column; gap: 8px; }
+.ph-foot__wordmark { font-family: var(--font-mono); font-weight: 600; font-size: var(--fs-md); color: var(--text-primary); }
+.ph-foot__s { color: var(--sect-community); }
+.ph-foot__brand p { margin: 0; max-width: 36ch; line-height: 1.5; }
+.ph-foot__col { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ph-foot__col b { color: var(--text-primary); }
+.ph-foot__col a { color: var(--text-secondary); text-decoration: none; }
+.ph-foot__col a:hover { color: var(--sect-community); }
+.ph-foot__col .cpf { margin-top: 8px; }
+
+.cpf {
+  display: flex; align-items: center; gap: 6px; max-width: 100%; box-sizing: border-box;
+  padding: 4px 4px 4px 10px; border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong); background: var(--bg-base);
+}
+.cpf__value {
+  flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap;
+  font-family: var(--font-mono); font-size: 11.5px; color: var(--text-primary); user-select: all;
+}
+.cpf__btn {
+  flex: none; padding: 4px 10px; border-radius: var(--radius-sm, 6px);
+  border: 1px solid var(--border-strong); background: var(--bg-surface); color: var(--text-primary);
+  font: inherit; font-size: 12px; font-weight: 600; cursor: pointer;
+}
+.cpf__btn:hover { border-color: var(--sect-community); color: var(--sect-community); }
+
+@media (max-width: 860px) {
+  .ph-cta { flex-direction: column; align-items: flex-start; padding: var(--space-6); }
+  .ph-cta h2 { font-size: 26px; }
+  .ph-foot { grid-template-columns: 1fr 1fr; }
+  .ph-foot__brand { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) { .ph-foot { grid-template-columns: 1fr; } }

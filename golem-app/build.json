@@ -1,14 +1,14 @@
 {
- "dir": "be5e330",
- "commit": "be5e330bafb9e87c190d9893d79fcb2940bacd18",
- "catalog_version": 32,
+ "dir": "435a648",
+ "commit": "435a64830c8c5530dcacb7c562b25c4733c8dfca",
+ "catalog_version": 33,
  "post_reads": [
   "/api/backing/drawer",
   "/api/blocks/status"
  ],
  "shell_v": "fc2c34075e",
  "snapshots": {
-  "factory": "be5e330bafb9e87c190d9893d79fcb2940bacd18"
+  "factory": "435a64830c8c5530dcacb7c562b25c4733c8dfca"
  },
  "main": "factory"
 }

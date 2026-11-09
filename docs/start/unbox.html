@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Unbox and plug in the golem — golem doc</title>
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/be5e330/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=e3cc703bcd">
 </head>
 <body>
   <header class="pn">
@@ -77,7 +77,7 @@
 <h2 id="s2">Power, network, sound card</h2>
 <ul><li><strong>The sound card</strong> goes on its own USB port — not on a hub shared with the touch screen. golem detects it at the first start and offers to use it.</li><li><strong>The network</strong>: a cable always reaches the golem. On Wi-Fi, it joins your network; with no known network, it raises its own (see <span class="gone">The golem does not show up</span>).</li><li><strong>The pedalboard</strong> goes into the sound card&#x27;s MIDI input.</li></ul>
 <h2 id="s3">First boot</h2>
-<p><strong>Install</strong> with one line — Linux: <code>curl -fsSL https://get.golem.fm | sh</code>; Windows: <code>irm https://get.golem.fm/win | iex</code>. The installer checks the machine, installs the audio engine, asks where to install and how much sound to download, then offers to connect golem.fm and TONE3000 (you can skip both).</p>
+<p><strong>Install</strong> with one line — Linux (x86-64): <code>curl -fsSL https://raw.githubusercontent.com/Goldoralf/golem/main/provision/bootstrap.sh | bash</code>; Windows (experimental), in PowerShell: <code>irm https://raw.githubusercontent.com/Goldoralf/golem/main/provision/bootstrap.ps1 | iex</code>; macOS (experimental): double-click <code>install-macos.command</code> in a clone (see the <a href="https://github.com/Goldoralf/golem#install" rel="noreferrer">README</a>). The installer checks the machine, installs the audio engine, asks where to install and how much sound to download, then offers to connect golem.fm and TONE3000 (you can skip both).</p>
 <p>Then golem starts, and opens <strong>the first-install check</strong>: play, listen, press a switch — two minutes, once (see <a href="../start/first-check.html">The first-install check</a>).</p>
 <p>One install, two ways to use it: <strong>in a window</strong> on the computer&#x27;s own screen, or <strong>as a server</strong> with a tablet or a phone as the screen. Switch from <strong>Settings ▸ System ▸ Dashboard</strong> (<em>Continue on a tablet</em>). <strong>Start golem with this computer</strong> makes it start by itself — the dedicated-rack setup.</p>
       </div>
@@ -86,6 +86,36 @@
   </main>
   <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">What you need</a></li><li><a href="#s2">Power, network, sound card</a></li><li><a href="#s3">First boot</a></li></ul></aside>
   </div>
+  <footer class="ph-foot">
+    <div class="ph-foot__brand">
+      <span class="ph-foot__wordmark"><span class="ph-foot__s">/</span>golem</span>
+      <p>Feed me sounds.</p>
+    </div>
+    <div class="ph-foot__col">
+      <b>golem</b>
+      <a href="../../">The Golem</a>
+      <a href="../../docs/">Docs</a>
+    </div>
+    <div class="ph-foot__col ph-foot__col--oss">
+      <b>Open source</b>
+      <a href="https://github.com/Goldoralf/golem" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="https://github.com/Goldoralf/golem/releases/latest" target="_blank" rel="noreferrer">Releases ↗</a>
+      <div class="cpf" role="group" aria-label="Clone the golem">
+        <code class="cpf__value">https://github.com/Goldoralf/golem.git</code>
+        <button type="button" class="cpf__btn" data-copy="https://github.com/Goldoralf/golem.git" aria-live="polite">Copy</button>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('click', async (e) => {
+      const b = e.target.closest('[data-copy]'); if (!b) return
+      const out = b
+      try { await navigator.clipboard.writeText(b.dataset.copy) } catch { return }
+      const was = out.dataset.idle || (out.dataset.idle = out.textContent)
+      out.textContent = out.dataset.done || 'Copied'
+      setTimeout(() => { out.textContent = was }, 1800)
+    })
+  </script>
   <script type="module">
     import { mount } from '../../assets/golem-shell.js?v=e9a9500d7e'
     const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}

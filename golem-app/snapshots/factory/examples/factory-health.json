@@ -11,12 +11,12 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1793971246.767
+   "at": 1794219269.047
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1793970906.666,
+   "skipped_at": 1794218966.654,
    "verdict": null
   },
   "startup": {
@@ -33,11 +33,11 @@
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.0,
-   "voice": 0.0,
-   "in1": 0.0,
-   "in2": 0.0,
-   "in3": 0.7294409275054932
+   "guitar": 0.727628767490387,
+   "voice": 0.7567927241325378,
+   "in1": 0.727628767490387,
+   "in2": 0.7567927241325378,
+   "in3": 0.0
   },
   "clip": {},
   "tempo": 120,
@@ -69,10 +69,10 @@
    "ok": true,
    "issues": [],
    "fix": "",
-   "ts": "2026-11-06 14:20:45"
+   "ts": "2026-11-09 11:14:24"
   },
   "rig_check": {
-   "t": 1793971246,
+   "t": 1794219266,
    "ok": true,
    "checked": 0,
    "issues": []
@@ -133,7 +133,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1793971186.971855,
+   "t": 1794219213.8311615,
    "countin": null
   },
   "backing": {
@@ -484,12 +484,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26815913984,
+   "free": 26548559872,
    "takes": 161572837,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14455,
+   "seconds": 14269,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -513,27 +513,10 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [
-    {
-     "id": "II",
-     "name": "AKAI MPK Mini Mk II",
-     "usb": "09e8:0045",
-     "kind": "unknown",
-     "label": "unknown MIDI device",
-     "propose": true
-    }
-   ],
-   "events": [
-    {
-     "at": "2026-11-06T14:15:05",
-     "ev": "plug",
-     "name": "AKAI MPK Mini Mk II",
-     "kind": "unknown",
-     "label": "unknown MIDI device"
-    }
-   ]
+   "devices": [],
+   "events": []
   },
-  "updated": 1793971246.3498566,
+  "updated": 1794219272.1525714,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -545,8 +528,8 @@
  },
  "reads": {
   "/api/health/facts": {
-   "at": 1793971246.767,
-   "since_start_s": 344.9,
+   "at": 1794219269.047,
+   "since_start_s": 307.2,
    "verdict": {
     "level": "warn",
     "title": "Playing is safe. One thing to look at.",
@@ -593,7 +576,7 @@
      "name": "Playing",
      "level": "ok",
      "text": "“Ambient Metal” · 0 files loaded and checked",
-     "source": ".rig-check.json 14:20 · .livemap.json"
+     "source": ".rig-check.json 11:14 · .livemap.json"
     },
     {
      "id": "setlist",
@@ -667,7 +650,7 @@
      "id": "disk",
      "name": "Disk",
      "level": "ok",
-     "text": "27 GB free of 205 GB",
+     "text": "26 GB free of 205 GB",
      "source": "disk"
     },
     {
@@ -692,20 +675,28 @@
      "id": "environment",
      "name": "Since last boot",
      "level": "ok",
-     "text": "nothing changed: same REAPER, plugins, card, rate, buffer",
-     "source": "environment snapshot"
+     "text": "golem updated: golem v0.6.3-3-g435a6483 → v0.6.4 · nothing else changed",
+     "source": "environment snapshot",
+     "detail": [
+      {
+       "key": "golem",
+       "from": "v0.6.3-3-g435a6483",
+       "to": "v0.6.4",
+       "at": 1794219238.8783276
+      }
+     ]
     }
    ],
    "guard": {
     "free": false,
-    "why": "in use (signal, 2 s ago)",
-    "idle_s": 2.2,
+    "why": "in use (signal, 0 s ago)",
+    "idle_s": 0.1,
     "src": "signal"
    },
    "first_check": {
     "pending": false,
     "done_at": null,
-    "skipped_at": 1793970906.666,
+    "skipped_at": 1794218966.654,
     "verdict": null
    }
   },
@@ -717,7 +708,7 @@
    "report": null,
    "error": null,
    "at": null,
-   "now": 1793971246.941
+   "now": 1794219272.154
   }
  },
  "anchors": [

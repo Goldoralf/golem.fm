@@ -33,7 +33,7 @@ function GolemUpdateCard() {
   return html`<section class="card-panel">
     <h3>golem</h3>
     <div class="upd-rows">
-      <div class="upd-row"><label>Current version</label><b>${u ? u.current : '…'}</b></div>
+      <div class="upd-row"><label>Current version</label><b>${u ? (u.current || '—') : '…'}</b></div>
       <div class="upd-row"><label>Branch</label><b>${u ? u.branch : '…'}</b></div>
       <div class="upd-row"><label>Working tree</label>
         <b class=${u && !u.clean ? 'warnish' : ''} title=${u && !u.clean ? (u.changes || []).join('\n') : ''}>
@@ -42,9 +42,11 @@ function GolemUpdateCard() {
         <span class=${cls('upd-status', stState)}>${stLabel}</span></div>
     </div>
     ${u && u.fetch_error ? html`<p class="muted warn">✗ ${u.fetch_error}</p>` : ''}
-    ${u && u.status === 'update-available' && u.log.length ? html`
-      <div class="upd-log"><b>Changes in ${u.latest}:</b>
-        ${u.log.map(l => html`<div class="upd-log-line">${l}</div>`)}</div>` : ''}
+
+    ${/* LES NOTES DE LA RELEASE (message du tag annoté, en anglais) — plus les sujets de commit, en français */''}
+    ${u && u.status === 'update-available' && u.notes ? html`
+      <div class="upd-log"><b>What's new in ${u.latest}</b>
+        ${u.notes.split('\n').map(l => html`<div class="upd-log-line">${l}</div>`)}</div>` : ''}
     <div class="upd-actions">
       <button class="chip" disabled=${checking} onClick=${check}>${checking ? '⏳ checking…' : '⟳ Check for releases'}</button>
       ${u && u.status === 'update-available' ? html`
@@ -53,7 +55,7 @@ function GolemUpdateCard() {
           ${updating === 'busy' ? (u.full_restart ? '⏳ updating — golem restarting…' : '⏳ updating — bridge restarting…') : `⬆ Update to ${u.latest}`}</button>` : ''}
       ${updating && updating !== 'busy' ? html`<span class="perf-err">✗ ${updating}</span>` : ''}
     </div>
-    <p class="muted" style="margin-top:12px">Updates are bound to <b>tagged releases</b> only (git).${' '}
+    <p class="muted" style="margin-top:12px">Updates are bound to <b>tagged releases</b> only${u && u.mode === 'archive' ? ' — downloaded from GitHub, your presets, settings and takes are kept' : ' (git)'}.${' '}
       ${u && u.full_restart
         ? html`golem <b>restarts entirely</b> after switching — this window closes and reopens, audio stops ~30 s.`
         : 'The bridge restarts automatically after switching — the page reloads itself.'}</p>

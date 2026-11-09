@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Not open yet — golem</title>
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="/golem-app/be5e330/favicon.ico">
-  <link rel="stylesheet" href="/assets/site.css?v=0edfda42c5">
+  <link rel="icon" href="/golem-app/435a648/favicon.ico">
+  <link rel="stylesheet" href="/assets/site.css?v=e3cc703bcd">
 </head>
 <body>
   <header class="pn">
@@ -22,5 +22,35 @@
       <a href="/docs/"><b>doc</b><span>How the golem works, for musicians</span></a>
     </div>
   </main>
+  <footer class="ph-foot">
+    <div class="ph-foot__brand">
+      <span class="ph-foot__wordmark"><span class="ph-foot__s">/</span>golem</span>
+      <p>Feed me sounds.</p>
+    </div>
+    <div class="ph-foot__col">
+      <b>golem</b>
+      <a href="/">The Golem</a>
+      <a href="/docs/">Docs</a>
+    </div>
+    <div class="ph-foot__col ph-foot__col--oss">
+      <b>Open source</b>
+      <a href="https://github.com/Goldoralf/golem" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="https://github.com/Goldoralf/golem/releases/latest" target="_blank" rel="noreferrer">Releases ↗</a>
+      <div class="cpf" role="group" aria-label="Clone the golem">
+        <code class="cpf__value">https://github.com/Goldoralf/golem.git</code>
+        <button type="button" class="cpf__btn" data-copy="https://github.com/Goldoralf/golem.git" aria-live="polite">Copy</button>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('click', async (e) => {
+      const b = e.target.closest('[data-copy]'); if (!b) return
+      const out = b
+      try { await navigator.clipboard.writeText(b.dataset.copy) } catch { return }
+      const was = out.dataset.idle || (out.dataset.idle = out.textContent)
+      out.textContent = out.dataset.done || 'Copied'
+      setTimeout(() => { out.textContent = was }, 1800)
+    })
+  </script>
 </body>
 </html>

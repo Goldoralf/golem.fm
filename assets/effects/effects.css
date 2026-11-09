@@ -1,0 +1,202 @@
+/* « The golem's effects » — préfixe `gb-`. L'écran des blocs reprend les
+   couleurs du Designer du rack (fond sombre, tuile au filet de sa couleur) :
+   c'est LE golem qu'on montre, il ne change pas avec le thème du site. */
+.gb-head { display: flex; flex-direction: column; gap: var(--space-3); }
+.gb-head h2 { max-width: 30ch; }
+.gb-head__lede { margin: 0; max-width: 72ch; font-size: var(--fs-base); line-height: 1.6; color: var(--text-secondary); }
+
+/* ─── le choix du système ─── */
+.gb-os { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-3); }
+.gb-os__btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 16px;
+  text-align: left;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font: inherit;
+  cursor: pointer;
+}
+.gb-os__btn b { font-size: 18px; letter-spacing: -0.01em; }
+.gb-os__btn span { font-family: var(--font-mono); font-size: 12px; color: var(--text-secondary); }
+.gb-os__btn em {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+.gb-os__btn em.is-preview { border-color: color-mix(in srgb, var(--sect-community) 60%, transparent); color: var(--sect-community); }
+.gb-os__btn.is-on { border-color: var(--sect-rack); background: color-mix(in srgb, var(--sect-rack) 12%, var(--bg-surface)); }
+.gb-os__btn:focus-visible { outline: 2px solid var(--sect-rack); outline-offset: 2px; }
+.gb-note { margin: 0; max-width: 78ch; font-size: var(--fs-sm); line-height: 1.5; color: var(--text-secondary); }
+
+/* ─── l'écran et la fiche ─── */
+.gb-work { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: var(--space-5); align-items: start; }
+.gb-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #12151a;
+  border: 1px solid #2a313b;
+  color: #e8ecf1;
+}
+.gb-cat { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 12px; align-items: start; }
+.gb-cat__name {
+  padding-top: 22px;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a94a3;
+}
+.gb-cat__tiles { display: flex; flex-wrap: wrap; gap: 10px; }
+
+/* La tuile d'un bloc — le dessin du Designer du rack. */
+.gb-tile {
+  --tc: #8a94a3;
+  width: 72px;
+  height: 62px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 0 4px;
+  border-radius: 14px;
+  border: 2px solid var(--tc);
+  background: #1c2129;
+  color: #e8ecf1;
+  font: inherit;
+  transition:
+    opacity 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.15s ease;
+}
+button.gb-tile { cursor: pointer; }
+button.gb-tile:hover { transform: translateY(-1px); }
+button.gb-tile:focus-visible { outline: 2px solid #e8ecf1; outline-offset: 2px; }
+/* Une vraie pédale pilotée par MIDI : une étiquette en coin, sur la tuile. */
+.gb-tile { position: relative; }
+.gb-tile__hw {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: var(--tc);
+  color: #111318;
+  font-family: var(--font-mono);
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+}
+.gb-tile--big .gb-tile__hw { top: -9px; right: -9px; font-size: 10px; padding: 2px 7px; }
+.gb-legend__k.is-hw::before { border: none; border-radius: 999px; width: 22px; background: #b06cf0; }
+.gb-card__hw { padding: 10px 12px; border-radius: 10px; border: 1px solid color-mix(in srgb, #b06cf0 55%, transparent); color: #e8ecf1; }
+.gb-tile__glyph { font-size: 22px; line-height: 1.1; color: var(--tc); transition: color 0.25s ease; }
+/* Les blocs-instruments : le pictogramme au trait du Designer, à la taille du glyphe. */
+.gb-tile__glyph .scr-ic { display: block; width: 1em; height: 1em; }
+.gb-tile__name { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10.5px; font-weight: 700; letter-spacing: 0.02em; }
+/* Ce système ne le pose pas : la tuile reste à sa place, éteinte. */
+.gb-tile.is-no { opacity: 0.3; border-style: dashed; border-color: #5a6470; }
+.gb-tile.is-no .gb-tile__glyph { color: #8a94a3; }
+/* Personne ne l'a essayé là : ni allumée, ni éteinte. */
+.gb-tile.is-untested { opacity: 0.5; border-style: dotted; }
+.gb-tile.is-sel { box-shadow: 0 0 0 2px #12151a, 0 0 0 4px #e8ecf1; opacity: 1; }
+.gb-tile--big { width: 104px; height: 92px; border-radius: 20px; border-width: 3px; flex: none; }
+.gb-tile--big .gb-tile__glyph { font-size: 36px; }
+.gb-tile--big .gb-tile__name { font-size: 13px; }
+
+.gb-legend { display: flex; flex-wrap: wrap; gap: 16px; padding-top: 8px; border-top: 1px solid #2a313b; font-size: 11.5px; color: #8a94a3; }
+.gb-legend__k { display: inline-flex; align-items: center; gap: 6px; }
+.gb-legend__k::before { content: ''; width: 14px; height: 12px; border-radius: 4px; border: 2px solid #2ecc71; }
+.gb-legend__k.is-no::before { border: 2px dashed #5a6470; opacity: 0.6; }
+.gb-legend__k.is-untested::before { border: 2px dotted #8a94a3; opacity: 0.7; }
+
+.gb-card {
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+}
+.gb-card__top { display: flex; align-items: center; gap: 16px; }
+.gb-card__top h3 { margin: 2px 0 0; font-size: 20px; letter-spacing: -0.01em; }
+.gb-card__cat,
+.gb-card__behind span,
+.gb-card__knobs > span,
+.gb-card__os > span {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.gb-card__behind { margin: 0; display: flex; flex-direction: column; gap: 2px; }
+.gb-card__behind b { font-size: 14px; }
+.gb-card__text { margin: 0; font-size: var(--fs-sm); line-height: 1.5; color: var(--text-secondary); }
+.gb-card__knobs { display: flex; flex-direction: column; gap: 6px; }
+.gb-card__knobs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 5px; }
+.gb-card__knobs li { padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border-strong); font-size: 12px; }
+.gb-card__os { display: flex; flex-direction: column; gap: 6px; padding-top: 12px; border-top: 1px solid var(--border-subtle); }
+.gb-card__os ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+.gb-card__os li { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; }
+.gb-card__os em { font-style: normal; font-family: var(--font-mono); font-size: 12px; color: var(--text-tertiary); }
+.gb-card__os li.is-yes em { color: var(--ok, #2ecc71); }
+
+/* ─── les deux à-côtés : TONE3000, ses propres plugins ─── */
+.gb-extras { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-4); }
+.gb-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  transition: border-color 0.25s ease;
+}
+.gb-extra.is-lit { border-color: #8b9fd7; }
+.gb-extra__k { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 0.12em; color: var(--sect-rack); }
+.gb-extra h3 { margin: 0; font-size: 20px; letter-spacing: -0.01em; }
+.gb-extra p { margin: 0; max-width: 62ch; font-size: var(--fs-sm); line-height: 1.55; color: var(--text-secondary); }
+.gb-extra__warn { color: var(--text-primary) !important; }
+.gb-extra__link { margin-top: auto; padding-top: 6px; font-size: var(--fs-sm); font-weight: 700; color: var(--text-primary); text-decoration: none; }
+.gb-extra__link:hover { text-decoration: underline; }
+
+@media (max-width: 980px) {
+  .gb-work { grid-template-columns: minmax(0, 1fr); }
+  .gb-card { position: static; }
+  .gb-extras { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 640px) {
+  .gb-os { grid-template-columns: minmax(0, 1fr); }
+  .gb-cat { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .gb-cat__name { padding-top: 0; }
+  .gb-screen { padding: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .gb-tile,
+  .gb-tile__glyph,
+  .gb-extra { transition: none; }
+}

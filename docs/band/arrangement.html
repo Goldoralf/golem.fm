@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The arrangement — golem doc</title>
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/be5e330/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=0edfda42c5">
+  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=e3cc703bcd">
 </head>
 <body>
   <header class="pn">
@@ -114,6 +114,36 @@
   </main>
   <aside class="docs-toc" aria-label="On this page"><b>On this page</b><ul><li><a href="#s1">Sections and bars</a></li><li><a href="#s2">When the song starts: count-in, click</a></li><li><a href="#s3">Rehearsing a section: cue, loop</a></li></ul></aside>
   </div>
+  <footer class="ph-foot">
+    <div class="ph-foot__brand">
+      <span class="ph-foot__wordmark"><span class="ph-foot__s">/</span>golem</span>
+      <p>Feed me sounds.</p>
+    </div>
+    <div class="ph-foot__col">
+      <b>golem</b>
+      <a href="../../">The Golem</a>
+      <a href="../../docs/">Docs</a>
+    </div>
+    <div class="ph-foot__col ph-foot__col--oss">
+      <b>Open source</b>
+      <a href="https://github.com/Goldoralf/golem" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a href="https://github.com/Goldoralf/golem/releases/latest" target="_blank" rel="noreferrer">Releases ↗</a>
+      <div class="cpf" role="group" aria-label="Clone the golem">
+        <code class="cpf__value">https://github.com/Goldoralf/golem.git</code>
+        <button type="button" class="cpf__btn" data-copy="https://github.com/Goldoralf/golem.git" aria-live="polite">Copy</button>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('click', async (e) => {
+      const b = e.target.closest('[data-copy]'); if (!b) return
+      const out = b
+      try { await navigator.clipboard.writeText(b.dataset.copy) } catch { return }
+      const was = out.dataset.idle || (out.dataset.idle = out.textContent)
+      out.textContent = out.dataset.done || 'Copied'
+      setTimeout(() => { out.textContent = was }, 1800)
+    })
+  </script>
   <script type="module">
     import { mount } from '../../assets/golem-shell.js?v=e9a9500d7e'
     const FRESH = {"/api/integrations": {"tone3000": {"publishable_key": {"set": false, "hint": ""}}, "golemfm": {"base_url": "", "token": {"set": false, "hint": ""}, "auto_push": false, "servers": []}}, "/api/t3k/auth/status": {"authed": false, "paired": false, "relay": {"running": false, "error": null}, "reason": "no TONE3000 key"}, "/api/network": {"mode": "none", "radios": 0, "eth": {"up": false, "ip": null}, "station": {"ssid": null, "ip": null}, "ap": {"up": false, "ssid": "golem", "ip": null, "clients": 0}, "reachable": [], "pending_confirm": false, "confirm_window_s": 20, "nm_available": false, "golem": {"host": "golem.local", "url": "http://golem.local:8770/", "mdns": false, "port80": false, "addresses": []}}, "/api/network/scan": {"networks": []}, "/api/network/known": {"known": []}}

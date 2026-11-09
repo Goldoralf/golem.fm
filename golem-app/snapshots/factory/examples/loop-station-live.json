@@ -11,12 +11,12 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1793971186.285
+   "at": 1794219213.802
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1793970906.666,
+   "skipped_at": 1794218966.654,
    "verdict": null
   },
   "startup": {
@@ -33,11 +33,11 @@
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.0,
-   "voice": 0.0,
-   "in1": 0.0,
-   "in2": 0.0,
-   "in3": 0.7721409201622009
+   "guitar": 0.7704170942306519,
+   "voice": 0.771573007106781,
+   "in1": 0.7704170942306519,
+   "in2": 0.771573007106781,
+   "in3": 0.0
   },
   "clip": {},
   "tempo": 127,
@@ -68,10 +68,10 @@
    "ok": true,
    "issues": [],
    "fix": "",
-   "ts": "2026-11-06 14:19:45"
+   "ts": "2026-11-09 11:13:34"
   },
   "rig_check": {
-   "t": 1793971182,
+   "t": 1794219212,
    "ok": true,
    "checked": 0,
    "issues": []
@@ -137,7 +137,7 @@
      "src": "keys-pads-1",
      "label": "Pads",
      "master": false,
-     "peak": 0.0
+     "peak": 0.33
     },
     {
      "state": "empty",
@@ -169,7 +169,7 @@
    ],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1793971186.971855,
+   "t": 1794219213.8311615,
    "countin": null
   },
   "backing": {
@@ -385,12 +385,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26918203392,
+   "free": 26562514944,
    "takes": 161572837,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14526,
+   "seconds": 14279,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -414,27 +414,10 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [
-    {
-     "id": "II",
-     "name": "AKAI MPK Mini Mk II",
-     "usb": "09e8:0045",
-     "kind": "unknown",
-     "label": "unknown MIDI device",
-     "propose": true
-    }
-   ],
-   "events": [
-    {
-     "at": "2026-11-06T14:15:05",
-     "ev": "plug",
-     "name": "AKAI MPK Mini Mk II",
-     "kind": "unknown",
-     "label": "unknown MIDI device"
-    }
-   ]
+   "devices": [],
+   "events": []
   },
-  "updated": 1793971187.4899528,
+  "updated": 1794219216.3121612,
   "profile": "desktop",
   "ui": {
    "windows": 0,

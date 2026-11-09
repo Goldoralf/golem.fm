@@ -11,12 +11,12 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1793971282.038
+   "at": 1794219304.234
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1793970906.666,
+   "skipped_at": 1794218966.654,
    "verdict": null
   },
   "startup": {
@@ -33,11 +33,11 @@
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.0,
-   "voice": 0.0,
-   "in1": 0.0,
-   "in2": 0.0,
-   "in3": 0.7294409275054932
+   "guitar": 0.727628767490387,
+   "voice": 0.7557207942008972,
+   "in1": 0.727628767490387,
+   "in2": 0.7557207942008972,
+   "in3": 0.0
   },
   "clip": {},
   "tempo": 120,
@@ -56,7 +56,7 @@
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": null,
+  "latency_ms": 8.0,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -69,10 +69,10 @@
    "ok": true,
    "issues": [],
    "fix": "",
-   "ts": "2026-11-06 14:21:05"
+   "ts": "2026-11-09 11:15:05"
   },
   "rig_check": {
-   "t": 1793971266,
+   "t": 1794219308,
    "ok": true,
    "checked": 0,
    "issues": []
@@ -133,7 +133,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1793971186.971855,
+   "t": 1794219213.8311615,
    "countin": null
   },
   "backing": {
@@ -484,12 +484,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26813652992,
+   "free": 26548781056,
    "takes": 161572837,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14453,
+   "seconds": 14269,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -513,27 +513,10 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [
-    {
-     "id": "II",
-     "name": "AKAI MPK Mini Mk II",
-     "usb": "09e8:0045",
-     "kind": "unknown",
-     "label": "unknown MIDI device",
-     "propose": true
-    }
-   ],
-   "events": [
-    {
-     "at": "2026-11-06T14:15:05",
-     "ev": "plug",
-     "name": "AKAI MPK Mini Mk II",
-     "kind": "unknown",
-     "label": "unknown MIDI device"
-    }
-   ]
+   "devices": [],
+   "events": []
   },
-  "updated": 1793971281.092651,
+  "updated": 1794219308.904725,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -546,18 +529,18 @@
  "reads": {
   "/api/state": {
    "boot": {
-    "t0": 1793970901.9790423,
+    "t0": 1794218961.9921312,
     "steps": {
-     "reaper": 1793970902.567,
-     "osc": 1793970903.579,
-     "preset": 1793970904.344,
-     "audio": 1793970905.609,
-     "midi": 1793970905.609
+     "reaper": 1794218962.597,
+     "osc": 1794218963.609,
+     "midi": 1794218964.113,
+     "preset": 1794218964.359,
+     "audio": 1794218969.083
     },
-    "done": 1793970905.609,
+    "done": 1794218969.083,
     "failed": null,
     "why": "start",
-    "last_took": 3.6,
+    "last_took": 7.1,
     "services": {
      "fm": {
       "configured": false,
@@ -575,7 +558,7 @@
       "ok": true
      }
     },
-    "now": 1793971283.603,
+    "now": 1794219308.945,
     "os": "Linux"
    },
    "health": {
@@ -583,12 +566,12 @@
     "title": "Playing is safe. One thing to look at.",
     "bad": 0,
     "warn": 1,
-    "at": 1793971282.038
+    "at": 1794219304.234
    },
    "first_check": {
     "pending": false,
     "done_at": null,
-    "skipped_at": 1793970906.666,
+    "skipped_at": 1794218966.654,
     "verdict": null
    },
    "startup": {
@@ -605,11 +588,11 @@
    "whammy_mode": null,
    "midi_pedals": {},
    "levels": {
-    "guitar": 0.0,
-    "voice": 0.0,
-    "in1": 0.0,
-    "in2": 0.0,
-    "in3": 0.7294409275054932
+    "guitar": 0.727628767490387,
+    "voice": 0.7557207942008972,
+    "in1": 0.727628767490387,
+    "in2": 0.7557207942008972,
+    "in3": 0.0
    },
    "clip": {},
    "tempo": 120,
@@ -628,7 +611,7 @@
     "block": "exp1"
    },
    "live_lock": false,
-   "latency_ms": null,
+   "latency_ms": 8.0,
    "audio_metrics": {},
    "xruns": 0,
    "xruns_recent": 0,
@@ -641,10 +624,10 @@
     "ok": true,
     "issues": [],
     "fix": "",
-    "ts": "2026-11-06 14:21:05"
+    "ts": "2026-11-09 11:15:05"
    },
    "rig_check": {
-    "t": 1793971266,
+    "t": 1794219308,
     "ok": true,
     "checked": 0,
     "issues": []
@@ -705,7 +688,7 @@
     "slots": [],
     "len": 0.0,
     "pos": 0.0,
-    "t": 1793971186.971855,
+    "t": 1794219213.8311615,
     "countin": null
    },
    "backing": {
@@ -1056,12 +1039,12 @@
    "perf_error": "",
    "perf_countin": null,
    "disk": {
-    "free": 26813652992,
+    "free": 26548781056,
     "takes": 161572837,
     "rate": 1440000,
     "lanes": 5,
     "measured": false,
-    "seconds": 14453,
+    "seconds": 14269,
     "warn_minutes": 15.0
    },
    "transcribe": {
@@ -1085,27 +1068,10 @@
     "candidates": []
    },
    "hotplug": {
-    "devices": [
-     {
-      "id": "II",
-      "name": "AKAI MPK Mini Mk II",
-      "usb": "09e8:0045",
-      "kind": "unknown",
-      "label": "unknown MIDI device",
-      "propose": true
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-06T14:15:05",
-      "ev": "plug",
-      "name": "AKAI MPK Mini Mk II",
-      "kind": "unknown",
-      "label": "unknown MIDI device"
-     }
-    ]
+    "devices": [],
+    "events": []
    },
-   "updated": 1793971281.092651,
+   "updated": 1794219308.904725,
    "profile": "desktop",
    "ui": {
     "windows": 0,
