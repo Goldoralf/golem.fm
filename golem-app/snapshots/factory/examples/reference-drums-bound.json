@@ -607,6 +607,36 @@
      "calibrated": null
     }
    ]
+  },
+  "/api/controllers": {
+   "controllers": [
+    {
+     "key": null,
+     "name": "MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "midi",
+     "roles": [],
+     "person": null,
+     "nth": null,
+     "kit": null,
+     "known": false,
+     "connected": true,
+     "port": 1,
+     "hw": "hw:II",
+     "first_seen": null,
+     "last_seen": null,
+     "id": null,
+     "profile": null,
+     "calibrated": null,
+     "model": {
+      "id": "akai-mpk-mini-mk2",
+      "name": "AKAI MPK Mini Mk II",
+      "can_program": true
+     },
+     "channels": null,
+     "split": false
+    }
+   ]
   }
  },
  "anchors": [
