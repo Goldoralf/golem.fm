@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html 404.html .nojekyll robots.txt sitemap.xml _site/
-          cp -r demo docs assets golem-app _site/
+          cp -r demo docs fx assets golem-app _site/
           if [ -f CNAME ]; then cp CNAME _site/; fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
