@@ -438,6 +438,9 @@ h1, h2, h3 { line-height: var(--lh-tight); }
 
 /* ═══ /fx — la galerie des pédales (assets/fx/fx.css vient de golem.fm, telle quelle).
    Il ne manque que l'écart entre les sections, que `.ph` donne là-bas. ═══ */
+/* La page est à la largeur de l'originale (1240px, gouttières comprises), pas à celle de la démo. */
+.demo.fx { max-width: 1240px; padding-inline: var(--space-6); }
+@media (max-width: 760px) { .demo.fx { padding-inline: var(--space-4); } }
 .fx .fx-sec { margin-top: var(--space-12); }
 .fx .fx-hero { padding-top: var(--space-6); }
 .fx-lede a { color: var(--text-primary); }

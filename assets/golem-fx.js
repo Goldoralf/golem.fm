@@ -36,7 +36,7 @@ function lanes() {
       { type: 'tremolo' },
       { type: 'vibrato' },
       amp('amp', 'clean', { form: 'combo' }),
-      { type: 'delay-tape' },
+      { type: 'tape' },
       { type: 'reverb-plate' },
     ],
     Bass: [{ type: 'comp' }, { type: 'octaver' }, ped('bass', 'Bass'), amp('amp', 'bass', { size: '8x10' })],
@@ -48,7 +48,7 @@ function lanes() {
       { type: 'delay' },
       { type: 'reverb-shimmer' },
     ],
-    Keys: [{ type: 'rotary' }, { type: 'chorus-js' }, { type: 'eq-graphic' }, { type: 'reverb-room' }],
+    Keys: [{ type: 'rotary' }, { type: 'chorus' }, { type: 'eq-graphic' }, { type: 'reverb-room' }],
     'High gain': [
       { type: 'met' },
       { type: 'emet' },
@@ -166,8 +166,7 @@ function mountDemo(root) {
       it.on = it.on === false
       //: A head and its cab switch together.
       const next = hit.list[hit.i + 1]
-      if (next && G.blockByType(it.type)?.family === 'nam-head' && G.blockByType(next.type)?.family === 'nam-cab')
-        next.on = it.on
+      if (next && G.blockByType(it.type)?.family === 'nam-head' && next.type === 'cab') next.on = it.on
     })
   const mute = (i, b) =>
     update((c) => {
