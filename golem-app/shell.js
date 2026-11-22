@@ -29,6 +29,18 @@
   var reads = cfg.reads || {};
   var state = cfg.state || {};
 
+  //: `&scenes=1` (pedalboard de golem.fm, 2026-11-17) : la coquille reste en
+  //: lecture seule, mais on peut y AJOUTER et RETIRER une scène — la seule
+  //: chose que `[data-shell=ro]` bloque parmi les gestes de scène (allumer un
+  //: bloc par scène, déplacer, régler passent déjà). L'hôte lit les écritures
+  //: par `cfg.onWrite` ; rien ne part.
+  if (params.get('scenes') === '1') {
+    var st = document.createElement('style');
+    st.textContent = '[data-shell=ro] .sc-tab.add{pointer-events:auto !important}' +
+      '[data-shell=ro] .scn-danger{display:revert !important}';
+    (document.head || document.documentElement).appendChild(st);
+  }
+
   function tell(msg) {
     msg.id = id;
     try { parent.postMessage(msg, location.origin); } catch (e) { /* hôte parti */ }
@@ -121,9 +133,15 @@
     return new Response(JSON.stringify(body), { status: 200, headers: { 'Content-Type': 'application/json' } });
   }
 
+  var ABSENT_404 = ['/api/cpu/'];
   var realFetch = window.fetch.bind(window);
   window.fetch = function (input, init) {
     var u = pathOf(input);
+    //: Un fichier STATIQUE que l'app lit hors de /api/ et qu'un golem neuf n'a
+    //: pas : les photos d'amplis de son propriétaire (page-amps.js). Le laisser
+    //: partir rendait un 404, la seule erreur de console de toute la vitrine
+    //: (golem-site, 2026-11-21). `{}` = aucune photo, ce que l'app lit déjà.
+    if (u && u.origin === location.origin && u.pathname === '/library/catalog/images.json') return Promise.resolve(json({}));
     if (!u || u.origin !== location.origin || u.pathname.indexOf('/api/') !== 0) return realFetch(input, init);
     var method = String((init && init.method) || (input && input.method) || 'GET').toUpperCase();
     var r = lookup(method, u.pathname, u.search);
@@ -150,6 +168,16 @@
         try { cfg.onWrite(method, canon(u.pathname), body); } catch (e) { /* hôte fautif : l'app n'en saura rien */ }
       }
       return Promise.resolve(json({ ok: true }));
+    }
+    //: Une lecture qu'un golem neuf REFUSE (reads.json › absent_404, SNAPSHOT.absent) :
+    //: le budget CPU du brouillon vide, ou tout le budget sur golem.fm, qui n'a pas
+    //: de profil. 404 comme le rack — `{}` serait lu comme une estimation. Le
+    //: `detail` n'est pas « Not Found » : l'app y lirait une route qui manque et
+    //: ne redemanderait plus rien de /api/cpu/ (cpu-budget.js, `_missing`).
+    for (var i = 0; i < ABSENT_404.length; i++) {
+      if (canon(u.pathname).indexOf(ABSENT_404[i]) === 0) {
+        return Promise.resolve(new Response(JSON.stringify({ detail: 'absent' }), { status: 404, headers: { 'Content-Type': 'application/json' } }));
+      }
     }
     tell({ type: 'golem-shell:miss', method: method, path: u.pathname });
     return Promise.resolve(json({}));

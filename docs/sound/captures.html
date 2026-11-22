@@ -16,14 +16,14 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=3a7e82a401">
+  <link rel="icon" href="../../golem-app/4cdf495/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=dba68df5fa">
   <script data-goatcounter="https://golem.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
   <header class="pn">
     <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
-    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../fx/" class="pn__link">FX</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
     <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest" data-goatcounter-click="download-header" data-goatcounter-title="Download (header)">Download</a></div>
   </header>
   <div class="docs">
@@ -85,22 +85,22 @@
       <div class="docs-body">
 <p>The amps, drive pedals and cabinets of your rig are <strong>captures</strong>: recordings of real gear, measured and turned into a model the golem plays. Amps and pedals are NAM captures; cabinets are impulse responses (IRs). The golem does not ship them: they come from <strong>TONE3000</strong>, through your own account.</p>
 <h2 id="s1">Amps, pedals, cabinets</h2>
-<figure class="doc-screen" id="panel-sheet" data-panel='{&quot;example&quot;: &quot;golem-rising-amp-sheet&quot;, &quot;id&quot;: &quot;sheet&quot;}'><div class="gs-stage"></div><figcaption>Ambient Metal&#x27;s Peavey 6505+: the preset names this capture, this golem does not have it yet.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
-<p>In a preset, a capture sits in a block like any other: the amp block of Ambient Metal plays a <strong>Peavey 6505+</strong> capture. The preset names the capture; the file lives in your Tones library.</p>
+<figure class="doc-screen" id="panel-sheet" data-panel='{&quot;example&quot;: &quot;golem-rising-amp-sheet&quot;, &quot;id&quot;: &quot;sheet&quot;}'><div class="gs-stage"></div><figcaption>Low Tide&#x27;s Mesa Dual Rectifier: the preset names this capture, this golem does not have it yet.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>In a preset, a capture sits in a block like any other: the amp block of Low Tide plays a <strong>Mesa Dual Rectifier</strong> capture. The preset names the capture; the file lives in your Tones library.</p>
 <ul><li>An <strong>amp</strong> capture is a head alone (add a cab block after it) or a whole rig, cabinet included (<code>+Cab</code>).</li><li>A <strong>pedal</strong> capture is a drive, a fuzz, a boost — the pedal as it was set when it was captured.</li><li>A <strong>cabinet</strong> is an IR: the speaker and the microphone in front of it.</li><li><strong>Outboard</strong> gear — a preamp, a compressor — is captured the same way.</li></ul>
 <p>golem&#x27;s own effects (delays, reverbs, modulation, EQ…) are not captures: they are part of the golem and never need a download.</p>
 <h2 id="s2">Your Tones library</h2>
-<figure class="doc-screen" id="panel-lib" data-panel='{&quot;example&quot;: &quot;library-amps&quot;, &quot;id&quot;: &quot;lib&quot;}'><div class="gs-stage"></div><figcaption>Library ▸ Tones ▸ Amps on a new golem: every amp model, no capture yet.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<figure class="doc-screen" id="panel-lib" data-panel='{&quot;example&quot;: &quot;library-amps&quot;, &quot;id&quot;: &quot;lib&quot;}'><div class="gs-stage"></div><figcaption>Library ▸ Tones ▸ Amps on a new golem: no amp yet, and how to get the factory captures.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p><strong>Library ▸ Tones</strong> holds your captures, in four tabs: <strong>Amps</strong>, <strong>Pedals</strong>, <strong>Cabs</strong>, <strong>Outboard</strong>. The role at the top (<em>Guitar</em>, <em>Bass</em>, <em>Voice</em>) shows what that instrument can load.</p>
-<p>The Amps tab is grouped <strong>by brand</strong>. Each card is an amp model — a 5150, a Powerball, a Savage — with the captures of it on this golem under its name. On a new golem every card says <code>no capture yet</code>.</p>
-<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;lib&quot;, &quot;halo&quot;: &quot;tones.amps&quot;}'>Show me</button></p>
-<p>The filters narrow the list: <strong>Heads</strong> / <strong>+Cab</strong>, the gain (<em>Clean</em>, <em>Crunch</em>, <em>High-gain</em>) and the style.</p>
-<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;lib&quot;, &quot;halo&quot;: &quot;tones.type&quot;}'>Show me</button></p>
-<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;library-amp-detail&quot;, &quot;halo&quot;: &quot;tones.amp-detail&quot;}'><div class="gs-stage"></div><figcaption>The Peavey 6505: no capture on this golem yet — browse TONE3000.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
-<p>Tap a model: it lists your captures of it, and <strong>⬇ Browse TONE3000 captures</strong> finds more. To use one, add the amp in the Designer (the <strong>+</strong> of the lane): the picker opens filtered on that model.</p>
+<p>The Amps tab lists the amps <strong>installed on this golem</strong> — nothing else. A new golem has none: the list says <code>No amps for these filters.</code>, and <code>⚠ No amp sound yet</code> offers to connect TONE3000 and download the factory captures.</p>
+<p>Once captures are there, the <strong>Brands</strong> rail on the left narrows the list to one maker:</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;lib&quot;, &quot;halo&quot;: &quot;tones.brands&quot;}'>Show me</button></p>
+<p>Above the amps, a band sorts them by gain; tap a part of it to keep only those. <strong>Heads</strong> / <strong>+Cab</strong>, the <strong>Style</strong> and the search field narrow the list further.</p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;lib&quot;, &quot;halo&quot;: &quot;tones.gain&quot;}'>Show me</button></p>
+<p>Each card is an amp, a <code>Head</code> or a <code>Head + cab</code>, with the number of captures you have of it. Tap one: it lists those captures, and touching a line plays it through the patch that is loaded. To use an amp in a preset, add it in the Designer (the <strong>+</strong> of the lane).</p>
 <h2 id="s3">Missing captures</h2>
-<figure class="doc-screen" id="panel-miss" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;miss&quot;}'><div class="gs-stage"></div><figcaption>Ambient Metal on a new golem: nine blocks wait for their capture.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
-<p>A preset made elsewhere — a factory preset, a song from your band — names captures this golem may not have. The Designer says it at the top: <code>⚠ 9 blocks missing on this rack</code>, and <strong>⬇ Download all</strong> fetches them from TONE3000 in one go.</p>
+<figure class="doc-screen" id="panel-miss" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;miss&quot;}'><div class="gs-stage"></div><figcaption>Low Tide on a new golem: five blocks wait for their capture.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>A preset made elsewhere — a factory preset, a song from your band — names captures this golem may not have. The Designer says it at the top: <code>⚠ 5 blocks missing on this rack</code>, and <strong>⬇ Download all</strong> fetches them from TONE3000 in one go.</p>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;miss&quot;, &quot;halo&quot;: &quot;designer.missing&quot;}'>Show me</button></p>
 <p><strong>A missing block is off, the rest of the chain plays.</strong> You never lose the sound of a whole preset because of one capture. Its tile is marked; tap it:</p>
 <figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-amp-sheet&quot;, &quot;halo&quot;: &quot;designer.block-status&quot;}'><div class="gs-stage"></div><figcaption>A missing capture: download it, pick another, remove the block, or keep it off.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
@@ -120,6 +120,7 @@
     <div class="ph-foot__col">
       <b>golem</b>
       <a href="../../">The Golem</a>
+      <a href="../../fx/">FX</a>
       <a href="../../docs/">Docs</a>
     </div>
     <div class="ph-foot__col ph-foot__col--oss">

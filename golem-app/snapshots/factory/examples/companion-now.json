@@ -2,21 +2,25 @@
  "name": "companion-now",
  "title": "The phone Companion: Now, during Golem Rising",
  "route": "/app/m.html?tab=now",
- "preset": "factory-ambient-metal",
+ "preset": "factory-nu-metal-eight",
  "scene": "B",
  "click": null,
  "state": {
+  "engine": {
+   "id": "ardour",
+   "name": "Golem Engine"
+  },
   "health": {
    "level": "warn",
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1794219334.428
+   "at": 1795303628.115
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1794218966.654,
+   "skipped_at": 1795303283.894,
    "verdict": null
   },
   "startup": {
@@ -25,18 +29,18 @@
   },
   "reaper_connected": true,
   "reaper_running": true,
-  "preset_id": "factory-ambient-metal",
-  "preset_name": "Ambient Metal",
+  "preset_id": "factory-nu-metal-eight",
+  "preset_name": "Low Tide",
   "scene_id": "B",
   "voice_on": false,
   "whammy_on": false,
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.727628767490387,
-   "voice": 0.7667256593704224,
-   "in1": 0.727628767490387,
-   "in2": 0.7667256593704224,
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
    "in3": 0.0
   },
   "clip": {},
@@ -65,25 +69,14 @@
    "ok": true,
    "why": ""
   },
-  "midi": {
-   "ok": true,
-   "issues": [],
-   "fix": "",
-   "ts": "2026-11-09 11:15:35"
-  },
+  "midi": {},
   "rig_check": {
-   "t": 1794219334,
-   "ok": true,
    "checked": 0,
+   "ok": true,
+   "t": 1795303588,
    "issues": []
   },
   "rig_unmounted": [
-   {
-    "id": "guitar-2",
-    "name": "Guitar 2",
-    "input": "—",
-    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
-   },
    {
     "id": "bass-1",
     "name": "Bass",
@@ -99,9 +92,9 @@
   ],
   "rig_error": null,
   "song": {
-   "line": "r:factory:8",
+   "line": "r:factory:12",
    "setlist": "factory",
-   "preset": "factory-ambient-metal",
+   "preset": "factory-nu-metal-eight",
    "title": "Golem Rising",
    "slug": null,
    "bpm": 120,
@@ -109,7 +102,7 @@
    "arrangement": true,
    "band_song": "rs:f3f0252689f96910f01c81be0325855f"
   },
-  "cpu_boost": false,
+  "cpu_boost": true,
   "pedalboard": {
    "id": "unknown",
    "name": "unknown pedalboard",
@@ -133,7 +126,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1794219213.8311615,
+   "t": 1795303514.42628,
    "countin": null
   },
   "backing": {
@@ -484,12 +477,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26543890432,
-   "takes": 161572837,
+   "free": 40553455616,
+   "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14266,
+   "seconds": 23995,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -502,7 +495,7 @@
   "click": {
    "on": false,
    "present": true,
-   "bpm": 120.0
+   "bpm": 120
   },
   "compo": {
    "targets": {},
@@ -513,10 +506,27 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [],
-   "events": []
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-11-22T00:20:20",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
   },
-  "updated": 1794219338.0691047,
+  "updated": 1795303627.3117537,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -527,9 +537,19 @@
   }
  },
  "reads": {
-  "/api/lane/mine?preset=factory-ambient-metal&role=Guitar": {
-   "preset": "factory-ambient-metal",
-   "preset_name": "Ambient Metal",
+  "/api/cpu/estimate-many?ids=factory-nu-metal-eight": {
+   "factory-nu-metal-eight": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   }
+  },
+  "/api/lane/mine?preset=factory-nu-metal-eight&role=Guitar": {
+   "preset": "factory-nu-metal-eight",
+   "preset_name": "Low Tide",
    "scene": null,
    "scene_name": null,
    "role": "Guitar",
@@ -541,45 +561,36 @@
     {
      "capture_modules": 0,
      "id": "guitar-1",
-     "name": "Guitar 1",
+     "name": "Guitar",
      "role": "guitar",
      "midi": false,
      "input": "IN 1",
-     "state": "Halo Clean",
+     "state": "Dream Clean",
      "implicit": false,
-     "level": -2,
+     "level": null,
      "mute": false,
      "blocks": [
       {
-       "id": "gate",
-       "type": "gate",
+       "id": "met",
+       "type": "met",
        "label": null,
        "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "comp",
-       "type": "comp",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "ts",
-       "type": "pedal-nam",
-       "label": "Ibanez TS9 Tube Screamer",
-       "variant": "tube-screamer",
        "foot": null,
        "on": false,
        "live": false
       },
       {
-       "id": "eq",
-       "type": "eq-para",
+       "id": "emet-7ncs",
+       "type": "emet",
+       "label": null,
+       "variant": null,
+       "foot": null,
+       "on": false,
+       "live": false
+      },
+      {
+       "id": "shem-ogmr",
+       "type": "shem",
        "label": null,
        "variant": null,
        "foot": null,
@@ -587,12 +598,48 @@
        "live": false
       },
       {
-       "id": "chorus",
-       "type": "chorus-js",
+       "id": "eq",
+       "type": "eq",
        "label": null,
        "variant": null,
        "foot": null,
        "on": true,
+       "live": false
+      },
+      {
+       "id": "oct",
+       "type": "pitch",
+       "label": null,
+       "variant": null,
+       "foot": 8,
+       "on": false,
+       "live": false
+      },
+      {
+       "id": "chorus",
+       "type": "chorus",
+       "label": null,
+       "variant": null,
+       "foot": 6,
+       "on": true,
+       "live": false
+      },
+      {
+       "id": "reverb-shimmer-ikua",
+       "type": "reverb-shimmer",
+       "label": null,
+       "variant": null,
+       "foot": null,
+       "on": true,
+       "live": false
+      },
+      {
+       "id": "killswitch-4gqg",
+       "type": "killswitch",
+       "label": null,
+       "variant": null,
+       "foot": null,
+       "on": false,
        "live": false
       },
       {
@@ -606,101 +653,6 @@
       },
       {
        "id": "verb",
-       "type": "reverb",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      }
-     ]
-    },
-    {
-     "capture_modules": 0,
-     "id": "guitar-2",
-     "name": "Guitar 2",
-     "role": "guitar",
-     "midi": false,
-     "input": "IN —",
-     "state": "Shimmer Pad",
-     "implicit": false,
-     "level": -5,
-     "mute": false,
-     "blocks": [
-      {
-       "id": "gate-2",
-       "type": "gate",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "comp-2",
-       "type": "comp",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "ts-2",
-       "type": "pedal-nam",
-       "label": "Ibanez TS9 Tube Screamer",
-       "variant": "tube-screamer",
-       "foot": null,
-       "on": false,
-       "live": false
-      },
-      {
-       "id": "eq-2",
-       "type": "eq-para",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "chorus-2",
-       "type": "chorus-js",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "dly-2",
-       "type": "delay",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": false,
-       "live": false
-      },
-      {
-       "id": "echo",
-       "type": "delay",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "shim",
-       "type": "reverb-shimmer",
-       "label": null,
-       "variant": null,
-       "foot": 6,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "verb-2",
        "type": "reverb",
        "label": null,
        "variant": null,
@@ -713,10 +665,10 @@
    ]
   },
   "/api/lane/mine?role=Guitar": {
-   "preset": "factory-ambient-metal",
-   "preset_name": "Ambient Metal",
+   "preset": "factory-nu-metal-eight",
+   "preset_name": "Low Tide",
    "scene": "B",
-   "scene_name": "Glass Verse",
+   "scene_name": "Whisper Verse",
    "role": "Guitar",
    "person": null,
    "prefs": {},
@@ -726,18 +678,18 @@
     {
      "capture_modules": 0,
      "id": "guitar-1",
-     "name": "Guitar 1",
+     "name": "Guitar",
      "role": "guitar",
      "midi": false,
      "input": "IN 1",
-     "state": "Glass Arp",
+     "state": "Whisper Clean",
      "implicit": false,
      "level": -1,
      "mute": false,
      "blocks": [
       {
-       "id": "gate",
-       "type": "gate",
+       "id": "met",
+       "type": "met",
        "label": null,
        "variant": null,
        "foot": null,
@@ -745,8 +697,8 @@
        "live": false
       },
       {
-       "id": "comp",
-       "type": "comp",
+       "id": "emet-7ncs",
+       "type": "emet",
        "label": null,
        "variant": null,
        "foot": null,
@@ -754,17 +706,17 @@
        "live": false
       },
       {
-       "id": "ts",
-       "type": "pedal-nam",
-       "label": "Ibanez TS9 Tube Screamer",
-       "variant": "tube-screamer",
+       "id": "shem-ogmr",
+       "type": "shem",
+       "label": null,
+       "variant": null,
        "foot": null,
-       "on": false,
+       "on": true,
        "live": false
       },
       {
        "id": "eq",
-       "type": "eq-para",
+       "type": "eq",
        "label": null,
        "variant": null,
        "foot": null,
@@ -772,12 +724,39 @@
        "live": false
       },
       {
+       "id": "oct",
+       "type": "pitch",
+       "label": null,
+       "variant": null,
+       "foot": 8,
+       "on": false,
+       "live": false
+      },
+      {
        "id": "chorus",
-       "type": "chorus-js",
+       "type": "chorus",
+       "label": null,
+       "variant": null,
+       "foot": 6,
+       "on": false,
+       "live": false
+      },
+      {
+       "id": "reverb-shimmer-ikua",
+       "type": "reverb-shimmer",
        "label": null,
        "variant": null,
        "foot": null,
        "on": true,
+       "live": false
+      },
+      {
+       "id": "killswitch-4gqg",
+       "type": "killswitch",
+       "label": null,
+       "variant": null,
+       "foot": null,
+       "on": false,
        "live": false
       },
       {
@@ -786,106 +765,11 @@
        "label": null,
        "variant": null,
        "foot": 7,
-       "on": true,
+       "on": false,
        "live": false
       },
       {
        "id": "verb",
-       "type": "reverb",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      }
-     ]
-    },
-    {
-     "capture_modules": 0,
-     "id": "guitar-2",
-     "name": "Guitar 2",
-     "role": "guitar",
-     "midi": false,
-     "input": "IN —",
-     "state": "Clean Echo",
-     "implicit": false,
-     "level": -6,
-     "mute": false,
-     "blocks": [
-      {
-       "id": "gate-2",
-       "type": "gate",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "comp-2",
-       "type": "comp",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "ts-2",
-       "type": "pedal-nam",
-       "label": "Ibanez TS9 Tube Screamer",
-       "variant": "tube-screamer",
-       "foot": null,
-       "on": false,
-       "live": false
-      },
-      {
-       "id": "eq-2",
-       "type": "eq-para",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "chorus-2",
-       "type": "chorus-js",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "dly-2",
-       "type": "delay",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": true,
-       "live": false
-      },
-      {
-       "id": "echo",
-       "type": "delay",
-       "label": null,
-       "variant": null,
-       "foot": null,
-       "on": false,
-       "live": false
-      },
-      {
-       "id": "shim",
-       "type": "reverb-shimmer",
-       "label": null,
-       "variant": null,
-       "foot": 6,
-       "on": false,
-       "live": false
-      },
-      {
-       "id": "verb-2",
        "type": "reverb",
        "label": null,
        "variant": null,

@@ -4,26 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Setlists — golem doc</title>
-  <meta name="description" content="A setlist is one evening: the songs in the order you play them. On the golem it is also what your feet play — bank 01 is the first song, bank 02 the…">
+  <meta name="description" content="A setlist is one evening: the songs in the order you play them. On the golem it is also what your feet play — bank 00 is the first song, bank 01 the…">
   <link rel="canonical" href="https://golem.fm/docs/band/setlists.html">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="golem">
   <meta property="og:title" content="Setlists — golem doc">
-  <meta property="og:description" content="A setlist is one evening: the songs in the order you play them. On the golem it is also what your feet play — bank 01 is the first song, bank 02 the…">
+  <meta property="og:description" content="A setlist is one evening: the songs in the order you play them. On the golem it is also what your feet play — bank 00 is the first song, bank 01 the…">
   <meta property="og:url" content="https://golem.fm/docs/band/setlists.html">
   <meta property="og:image" content="https://golem.fm/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=3a7e82a401">
+  <link rel="icon" href="../../golem-app/4cdf495/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=dba68df5fa">
   <script data-goatcounter="https://golem.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
   <header class="pn">
     <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
-    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../fx/" class="pn__link">FX</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
     <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest" data-goatcounter-click="download-header" data-goatcounter-title="Download (header)">Download</a></div>
   </header>
   <div class="docs">
@@ -83,20 +83,20 @@
       <h1>Setlists</h1>
       <span class="docs-badge">golem · golem.fm</span>
       <div class="docs-body">
-<p>A setlist is one evening: the songs in the order you play them. On the golem it is also <strong>what your feet play</strong> — bank 01 is the first song, bank 02 the second, and the up and down switches walk through it.</p>
+<p>A setlist is one evening: the songs in the order you play them. On the golem it is also <strong>what your feet play</strong> — bank 00 is the first song, bank 01 the second, and the up and down switches walk through it.</p>
 <h2 id="s1">Building a setlist</h2>
 <figure class="doc-screen" id="panel-all" data-panel='{&quot;example&quot;: &quot;factory-setlists&quot;, &quot;id&quot;: &quot;all&quot;}'><div class="gs-stage"></div><figcaption>Songs ▸ Banks &amp; Setlists: the factory lists. Factory Golem is the one on the foot.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p><strong>Songs ▸ Banks &amp; Setlists</strong> shows two kinds of lists:</p>
 <ul><li>a <strong>setlist</strong> (<code>▤ SETLIST</code>) holds <strong>songs</strong> — each line plays a song, with its preset, its tempo, its arrangement;</li><li>a <strong>bank</strong> (<code>⛓ BANK</code>) holds <strong>sounds</strong> — each line plays a patch. The factory banks give each instrument its sounds, one per bank: <em>Factory Guitar</em>, <em>Factory Bass</em>, <em>Factory Keys</em>…</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;all&quot;, &quot;halo&quot;: &quot;setlists.card:factory&quot;}'>Show me</button></p>
-<p>Every golem ships with the <strong>Factory Golem</strong> setlist: nine songs, one per factory preset. Open it.</p>
+<p>Every golem ships with the <strong>Factory Golem</strong> setlist: thirteen songs, one per factory preset. Open it.</p>
 <figure class="doc-screen" id="panel-open" data-panel='{&quot;example&quot;: &quot;factory-setlist&quot;, &quot;id&quot;: &quot;open&quot;}'><div class="gs-stage"></div><figcaption>The Factory Golem setlist opened: the songs on the left, in bank order.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>The songs are on the left <strong>in bank order</strong>: the number is the bank. A song line says its preset, its tempo (<code>♩ 120</code>), and small icons for what it carries (an arrangement, stems).</p>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;open&quot;, &quot;halo&quot;: &quot;setlists.lines&quot;}'>Show me</button></p>
 <p><code>+ Add a song</code> picks a song from your repertoire (Songs ▸ Songs). A setlist never creates a song: a song exists once, and every setlist that plays it follows it.</p>
 <h2 id="s2">Banks on the foot</h2>
-<figure class="doc-screen" id="panel-grid" data-panel='{&quot;example&quot;: &quot;factory-setlist-banks&quot;, &quot;id&quot;: &quot;grid&quot;}'><div class="gs-stage"></div><figcaption>⇅ Banks: the setlist as it sits under your feet — nine songs, ten free banks.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
-<p><strong>⇅ Banks</strong> opens the grid. <strong>The grid is the pedalboard</strong>: bank 01 is the first one you reach.</p>
+<figure class="doc-screen" id="panel-grid" data-panel='{&quot;example&quot;: &quot;factory-setlist-banks&quot;, &quot;id&quot;: &quot;grid&quot;}'><div class="gs-stage"></div><figcaption>⇅ Banks: the setlist as it sits under your feet — thirteen songs, six free banks.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p><strong>⇅ Banks</strong> opens the grid. <strong>The grid is the pedalboard</strong>: bank 00 is the first one you reach.</p>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;grid&quot;, &quot;halo&quot;: &quot;setlists.grid&quot;}'>Show me</button></p>
 <ul><li><strong>19 banks, no more.</strong> A setlist is one gig and must fit the banks your feet reach directly. The golem refuses a twentieth song rather than drop one silently.</li><li><strong>A free bank is real.</strong> Leave a hole on purpose — for an encore you may play. Pressing an empty bank is safe: it never changes what plays.</li><li>Tap a free bank to place a preset there. Tap a filled one, then another bank, to move it (two filled banks swap).</li></ul>
 <p>Only <strong>one list is on the foot</strong> at a time. On a list&#x27;s card, <strong>▶ On the foot</strong> puts it there (tap twice: it changes what your feet do). On the Live screen, tap the list&#x27;s name in the top bar:</p>
@@ -112,7 +112,7 @@
 <p>An exception for one evening only — tonight in Drop D, tonight at 110 — lives on the <strong>line</strong>, not in the song: the other setlists keep the song as it is. The golem plays the exceptions a setlist brings from golem.fm, where they are made; on the golem itself, every change goes into the song.</p>
 <p>A line can also carry no song at all: a guest, an a cappella moment, a song not written yet. Such a free line is edited right here (preset, tempo, tuning), and <code>◆ Make it a song</code> turns it into a song of your repertoire.</p>
 <h2 id="s4">Playing it on the golem</h2>
-<p>With the setlist on the foot, the <strong>bank switches</strong> change song: the golem loads the song&#x27;s preset with the song&#x27;s tempo, stems and arrangement. On the Live screen, the top bar says <code>Factory Golem 9/9</code> and the song bar shows <code>SETLIST #09 · 9/9</code> above the song&#x27;s title.</p>
+<p>With the setlist on the foot, the <strong>bank switches</strong> change song: the golem loads the song&#x27;s preset with the song&#x27;s tempo, stems and arrangement. On the Live screen, the top bar says <code>Factory Golem 13/19</code> and the song bar shows <code>SETLIST #12 · 13/13</code> above the song&#x27;s title.</p>
 <ul><li><strong>◀ ▶ on the Live screen</strong> do the same as the foot: previous and next song.</li><li><strong>A preset loaded from somewhere else</strong> (the Designer, the preset browser) plays on its own: its sounds, not its song — no parts, no stems, no click. The song bar says <code>no song · sounds only — load it</code>; tap it, or press the bank switch, to load the song.</li><li><strong>During a Gig</strong>, a setlist that arrives from golem.fm and touches the list on the foot waits until you leave the mode: your set never changes under your feet.</li></ul>
 <p>A setlist holds <strong>references</strong>: if you change a preset, the setlist plays the new sound. To freeze the sounds of a set as they are tonight — before you rework your presets — take a <strong>snapshot</strong> (📷); it is the only way back to tonight&#x27;s sounds.</p>
       </div>
@@ -129,6 +129,7 @@
     <div class="ph-foot__col">
       <b>golem</b>
       <a href="../../">The Golem</a>
+      <a href="../../fx/">FX</a>
       <a href="../../docs/">Docs</a>
     </div>
     <div class="ph-foot__col ph-foot__col--oss">

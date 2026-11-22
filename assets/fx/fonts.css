@@ -1,0 +1,7 @@
+/* Les polices des pédales (fontsource, OFL), servies d'ici : rien chez un tiers. */
+@font-face { font-family: 'Saira Semi Condensed'; font-style: normal; font-display: swap; font-weight: 400; src: url('fonts/saira-semi-condensed-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Saira Semi Condensed'; font-style: normal; font-display: swap; font-weight: 600; src: url('fonts/saira-semi-condensed-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Saira Semi Condensed'; font-style: normal; font-display: swap; font-weight: 700; src: url('fonts/saira-semi-condensed-latin-700-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Shrikhand'; font-style: normal; font-display: swap; font-weight: 400; src: url('fonts/shrikhand-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Pirata One'; font-style: normal; font-display: swap; font-weight: 400; src: url('fonts/pirata-one-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Big Shoulders Display'; font-style: normal; font-display: swap; font-weight: 100 900; src: url('fonts/big-shoulders-display-latin-wght-normal.woff2') format('woff2'); }

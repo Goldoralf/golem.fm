@@ -16,14 +16,14 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=3a7e82a401">
+  <link rel="icon" href="../../golem-app/4cdf495/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=dba68df5fa">
   <script data-goatcounter="https://golem.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
   <header class="pn">
     <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
-    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../fx/" class="pn__link">FX</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
     <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest" data-goatcounter-click="download-header" data-goatcounter-title="Download (header)">Download</a></div>
   </header>
   <div class="docs">
@@ -88,17 +88,17 @@
 <figure class="doc-screen" id="panel-list" data-panel='{&quot;example&quot;: &quot;factory-patches&quot;, &quot;id&quot;: &quot;list&quot;}'><div class="gs-stage"></div><figcaption>Songs ▸ Patches: the factory patches.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p><strong>Songs ▸ Patches</strong> lists them. Each card is one sound:</p>
 <ul><li>its <strong>name</strong> and its <strong>instrument</strong> (Guitar, Bass, Voice, Keys, Drums), and the bank it sits on if it is on the pedalboard;</li><li>its <strong>chain</strong>, drawn small, from input to output;</li><li>its <strong>scenes A–E</strong> and <strong>stomps 6–10</strong>, on the right — tap them to see what changes;</li><li>its <strong>tags</strong>, to find it again. Filters at the top: instrument, musician, tag.</li></ul>
-<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;list&quot;, &quot;halo&quot;: &quot;songs.patch:factory-bass-jazz-warm&quot;}'>Show me</button></p>
+<p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;list&quot;, &quot;halo&quot;: &quot;songs.patch:factory-bass-upright-jazz&quot;}'>Show me</button></p>
 <p>A patch never names a jack: it knows its role (a guitar patch looks for a guitar input) and plays wherever that instrument is plugged.</p>
 <h2 id="s2">Dropping a patch into a lane</h2>
-<figure class="doc-screen" id="panel-drop" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;drop&quot;}'><div class="gs-stage"></div><figcaption>Ambient Metal&#x27;s Guitar 1 lane came from the patch Ambient Djent.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<figure class="doc-screen" id="panel-drop" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;drop&quot;}'><div class="gs-stage"></div><figcaption>Low Tide&#x27;s Guitar 1 lane came from the patch Eight-String Nu.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>The factory presets are made of factory patches: each lane was built by dropping a patch into it.</p>
-<ul><li><strong>The ⛓ chip</strong> at the top of a lane says which patch it came from — here <em>Ambient Djent</em>. Tap it to drop another patch into the lane instead.</li></ul>
+<ul><li><strong>The ⛓ chip</strong> at the top of a lane says which patch it came from — here <em>Eight-String Nu</em>. Tap it to drop another patch into the lane instead.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;drop&quot;, &quot;halo&quot;: &quot;designer.patch&quot;}'>Show me</button></p>
 <ul><li><strong>The lane is replaced</strong> by the patch&#x27;s chain, with its scenes. If the patch has a scene the song does not, the song gets it (up to eight scenes); the song&#x27;s scene names stay.</li><li><strong>The pedalboard follows</strong>: a block on switch 6 in the patch is on switch 6 in the song. If another lane already has a block on 6, switch 6 now drives both.</li><li><strong>Only the sound travels.</strong> The patch&#x27;s own players (looper, samples…) and its tags stay with the patch.</li></ul>
 <h2 id="s3">“edited”: when a lane is no longer its patch</h2>
-<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;metal-for-all-designer&quot;, &quot;halo&quot;: &quot;designer.patch&quot;}'><div class="gs-stage"></div><figcaption>Metal for all, Guitar 1: “Modern Metal · edited”.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
-<p>When you change a lane after dropping a patch, the chip says so: <code>⛓ Modern Metal · edited</code>. Metal for all&#x27;s first guitar is the <em>Modern Metal</em> patch with one block added for this song: a volume pedal at the end of the chain.</p>
+<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;metal-for-all-designer&quot;, &quot;halo&quot;: &quot;designer.patch&quot;}'><div class="gs-stage"></div><figcaption>Iron Thicket, Guitar 1: the chip reads “Groove Metal” — the lane is still its patch.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<p>When you change a lane after dropping a patch, the chip says so: <code>⛓ Groove Metal · edited</code>. Iron Thicket&#x27;s first guitar is the <em>Groove Metal</em> patch as it ships, so its chip shows the name alone; add a block for this song, and it turns to <code>edited</code>.</p>
 <p>What does <strong>not</strong> count as an edit: the golem renames blocks when two lanes would share a name, and gives the switches to the song&#x27;s pedalboard. The chip only says <code>edited</code> when the <strong>sound</strong> changed — a block added or removed, a knob turned.</p>
 <p>The song keeps its own copy: changing the lane never changes the patch, and changing the patch later does not change the songs by itself. To put the new version back into songs, use <strong>⬇ Deposit in songs…</strong> on the patch: it replaces the lane of the songs you pick.</p>
 <h2 id="s4">Trying a patch on the rack</h2>
@@ -122,6 +122,7 @@
     <div class="ph-foot__col">
       <b>golem</b>
       <a href="../../">The Golem</a>
+      <a href="../../fx/">FX</a>
       <a href="../../docs/">Docs</a>
     </div>
     <div class="ph-foot__col ph-foot__col--oss">

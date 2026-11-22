@@ -16,14 +16,14 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=3a7e82a401">
+  <link rel="icon" href="../../golem-app/4cdf495/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=dba68df5fa">
   <script data-goatcounter="https://golem.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
   <header class="pn">
     <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
-    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../fx/" class="pn__link">FX</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
     <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest" data-goatcounter-click="download-header" data-goatcounter-title="Download (header)">Download</a></div>
   </header>
   <div class="docs">
@@ -89,7 +89,7 @@
 <p>The ten switches have two jobs.</p>
 <ul><li><strong>Switches 1 to 5 are scenes A to E.</strong> A scene changes the whole band&#x27;s sound at once. Pressing a scene switch also makes sure the right song is loaded first, then calls the scene.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;sw&quot;, &quot;halo&quot;: &quot;live.scenes&quot;}'>Show me</button></p>
-<ul><li><strong>Switches 6 to 10 are stomps</strong>: blocks you switch on and off, like pedals. Which block sits on which stomp is decided per preset. In Golem Rising, #6 is the <em>Shimmer</em>, #7 the <em>Tempo Delay</em>, #8 the singer&#x27;s <em>Grit</em>, #9 starts the song&#x27;s arrangement and #10 the drum machine.</li></ul>
+<ul><li><strong>Switches 6 to 10 are stomps</strong>: blocks you switch on and off, like pedals. Which block sits on which stomp is decided per preset. In Golem Rising, #6 is the <em>Chorus</em>, #7 the <em>Tempo Delay</em>, #8 the <em>Pitch</em>, #9 starts the song&#x27;s arrangement and #10 the drum machine.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;sw&quot;, &quot;halo&quot;: &quot;live.stomps&quot;}'>Show me</button></p>
 <ul><li><strong>The two expression pedals</strong> each have a role, <strong>Volume</strong> or <strong>Effect</strong> — here EXP 2 is the volume. The Effect pedal drives the knob of a block you assign to it (a wah, a whammy…).</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;sw&quot;, &quot;halo&quot;: &quot;live.exp&quot;}'>Show me</button></p>
@@ -108,7 +108,7 @@
 <h2 id="s4">Flashing the FCB1010 UnO2</h2>
 <figure class="doc-screen" id="panel-fcb" data-panel='{&quot;example&quot;: &quot;reference-pedalboard&quot;, &quot;id&quot;: &quot;fcb&quot;}'><div class="gs-stage"></div><figcaption>Settings ▸ Gear ▸ Pedalboard on the reference rack.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>The UnO2 chip keeps its own memory of what each switch sends. The golem writes it for you — that is <em>flashing</em>.</p>
-<ul><li><strong>The pedalboard is recognised, not declared.</strong> The golem asks the chip who it is: <code>● MEASURED</code>, its firmware and when it was last heard. A pedalboard that does not answer can be chosen by hand.</li></ul>
+<ul><li><strong>The pedalboard is recognised, not declared.</strong> The golem asks the chip who it is: a recognised FCB1010 reads <code>● MEASURED</code>, with its firmware and when it was last heard. With no pedalboard answering, as on this screen, the page says <code>unknown pedalboard</code> and lets you choose one by hand.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;fcb&quot;, &quot;halo&quot;: &quot;tab.gear&quot;}'>Show me</button></p>
 <ul><li><strong>What each switch sends</strong> is on the page: scenes A–E on CC 20 to 24, stomps on CC 30 to 34, the two pedals on CC 7 and CC 11, all on MIDI channel 2.</li><li><strong>The pedal roles</strong> — Volume or Effect — are set here, under each pedal. No flashing needed.</li></ul>
 <p><strong>To flash</strong>, from <strong>Set up</strong>:</p>
@@ -130,6 +130,7 @@
     <div class="ph-foot__col">
       <b>golem</b>
       <a href="../../">The Golem</a>
+      <a href="../../fx/">FX</a>
       <a href="../../docs/">Docs</a>
     </div>
     <div class="ph-foot__col ph-foot__col--oss">

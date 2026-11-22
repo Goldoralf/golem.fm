@@ -2,21 +2,25 @@
  "name": "factory-health",
  "title": "Settings ▸ System ▸ Health on a new golem",
  "route": "#/system/sys/health",
- "preset": "factory-ambient-metal",
+ "preset": "factory-nu-metal-eight",
  "scene": "B",
  "click": null,
  "state": {
+  "engine": {
+   "id": "ardour",
+   "name": "Golem Engine"
+  },
   "health": {
    "level": "warn",
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1794219269.047
+   "at": 1795303567.715
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1794218966.654,
+   "skipped_at": 1795303283.894,
    "verdict": null
   },
   "startup": {
@@ -25,18 +29,18 @@
   },
   "reaper_connected": true,
   "reaper_running": true,
-  "preset_id": "factory-ambient-metal",
-  "preset_name": "Ambient Metal",
+  "preset_id": "factory-nu-metal-eight",
+  "preset_name": "Low Tide",
   "scene_id": "B",
   "voice_on": false,
   "whammy_on": false,
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.727628767490387,
-   "voice": 0.7567927241325378,
-   "in1": 0.727628767490387,
-   "in2": 0.7567927241325378,
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
    "in3": 0.0
   },
   "clip": {},
@@ -65,25 +69,14 @@
    "ok": true,
    "why": ""
   },
-  "midi": {
-   "ok": true,
-   "issues": [],
-   "fix": "",
-   "ts": "2026-11-09 11:14:24"
-  },
+  "midi": {},
   "rig_check": {
-   "t": 1794219266,
-   "ok": true,
    "checked": 0,
+   "ok": true,
+   "t": 1795303551,
    "issues": []
   },
   "rig_unmounted": [
-   {
-    "id": "guitar-2",
-    "name": "Guitar 2",
-    "input": "—",
-    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
-   },
    {
     "id": "bass-1",
     "name": "Bass",
@@ -99,9 +92,9 @@
   ],
   "rig_error": null,
   "song": {
-   "line": "r:factory:8",
+   "line": "r:factory:12",
    "setlist": "factory",
-   "preset": "factory-ambient-metal",
+   "preset": "factory-nu-metal-eight",
    "title": "Golem Rising",
    "slug": null,
    "bpm": 120,
@@ -109,7 +102,7 @@
    "arrangement": true,
    "band_song": "rs:f3f0252689f96910f01c81be0325855f"
   },
-  "cpu_boost": false,
+  "cpu_boost": true,
   "pedalboard": {
    "id": "unknown",
    "name": "unknown pedalboard",
@@ -133,7 +126,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1794219213.8311615,
+   "t": 1795303514.42628,
    "countin": null
   },
   "backing": {
@@ -484,12 +477,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26548559872,
-   "takes": 161572837,
+   "free": 40555180032,
+   "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14269,
+   "seconds": 23996,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -502,7 +495,7 @@
   "click": {
    "on": false,
    "present": true,
-   "bpm": 120.0
+   "bpm": 120
   },
   "compo": {
    "targets": {},
@@ -513,10 +506,27 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [],
-   "events": []
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-11-22T00:20:20",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
   },
-  "updated": 1794219272.1525714,
+  "updated": 1795303570.3144314,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -528,18 +538,18 @@
  },
  "reads": {
   "/api/health/facts": {
-   "at": 1794219269.047,
-   "since_start_s": 307.2,
+   "at": 1795303567.715,
+   "since_start_s": 350.7,
    "verdict": {
     "level": "warn",
     "title": "Playing is safe. One thing to look at.",
-    "text": "Setlist on the foot: “Factory Golem” · 65 blocks will not play here across 9 of 9 presets: 1 need a plugin not installed on this Linux machine, 64 to download",
+    "text": "Setlist on the foot: “Factory Golem” · 66 blocks will not play here across 13 of 13 presets: 1 need a plugin not installed on this Linux machine, 65 to download",
     "counts": {
-     "ok": 8,
+     "ok": 9,
      "warn": 1,
      "bad": 0,
-     "wait": 2,
-     "total": 11
+     "wait": 3,
+     "total": 13
     }
    },
    "facts": [
@@ -547,7 +557,7 @@
      "id": "engine",
      "name": "Engine",
      "level": "ok",
-     "text": "REAPER 7.82 · running · talking to the bridge",
+     "text": "Golem Engine golem-engine-9.9-g3 · running · talking to the bridge",
      "source": "reaper_running · reaper_connected"
     },
     {
@@ -575,14 +585,14 @@
      "id": "playing",
      "name": "Playing",
      "level": "ok",
-     "text": "“Ambient Metal” · 0 files loaded and checked",
-     "source": ".rig-check.json 11:14 · .livemap.json"
+     "text": "“Low Tide” · 0 files loaded and checked",
+     "source": ".rig-check.json 00:25 · .livemap.json"
     },
     {
      "id": "setlist",
      "name": "Setlist on the foot",
      "level": "warn",
-     "text": "“Factory Golem” · 65 blocks will not play here across 9 of 9 presets: 1 need a plugin not installed on this Linux machine, 64 to download",
+     "text": "“Factory Golem” · 66 blocks will not play here across 13 of 13 presets: 1 need a plugin not installed on this Linux machine, 65 to download",
      "source": "blocks/status · setlist",
      "fix": {
       "label": "Patches →",
@@ -590,51 +600,51 @@
      },
      "detail": [
       {
-       "preset": "Chill Jazz",
-       "missing": 10,
-       "download": 10,
+       "preset": "Blue Lantern Trio",
+       "missing": 2,
+       "download": 2,
        "unavailable": 0
       },
       {
-       "preset": "Blues Night",
-       "missing": 9,
-       "download": 9,
-       "unavailable": 0
-      },
-      {
-       "preset": "Funk Session",
+       "preset": "Rail Yard",
        "missing": 5,
        "download": 5,
        "unavailable": 0
       },
       {
-       "preset": "Rock Classics",
+       "preset": "Harbour Rain",
        "missing": 5,
        "download": 5,
        "unavailable": 0
       },
       {
-       "preset": "Indie Pop",
-       "missing": 4,
-       "download": 4,
+       "preset": "Velvet Ossuary",
+       "missing": 6,
+       "download": 6,
        "unavailable": 0
       },
       {
-       "preset": "Alt Rock",
+       "preset": "Glass Summit",
        "missing": 7,
        "download": 7,
        "unavailable": 0
       },
       {
-       "preset": "Metal for all",
-       "missing": 14,
-       "download": 13,
+       "preset": "Iron Thicket",
+       "missing": 7,
+       "download": 6,
        "unavailable": 1
       },
       {
-       "preset": "Loop Station",
-       "missing": 2,
-       "download": 2,
+       "preset": "Paper Satellites",
+       "missing": 3,
+       "download": 3,
+       "unavailable": 0
+      },
+      {
+       "preset": "Room With Echoes",
+       "missing": 4,
+       "download": 4,
        "unavailable": 0
       }
      ]
@@ -643,14 +653,14 @@
      "id": "plugins",
      "name": "Plugins",
      "level": "ok",
-     "text": "1020 found by REAPER · 2 block types not installable here · 3 quarantined (delay-echo, detune, pitch)",
-     "source": ".fx-inventory.json"
+     "text": "70 of 70 block plugins found by Golem Engine",
+     "source": ".engine-plugins.json"
     },
     {
      "id": "disk",
      "name": "Disk",
      "level": "ok",
-     "text": "26 GB free of 205 GB",
+     "text": "41 GB free of 205 GB",
      "source": "disk"
     },
     {
@@ -668,35 +678,41 @@
      "id": "scripts",
      "name": "Scripts",
      "level": "ok",
-     "text": "no Lua error since start",
-     "source": ".lua-errors.log"
+     "text": "no error in Golem Engine's watcher since start",
+     "source": ".watch.log"
+    },
+    {
+     "id": "perf",
+     "name": "Performance mode",
+     "level": "ok",
+     "text": "on — golem is running",
+     "source": "cpufreq governor · config/perf.json"
+    },
+    {
+     "id": "cpu",
+     "name": "CPU budget",
+     "level": "wait",
+     "text": "not calibrated yet — golem measures each block when the rack is idle (in use (screen, 0 s ago))",
+     "source": "config/cpu-profile.json"
     },
     {
      "id": "environment",
      "name": "Since last boot",
      "level": "ok",
-     "text": "golem updated: golem v0.6.3-3-g435a6483 → v0.6.4 · nothing else changed",
-     "source": "environment snapshot",
-     "detail": [
-      {
-       "key": "golem",
-       "from": "v0.6.3-3-g435a6483",
-       "to": "v0.6.4",
-       "at": 1794219238.8783276
-      }
-     ]
+     "text": "nothing changed: same Golem Engine, plugins, card, rate, buffer",
+     "source": "environment snapshot"
     }
    ],
    "guard": {
     "free": false,
-    "why": "in use (signal, 0 s ago)",
-    "idle_s": 0.1,
-    "src": "signal"
+    "why": "in use (screen, 4 s ago)",
+    "idle_s": 4.7,
+    "src": "screen"
    },
    "first_check": {
     "pending": false,
     "done_at": null,
-    "skipped_at": 1794218966.654,
+    "skipped_at": 1795303283.894,
     "verdict": null
    }
   },
@@ -708,18 +724,67 @@
    "report": null,
    "error": null,
    "at": null,
-   "now": 1794219272.154
+   "now": 1795303570.397
+  },
+  "/api/system": {
+   "platform": "linux",
+   "reaper_connected": true,
+   "reaper_running": true,
+   "bridge": "ok",
+   "cpu_governor": "performance",
+   "perf": {
+    "governor": "performance",
+    "on": true,
+    "wanted": true,
+    "reason": "golem is running",
+    "auto": true,
+    "on_battery": false,
+    "available": true
+   },
+   "git_branch": "HEAD",
+   "git_clean": true,
+   "presets": 13,
+   "tones": 0,
+   "audio_bsize": 192,
+   "audio_bsizes": [
+    32,
+    64,
+    96,
+    128,
+    192,
+    256,
+    384,
+    512,
+    1024
+   ],
+   "audio_bsizes_ok": null,
+   "audio_driver": null,
+   "audio_srate": 48000,
+   "audio_latency_ms": null,
+   "audio_latency_source": null,
+   "audio_driver_override": null,
+   "serial": "<redacted>",
+   "engine": {
+    "id": "ardour",
+    "name": "Golem Engine",
+    "version": "golem-engine-9.9-g3"
+   },
+   "audio_dsp_load": 58.3,
+   "audio_backend": "Dummy",
+   "audio_live_buffer": true
   }
  },
  "anchors": [
   "health.checks",
   "health.fact:audio",
+  "health.fact:cpu",
   "health.fact:disk",
   "health.fact:dropouts",
   "health.fact:engine",
   "health.fact:environment",
   "health.fact:golemfm",
   "health.fact:pedalboard",
+  "health.fact:perf",
   "health.fact:playing",
   "health.fact:plugins",
   "health.fact:scripts",

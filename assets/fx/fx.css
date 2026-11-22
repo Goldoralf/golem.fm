@@ -1,0 +1,97 @@
+/* /fx — la galerie des pédales du golem (2026-11-13, maquette
+   `conception/mockups/fx-page.html`). Préfixe `fx-` ; sections et appel final
+   repris du site vitrine (`ph-sec`, `ph-cta`, publicHome.css).
+   ⚠ JAMAIS DE DÉFILEMENT HORIZONTAL : la scène tient dans la largeur. */
+
+.fx { padding-bottom: 0; }
+.fx-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.fx-hero { padding-top: var(--space-10); gap: var(--space-3); }
+.fx-hero h1 {
+  margin: 0; font-family: var(--font-sans); font-weight: 800; letter-spacing: -0.02em;
+  font-size: 44px; line-height: 1.08; max-width: 18ch;
+}
+.fx-lede { margin: 0; color: var(--text-secondary); max-width: 70ch; font-size: var(--fs-md, 16px); }
+.fx-stats { display: flex; gap: 10px; flex-wrap: wrap; margin-top: var(--space-2); }
+.fx-stats span {
+  font: 600 12px var(--font-mono); padding: 6px 11px; border-radius: 999px;
+  border: 1px solid var(--border-subtle); background: var(--bg-surface); color: var(--text-secondary);
+}
+
+.fx-sec { gap: var(--space-3); }
+.fx-sec h2 { font-size: 30px; }
+
+.fx-bar { display: flex; gap: 10px 16px; flex-wrap: wrap; align-items: center; }
+.fx-seg {
+  display: inline-flex; flex-wrap: wrap; gap: 3px; padding: 3px;
+  background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 10px;
+}
+.fx-seg button {
+  border: 0; background: none; color: var(--text-secondary); font: 600 13px var(--font-sans);
+  padding: 6px 12px; border-radius: 7px; cursor: pointer;
+}
+.fx-seg button[aria-pressed='true'] { background: var(--bg-elevated); color: var(--text-primary); }
+
+/* La scène : à la largeur de l'écran, toujours. */
+.fx-scene {
+  border-radius: 16px; overflow: hidden; background: #0d0b09; border: 1px solid #23201b;
+  box-shadow: 0 14px 50px rgba(0, 0, 0, 0.45);
+}
+.fx-scene svg.gs-scene { display: block; width: 100%; height: auto; max-width: none; }
+.fx-scene .gp-pedal, .fx-scene .gp-amp { cursor: pointer; }
+
+.fx-tiles { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.fx-tiles__arrow { color: var(--text-tertiary); }
+.fx-tiles__split {
+  display: inline-flex; flex-direction: column; gap: 6px; padding: 6px 8px; border-radius: 8px;
+  border-left: 2px solid var(--border-strong); border-right: 2px solid var(--border-strong);
+}
+.fx-tiles__branch { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.fx-tiles__branch.is-muted .gp-tile { opacity: 0.35; filter: saturate(0.3); }
+.fx-tiles__tag {
+  font: 700 12px var(--font-mono); width: 24px; height: 24px; border-radius: 4px;
+  border: 1px solid var(--border-strong); background: none; color: inherit; cursor: pointer;
+}
+.fx-tiles__tag[aria-pressed='false'] { opacity: 0.5; text-decoration: line-through; }
+.fx-hint { margin: 0; color: var(--text-tertiary); font-size: var(--fs-sm); }
+
+/* La tuile de bloc de golem-fx (`blockTile`), aux couleurs du site. */
+.fx .gp-tile, .gb .gp-tile {
+  --tile: #8a94a3; display: inline-flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  width: 74px; height: 68px; border-radius: 12px; cursor: pointer; user-select: none; color: var(--tile);
+  background: color-mix(in srgb, var(--tile) 16%, var(--bg-surface));
+  border: 1.5px solid color-mix(in srgb, var(--tile) 70%, transparent);
+}
+.fx .gp-tile.is-off { opacity: 0.45; filter: saturate(0.4); }
+.fx .gp-tile-glyph { font-size: 26px; line-height: 1; display: flex; }
+.fx .gp-tile-name {
+  font: 600 11px var(--font-sans); color: var(--text-primary); max-width: 68px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+/* Les galeries : la pédale, qu'un clic allume. */
+.fx-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 16px 12px; }
+.fx-card {
+  background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: 14px;
+  padding: 14px 10px 12px; display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.fx-card__slot {
+  height: 210px; display: flex; align-items: flex-end; justify-content: center;
+  background: none; border: 0; padding: 0; cursor: pointer; max-width: 100%;
+}
+.fx-card__slot svg { height: 100%; width: auto; max-width: 100%; filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.45)); }
+.fx-card__meta { width: 100%; text-align: center; display: flex; flex-direction: column; gap: 2px; }
+.fx-card__meta b { font: 700 15px 'Saira Semi Condensed', var(--font-sans); letter-spacing: 0.02em; }
+.fx-card__meta span { color: var(--text-secondary); font-size: 12.5px; line-height: 1.35; }
+.fx-card__meta em { color: #ffd23f; font: 600 11px var(--font-mono); font-style: normal; }
+.fx-bw .fx-card { background: #0e0e10; border-color: #2a2a30; }
+
+.fx-amps { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; align-items: end; }
+.fx-amps .fx-card__slot { height: auto; width: 100%; }
+.fx-amps .fx-card__slot svg { width: 100%; max-width: 300px; height: auto; }
+
+@media (max-width: 760px) {
+  .fx-hero h1 { font-size: 32px; }
+  .fx-sec h2 { font-size: 24px; }
+  .fx-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fx-card__slot { height: 170px; }
+}

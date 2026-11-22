@@ -2,21 +2,25 @@
  "name": "golem-rising-mixer",
  "title": "Golem Rising: the Live mixer",
  "route": "#/live",
- "preset": "factory-ambient-metal",
+ "preset": "factory-nu-metal-eight",
  "scene": "B",
  "click": "live.tool.mixer",
  "state": {
+  "engine": {
+   "id": "ardour",
+   "name": "Golem Engine"
+  },
   "health": {
    "level": "warn",
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1794219218.826
+   "at": 1795303522.462
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1794218966.654,
+   "skipped_at": 1795303283.894,
    "verdict": null
   },
   "startup": {
@@ -25,18 +29,18 @@
   },
   "reaper_connected": true,
   "reaper_running": true,
-  "preset_id": "factory-ambient-metal",
-  "preset_name": "Ambient Metal",
+  "preset_id": "factory-nu-metal-eight",
+  "preset_name": "Low Tide",
   "scene_id": "B",
   "voice_on": false,
   "whammy_on": false,
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.727628767490387,
-   "voice": 0.7671442031860352,
-   "in1": 0.727628767490387,
-   "in2": 0.7671442031860352,
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
    "in3": 0.0
   },
   "clip": {},
@@ -65,25 +69,14 @@
    "ok": true,
    "why": ""
   },
-  "midi": {
-   "ok": true,
-   "issues": [],
-   "fix": "",
-   "ts": "2026-11-09 11:13:39"
-  },
+  "midi": {},
   "rig_check": {
-   "t": 1794219220,
-   "ok": true,
    "checked": 0,
+   "ok": true,
+   "t": 1795303513,
    "issues": []
   },
   "rig_unmounted": [
-   {
-    "id": "guitar-2",
-    "name": "Guitar 2",
-    "input": "—",
-    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
-   },
    {
     "id": "bass-1",
     "name": "Bass",
@@ -99,9 +92,9 @@
   ],
   "rig_error": null,
   "song": {
-   "line": "r:factory:8",
+   "line": "r:factory:12",
    "setlist": "factory",
-   "preset": "factory-ambient-metal",
+   "preset": "factory-nu-metal-eight",
    "title": "Golem Rising",
    "slug": null,
    "bpm": 120,
@@ -109,7 +102,7 @@
    "arrangement": true,
    "band_song": "rs:f3f0252689f96910f01c81be0325855f"
   },
-  "cpu_boost": false,
+  "cpu_boost": true,
   "pedalboard": {
    "id": "unknown",
    "name": "unknown pedalboard",
@@ -133,7 +126,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1794219213.8311615,
+   "t": 1795303514.42628,
    "countin": null
   },
   "backing": {
@@ -484,12 +477,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26562514944,
-   "takes": 161572837,
+   "free": 40557436928,
+   "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14279,
+   "seconds": 23998,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -502,7 +495,7 @@
   "click": {
    "on": false,
    "present": true,
-   "bpm": 120.0
+   "bpm": 120
   },
   "compo": {
    "targets": {},
@@ -513,10 +506,27 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [],
-   "events": []
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-11-22T00:20:20",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
   },
-  "updated": 1794219221.0830202,
+  "updated": 1795303522.6762106,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -527,6 +537,122 @@
   }
  },
  "reads": {
+  "/api/cpu/estimate-many?ids=factory-nu-metal-eight": {
+   "factory-nu-metal-eight": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   }
+  },
+  "/api/cpu/estimate-many?ids=factory-nu-metal-eight,factory-jazz-club,factory-texas-blues,factory-blues-ballad,factory-ambient-djent,factory-hero-instrumental,factory-groove-metal,factory-glass-ambient,factory-loop-indie,factory-fuzz-grunge,factory-funk-rock,factory-pop-rock,factory-bass-lab": {
+   "factory-nu-metal-eight": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-jazz-club": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-texas-blues": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-blues-ballad": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-ambient-djent": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-hero-instrumental": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-groove-metal": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-glass-ambient": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-loop-indie": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "keys-pads-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-fuzz-grunge": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-funk-rock": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-pop-rock": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   },
+   "factory-bass-lab": {
+    "verdict": "unknown",
+    "worst": {
+     "lane": "guitar-1",
+     "scene": "A",
+     "pct": 0.0
+    }
+   }
+  },
   "/api/mixer": {
    "sources": [
     {

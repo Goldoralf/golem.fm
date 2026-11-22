@@ -16,14 +16,14 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=3a7e82a401">
+  <link rel="icon" href="../../golem-app/4cdf495/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=dba68df5fa">
   <script data-goatcounter="https://golem.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
   <header class="pn">
     <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
-    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../fx/" class="pn__link">FX</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
     <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest" data-goatcounter-click="download-header" data-goatcounter-title="Download (header)">Download</a></div>
   </header>
   <div class="docs">
@@ -83,23 +83,23 @@
       <h1>Lanes: one per musician</h1>
       <span class="docs-badge">golem</span>
       <div class="docs-body">
-<p>A golem plays a whole band, not one guitar. Each musician has a <strong>lane</strong>: their own input, their own chain of blocks, their own sound in every scene. This page opens <strong>Metal for all</strong>, the factory preset with the most lanes (line 07 of the <strong>Factory Golem</strong> setlist, <em>Iron Tide</em>).</p>
+<p>A golem plays a whole band, not one guitar. Each musician has a <strong>lane</strong>: their own input, their own chain of blocks, their own sound in every scene. This page opens <strong>Iron Thicket</strong>, a factory preset with six lanes (line 05 of the <strong>Factory Golem</strong> setlist).</p>
 <h2 id="s1">What a lane is</h2>
-<figure class="doc-screen" id="panel-lanes" data-panel='{&quot;example&quot;: &quot;metal-for-all-designer&quot;, &quot;id&quot;: &quot;lanes&quot;}'><div class="gs-stage"></div><figcaption>Metal for all in the Designer: six lanes, one tab each.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<figure class="doc-screen" id="panel-lanes" data-panel='{&quot;example&quot;: &quot;metal-for-all-designer&quot;, &quot;id&quot;: &quot;lanes&quot;}'><div class="gs-stage"></div><figcaption>Iron Thicket in the Designer: six lanes, one tab each.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>A lane is one instrument&#x27;s path through the golem: an <strong>input</strong>, a <strong>chain of blocks</strong>, an <strong>output</strong>.</p>
-<ul><li><strong>One tab per lane</strong>, at the top of the Designer. Metal for all has six: Guitar 1, Bass 1, Guitar 2, Voice 1, Drums and Keys. Tap a tab to see that lane&#x27;s chain.</li></ul>
+<ul><li><strong>One tab per lane</strong>, at the top of the Designer. Iron Thicket has six: Guitar 1, Bass 1, Guitar 2, Voice 1, Drums and Keys. Tap a tab to see that lane&#x27;s chain.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;lanes&quot;, &quot;halo&quot;: &quot;designer.lanes&quot;}'>Show me</button></p>
 <ul><li><strong>The input</strong> is on the left of the chain, <strong>the output</strong> on the right. Guitar 1 plays from <code>IN 1</code> and goes out on outputs <code>1·2</code>.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;lanes&quot;, &quot;halo&quot;: &quot;designer.in designer.out&quot;}'>Show me</button></p>
-<ul><li><strong>The chain</strong> is everything in between. Guitar 1 here: a Whammy, a gate and an EQ, then two amps on two branches, then the effects that follow.</li></ul>
+<ul><li><strong>The chain</strong> is everything in between. Guitar 1 here: a gate and a boost, then two amps on two branches, then the effects that follow.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;lanes&quot;, &quot;halo&quot;: &quot;designer.chain&quot;}'>Show me</button></p>
 <p>All the lanes play at the same time. A scene changes all of them together — see <a href="../sound/presets.html">Presets and scenes</a>.</p>
 <h2 id="s2">Guitar, bass, voice, keys, drums</h2>
 <p>Every lane has a <strong>role</strong>: guitar, bass, voice, keys, pads, drums, or line. The role decides two things: which input the lane looks for, and which blocks make sense on it — a voice lane is never offered an amp or a cabinet.</p>
 <ul><li><strong>Audio lanes</strong> — guitar, bass, voice, line — play from a jack of your sound card.</li><li><strong>MIDI lanes</strong> — keys, pads, drums — play from a USB port of the rack, where a keyboard, a pad controller or an electronic drum kit is plugged. The golem makes their sound: a piano, a synth, a drum kit.</li></ul>
-<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-keys&quot;, &quot;halo&quot;: &quot;designer.in&quot;}'><div class="gs-stage"></div><figcaption>Golem Rising&#x27;s piano lane plays from USB: the MPK Mini of the reference rack.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-keys&quot;, &quot;halo&quot;: &quot;designer.in&quot;}'><div class="gs-stage"></div><figcaption>Golem Rising&#x27;s synth lane plays from USB: the MPK Mini of the reference rack.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>The tab tells you where each lane plays from: <code>IN 1</code> for a jack, <code>USB 1</code> for a USB port.</p>
-<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;metal-for-all-drums&quot;, &quot;halo&quot;: &quot;designer.chain&quot;}'><div class="gs-stage"></div><figcaption>Metal for all&#x27;s drum lane: a drum kit, a compressor, an EQ, a room.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;metal-for-all-drums&quot;, &quot;halo&quot;: &quot;designer.chain&quot;}'><div class="gs-stage"></div><figcaption>Iron Thicket&#x27;s drum lane: a drum kit, a compressor, an EQ, a transient shaper, a room.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>A drum lane turns the hits of an electronic kit into the sound of the rack&#x27;s kits. See <a href="../sound/keys-drums.html">Keys, drums and samples</a>.</p>
 <h2 id="s3">One input per musician</h2>
 <figure class="doc-screen" id="panel-card" data-panel='{&quot;example&quot;: &quot;reference-soundcard&quot;, &quot;id&quot;: &quot;card&quot;}'><div class="gs-stage"></div><figcaption>Settings ▸ Gear ▸ Soundcard on the reference rack: a Volt 276.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
@@ -123,6 +123,7 @@
     <div class="ph-foot__col">
       <b>golem</b>
       <a href="../../">The Golem</a>
+      <a href="../../fx/">FX</a>
       <a href="../../docs/">Docs</a>
     </div>
     <div class="ph-foot__col ph-foot__col--oss">

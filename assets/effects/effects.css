@@ -200,3 +200,39 @@ button.gb-tile:focus-visible { outline: 2px solid #e8ecf1; outline-offset: 2px; 
   .gb-tile__glyph,
   .gb-extra { transition: none; }
 }
+
+/* ── Fusion avec les glyphes de golem-fx (2026-11-13, maquette
+   `conception/mockups/golem-effects-merge.html`) ── */
+.gb-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+/* Le glyphe dessiné : un SVG au trait, `currentColor`, à la taille du glyphe. */
+.gb-tile__glyph svg { display: block; width: 1em; height: 1em; }
+
+/* « Made by » : All | Golem FX | Open Source. */
+.gb-src { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.gb-src__k { font: 600 10.5px var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-tertiary); }
+.gb-src__seg {
+  display: inline-flex; gap: 3px; padding: 3px; border-radius: 10px;
+  background: var(--bg-surface); border: 1px solid var(--border-subtle);
+}
+.gb-src__seg button {
+  border: 0; background: none; color: var(--text-secondary); font: 600 13px var(--font-sans);
+  padding: 6px 12px; border-radius: 7px; cursor: pointer;
+}
+.gb-src__seg button[aria-pressed='true'] { background: var(--bg-elevated); color: var(--text-primary); }
+
+/* La fiche : le bloc dessiné, qu'un clic allume. */
+.gb-card__art {
+  height: 220px; margin: -20px -20px 0; padding: 14px; border: 0; cursor: pointer;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(140% 120% at 50% 0%, #23221d, #121210 70%);
+}
+.gb-card__art svg { max-height: 190px; max-width: 100%; width: auto; height: auto; filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.5)); }
+.gb-card__badge {
+  display: inline-block; margin-top: 6px; font: 700 10px var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase;
+  border-radius: 4px; padding: 2px 6px; background: var(--bg-elevated); color: var(--text-secondary); border: 1px solid var(--border-subtle);
+}
+.gb-card__badge.is-gfx { background: #ffd23f; color: #1b1500; border-color: #ffd23f; }
+.gb-card__presets { margin-left: 8px; font: 600 11px var(--font-mono); color: var(--text-tertiary); }
+.gb-card__more { color: var(--sect-rack); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.gb-card__more:hover { text-decoration: underline; }

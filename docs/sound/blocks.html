@@ -16,14 +16,14 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=3a7e82a401">
+  <link rel="icon" href="../../golem-app/4cdf495/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=dba68df5fa">
   <script data-goatcounter="https://golem.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
   <header class="pn">
     <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
-    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../fx/" class="pn__link">FX</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
     <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest" data-goatcounter-click="download-header" data-goatcounter-title="Download (header)">Download</a></div>
   </header>
   <div class="docs">
@@ -83,9 +83,9 @@
       <h1>Blocks</h1>
       <span class="docs-badge">golem</span>
       <div class="docs-body">
-<p>Everything you hear goes through <strong>blocks</strong>: an amp, a cabinet, a drive, a delay, a reverb, a piano, a drum kit. A lane is a chain of blocks; this page is about one block at a time. The examples open <strong>Ambient Metal</strong>, the preset of <em>Golem Rising</em> in the <strong>Factory Golem</strong> setlist.</p>
+<p>Everything you hear goes through <strong>blocks</strong>: an amp, a cabinet, a drive, a delay, a reverb, a piano, a drum kit. A lane is a chain of blocks; this page is about one block at a time. The examples open <strong>Low Tide</strong>, the preset of <em>Golem Rising</em> in the <strong>Factory Golem</strong> setlist.</p>
 <h2 id="s1">The block catalogue</h2>
-<figure class="doc-screen" id="panel-cat" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;halo&quot;: &quot;designer.chain&quot;, &quot;id&quot;: &quot;cat&quot;}'><div class="gs-stage"></div><figcaption>Ambient Metal, Guitar 1: each tile is a block, its colour is its family.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<figure class="doc-screen" id="panel-cat" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;halo&quot;: &quot;designer.chain&quot;, &quot;id&quot;: &quot;cat&quot;}'><div class="gs-stage"></div><figcaption>Low Tide, Guitar 1: each tile is a block, its colour is its family.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>The golem has some seventy kinds of blocks, in families: <strong>dynamics</strong> (gate, compressor), <strong>drive</strong>, <strong>amp</strong>, <strong>cab</strong>, <strong>EQ</strong>, <strong>filter</strong> (wah…), <strong>modulation</strong> (chorus, phaser, tremolo…), <strong>delay</strong>, <strong>reverb</strong>, <strong>pitch</strong>, <strong>keys</strong>, <strong>drums</strong>, <strong>utility</strong> (volume, split…) and a few more. Each family has its colour and its icon, so a chain reads at a glance.</p>
 <ul><li><strong>The catalogue follows the instrument.</strong> A voice lane is never offered an amp or a cabinet; a keys lane gets pianos and synths.</li><li><strong>On the rack, ＋ between two blocks</strong> opens the catalogue: a family, then a block, then — for amps, pedals and cabinets — the capture you want.</li><li><strong>Amps, pedals and cabinets are captures</strong> of real gear (NAM captures and impulse responses). A factory golem ships the links, not the files: until a capture is downloaded, its tile shows ⬇.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;cat&quot;, &quot;halo&quot;: &quot;designer.missing&quot;}'>Show me</button></p>
@@ -93,17 +93,17 @@
 <figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-amp-sheet&quot;, &quot;halo&quot;: &quot;designer.block-status&quot;}'><div class="gs-stage"></div><figcaption>Tapping a block whose capture is not here yet: what it needs, and where it comes from.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <h2 id="s2">A block’s drawer: knobs, assign, presets</h2>
 <figure class="doc-screen" id="panel-sheet" data-panel='{&quot;example&quot;: &quot;golem-rising-delay-sheet&quot;, &quot;halo&quot;: &quot;designer.sheet&quot;, &quot;id&quot;: &quot;sheet&quot;}'><div class="gs-stage"></div><figcaption>Tap the Tempo Delay: its drawer opens on Settings.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
-<p>Tap a block and its drawer slides up. It has up to three tabs.</p>
-<ul><li><strong>Settings</strong> — the block&#x27;s knobs. Turning a knob changes it <strong>in the scene you are editing</strong> (the drawer says which). The switch at the top tells whether the block plays in this scene: <code>⏻ Active in B</code>, or off in B. When a scene has its own knob values, <strong>Use in all scenes</strong> makes them the block&#x27;s settings everywhere.</li></ul>
+<p>Tap a block and its drawer slides up. It has two tabs, <strong>Settings</strong> and <strong>MIDI assign</strong>; the block&#x27;s presets sit beside its knobs, on the Settings tab.</p>
+<ul><li><strong>Settings</strong> — the block&#x27;s knobs. Turning a knob changes it <strong>in the scene you are editing</strong> (the drawer says which). The switch at the top tells whether the block plays in this scene: <code>⏻ Active in B</code>, or — as here — <code>⏻ Off in B</code>. When a scene has its own knob values, <strong>Use in all scenes</strong> makes them the block&#x27;s settings everywhere.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;sheet&quot;, &quot;halo&quot;: &quot;designer.sheet.settings&quot;}'>Show me</button></p>
-<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-delay-presets&quot;, &quot;halo&quot;: &quot;designer.sheet&quot;}'><div class="gs-stage"></div><figcaption>The Presets tab: named settings for this block.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
-<ul><li><strong>Presets</strong> — named settings for this block only, factory ones and yours. Loading one sets the block in <strong>every scene</strong> and clears its per-scene values; it never touches the rest of the song. Save the current settings as a preset of your own, for one instrument or all.</li></ul>
+<figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-delay-presets&quot;, &quot;halo&quot;: &quot;designer.sheet&quot;}'><div class="gs-stage"></div><figcaption>The presets, on the left of the knobs: named settings for this block.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<ul><li><strong>Presets</strong> — named settings for this block only, factory ones and yours, in a list you can search (22 for the Tempo Delay). Loading one sets the block in <strong>every scene</strong> and clears its per-scene values; it never touches the rest of the song. <strong>Save as…</strong> keeps the current settings as a preset of your own, for one instrument or all.</li></ul>
 <figure class="doc-screen" data-panel='{&quot;example&quot;: &quot;golem-rising-delay-assign&quot;, &quot;halo&quot;: &quot;designer.sheet&quot;}'><div class="gs-stage"></div><figcaption>The MIDI assign tab: the delay is on switch 7.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <ul><li><strong>MIDI assign</strong> — which footswitch or expression pedal drives this block. Tap a switch to put the block on it, tap again to take it off. A long press on a tile opens the drawer straight on this tab.</li></ul>
 <h2 id="s3">Split, merge, A/B branches</h2>
-<figure class="doc-screen" id="panel-split" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;split&quot;}'><div class="gs-stage"></div><figcaption>Ambient Metal&#x27;s guitar: a split into two amps, merged back.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
+<figure class="doc-screen" id="panel-split" data-panel='{&quot;example&quot;: &quot;golem-rising-designer&quot;, &quot;id&quot;: &quot;split&quot;}'><div class="gs-stage"></div><figcaption>Low Tide&#x27;s guitar: a split into two amps, merged back.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>A chain can <strong>split in two</strong>: two branches side by side, each with its own blocks.</p>
-<ul><li><strong>Branch A and branch B.</strong> Golem Rising&#x27;s guitar goes into a Peavey and a Mesa cabinet on A, a Roland on B. Each branch can be switched on or off <strong>per scene</strong>, with the <code>A ⏻</code> and <code>B ⏻</code> controls on the fork.</li></ul>
+<ul><li><strong>Branch A and branch B.</strong> Golem Rising&#x27;s guitar goes into a Mesa Dual Rectifier and a Mesa cabinet on A, a Roland on B. Each branch can be switched on or off <strong>per scene</strong>, with the <code>A ⏻</code> and <code>B ⏻</code> controls on the fork.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;split&quot;, &quot;halo&quot;: &quot;designer.split&quot;}'>Show me</button></p>
 <ul><li><strong>⇉ or Σ.</strong> With <strong>⇉</strong> (fan-out) each branch goes to its own output: two amps to two speakers. With <strong>Σ</strong> (merge) the branches are summed back into one, with a level in dB (−3 dB here), and the chain goes on after it.</li></ul>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;split&quot;, &quot;halo&quot;: &quot;designer.merge&quot;}'>Show me</button></p>
@@ -122,6 +122,7 @@
     <div class="ph-foot__col">
       <b>golem</b>
       <a href="../../">The Golem</a>
+      <a href="../../fx/">FX</a>
       <a href="../../docs/">Docs</a>
     </div>
     <div class="ph-foot__col ph-foot__col--oss">

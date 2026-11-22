@@ -16,14 +16,14 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#0d0f12">
-  <link rel="icon" href="../../golem-app/435a648/favicon.ico">
-  <link rel="stylesheet" href="../../assets/site.css?v=3a7e82a401">
+  <link rel="icon" href="../../golem-app/4cdf495/favicon.ico">
+  <link rel="stylesheet" href="../../assets/site.css?v=dba68df5fa">
   <script data-goatcounter="https://golem.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
   <header class="pn">
     <a class="pn__wordmark" href="../../"><span class="pn__wordmark-s">/</span>golem</a>
-    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
+    <nav class="pn__links" aria-label="Main"><a href="../../" class="pn__link">The Golem</a><a href="../../fx/" class="pn__link">FX</a><a href="../../docs/" class="pn__link is-on">Docs</a></nav>
     <div class="pn__actions"><a class="pn__install" href="https://github.com/Goldoralf/golem/releases/latest" data-goatcounter-click="download-header" data-goatcounter-title="Download (header)">Download</a></div>
   </header>
   <div class="docs">
@@ -88,10 +88,10 @@
 <figure class="doc-screen" id="panel-h" data-panel='{&quot;example&quot;: &quot;factory-health&quot;, &quot;id&quot;: &quot;h&quot;}'><div class="gs-stage"></div><figcaption>Health on a new golem: it plays, and the banner says what deserves a look.<button type="button" class="doc-screen-reset">Back to the example</button></figcaption></figure>
 <p>The banner at the top gives the verdict in one sentence — <em>Playing is safe</em>, then what to look at — and counts the facts that are green, orange and red.</p>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;h&quot;, &quot;halo&quot;: &quot;health.verdict&quot;}'>Show me</button></p>
-<p><strong>Now</strong> lists eleven facts, read every five seconds, touching nothing:</p>
+<p><strong>Now</strong> lists thirteen facts, read every five seconds, touching nothing:</p>
 <p class="doc-step"><button type="button" class="doc-step__show" data-step='{&quot;of&quot;: &quot;h&quot;, &quot;halo&quot;: &quot;health.now&quot;}'>Show me</button></p>
-<p>| Fact | What it says | |---|---| | <strong>Engine</strong> | the audio engine is running and talks to the golem | | <strong>Sound card</strong> | the card is there and its audio really moves | | <strong>Dropouts</strong> | clicks in the sound in the last ten minutes — a few is orange, many is red | | <strong>Pedalboard &amp; MIDI</strong> | the pedalboard and your MIDI devices answer | | <strong>Playing</strong> | the preset that plays has all its files loaded | | <strong>Setlist on the foot</strong> | the blocks of your setlist that will not play on this golem, and why | | <strong>Plugins</strong> | what the engine found installed | | <strong>Disk</strong> | the free space — orange under 20 GB, red under 5 GB | | <strong>golem.fm</strong> | paired, and reachable | | <strong>Scripts</strong> | no error in the golem&#x27;s own scripts since it started | | <strong>Since last boot</strong> | what changed on the machine since it started |</p>
-<p>Grey means <em>not measured yet</em>, or <em>does not apply</em>: it never alarms. On a new golem, <em>Setlist on the foot</em> is orange — the factory presets need their captures from TONE3000 — and its <strong>Patches →</strong> button goes where they are downloaded.</p>
+<p>| Fact | What it says | |---|---| | <strong>Engine</strong> | the audio engine is running and talks to the golem | | <strong>Sound card</strong> | the card is there and its audio really moves | | <strong>Dropouts</strong> | clicks in the sound in the last ten minutes — a few is orange, many is red | | <strong>Pedalboard &amp; MIDI</strong> | the pedalboard and your MIDI devices answer | | <strong>Playing</strong> | the preset that plays has all its files loaded | | <strong>Setlist on the foot</strong> | the blocks of your setlist that will not play on this golem, and why | | <strong>Plugins</strong> | what the engine found installed | | <strong>Disk</strong> | the free space — orange under 20 GB, red under 5 GB | | <strong>golem.fm</strong> | paired, and reachable | | <strong>Scripts</strong> | no error in the golem&#x27;s own scripts since it started | | <strong>Performance mode</strong> | the computer&#x27;s performance mode is on while golem is running | | <strong>CPU budget</strong> | what each block costs on this machine — the golem measures it when the rack is idle | | <strong>Since last boot</strong> | what changed on the machine since it started |</p>
+<p>Grey means <em>not measured yet</em>, or <em>does not apply</em>: it never alarms. On a new golem, <em>CPU budget</em> is grey — <em>not calibrated yet</em> — and <em>Setlist on the foot</em> is orange — the factory presets need their captures from TONE3000 — and its <strong>Patches →</strong> button goes where they are downloaded.</p>
 <h2 id="s2">Fixing from Health</h2>
 <p>When the golem knows the answer to an orange or red line, the line carries a <strong>Fix</strong> button: raise the audio buffer after dropouts, reopen the sound card, reopen the MIDI devices after a cable was replugged, pose the preset again when files did not load, restart the engine.</p>
 <p>Nothing runs on the first tap. The sheet first says <strong>what will change</strong> (before → after), what it costs, how the golem will check that it worked, and how to undo it. Confirm, and the golem runs it, then <strong>verifies</strong>: the line turns green, or the sheet says it did not work.</p>
@@ -120,6 +120,7 @@
     <div class="ph-foot__col">
       <b>golem</b>
       <a href="../../">The Golem</a>
+      <a href="../../fx/">FX</a>
       <a href="../../docs/">Docs</a>
     </div>
     <div class="ph-foot__col ph-foot__col--oss">

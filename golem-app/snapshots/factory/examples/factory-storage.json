@@ -2,21 +2,25 @@
  "name": "factory-storage",
  "title": "Settings ▸ Content ▸ Storage on a new golem",
  "route": "#/system/content/storage",
- "preset": "factory-ambient-metal",
+ "preset": "factory-nu-metal-eight",
  "scene": "B",
  "click": null,
  "state": {
+  "engine": {
+   "id": "ardour",
+   "name": "Golem Engine"
+  },
   "health": {
    "level": "warn",
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1794219274.058
+   "at": 1795303572.725
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1794218966.654,
+   "skipped_at": 1795303283.894,
    "verdict": null
   },
   "startup": {
@@ -25,18 +29,18 @@
   },
   "reaper_connected": true,
   "reaper_running": true,
-  "preset_id": "factory-ambient-metal",
-  "preset_name": "Ambient Metal",
+  "preset_id": "factory-nu-metal-eight",
+  "preset_name": "Low Tide",
   "scene_id": "B",
   "voice_on": false,
   "whammy_on": false,
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.727628767490387,
-   "voice": 0.7639812231063843,
-   "in1": 0.727628767490387,
-   "in2": 0.7639812231063843,
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
    "in3": 0.0
   },
   "clip": {},
@@ -65,25 +69,14 @@
    "ok": true,
    "why": ""
   },
-  "midi": {
-   "ok": true,
-   "issues": [],
-   "fix": "",
-   "ts": "2026-11-09 11:14:29"
-  },
+  "midi": {},
   "rig_check": {
-   "t": 1794219271,
-   "ok": true,
    "checked": 0,
+   "ok": true,
+   "t": 1795303551,
    "issues": []
   },
   "rig_unmounted": [
-   {
-    "id": "guitar-2",
-    "name": "Guitar 2",
-    "input": "—",
-    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
-   },
    {
     "id": "bass-1",
     "name": "Bass",
@@ -99,9 +92,9 @@
   ],
   "rig_error": null,
   "song": {
-   "line": "r:factory:8",
+   "line": "r:factory:12",
    "setlist": "factory",
-   "preset": "factory-ambient-metal",
+   "preset": "factory-nu-metal-eight",
    "title": "Golem Rising",
    "slug": null,
    "bpm": 120,
@@ -109,7 +102,7 @@
    "arrangement": true,
    "band_song": "rs:f3f0252689f96910f01c81be0325855f"
   },
-  "cpu_boost": false,
+  "cpu_boost": true,
   "pedalboard": {
    "id": "unknown",
    "name": "unknown pedalboard",
@@ -133,7 +126,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1794219213.8311615,
+   "t": 1795303514.42628,
    "countin": null
   },
   "backing": {
@@ -484,12 +477,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26548559872,
-   "takes": 161572837,
+   "free": 40555180032,
+   "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14269,
+   "seconds": 23996,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -502,7 +495,7 @@
   "click": {
    "on": false,
    "present": true,
-   "bpm": 120.0
+   "bpm": 120
   },
   "compo": {
    "targets": {},
@@ -513,10 +506,27 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [],
-   "events": []
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-11-22T00:20:20",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
   },
-  "updated": 1794219275.157885,
+  "updated": 1795303572.9928606,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -530,36 +540,36 @@
   "/api/storage": {
    "disk": {
     "total": 205166764032,
-    "used": 168120672256,
-    "free": 26549637120
+    "used": 154115002368,
+    "free": 40555307008
    },
    "music": {
     "amps": 0,
     "cabs": 0,
     "pedals": 0,
-    "presets": 175239,
-    "patches": 473287,
-    "banks": 10854,
+    "presets": 240247,
+    "patches": 632915,
+    "banks": 14104,
     "settings": 195640,
-    "kits": 2468884,
+    "kits": 8919014,
     "synths": 0,
     "grooves": 7101,
-    "songs": 471583,
-    "recordings": 161512178,
+    "songs": 471574,
+    "recordings": 0,
     "standards": 2623,
     "vocals": 0
    },
-   "music_total": 165317389,
+   "music_total": 10483218,
    "counts": {
     "presets": {
-     "n": 9,
-     "bytes": 175239,
+     "n": 13,
+     "bytes": 240247,
      "templates": 0
     },
     "banks": {
      "n": 6,
      "mappings": 0,
-     "bytes": 10854
+     "bytes": 14104
     },
     "amps": {
      "n": 0,
@@ -579,24 +589,24 @@
     },
     "kits": {
      "n": 7,
-     "sounds": 48,
-     "bytes": 2468884
+     "sounds": 58,
+     "bytes": 8919014
     },
     "songs": {
      "n": 1,
-     "bytes": 471583
+     "bytes": 471574
     },
     "originals": {
      "n": 1,
-     "bytes": 471583
+     "bytes": 471574
     },
     "patches": {
-     "n": 38,
-     "bytes": 473287
+     "n": 53,
+     "bytes": 632915
     },
     "blockpresets": {
      "n": 0,
-     "factory": 176,
+     "factory": 807,
      "bytes": 0
     },
     "settings": {
@@ -612,10 +622,10 @@
      "bytes": 7101
     },
     "recordings": {
-     "n": 8,
-     "bytes": 161512178,
-     "audio": 7,
-     "sessions": 1
+     "n": 0,
+     "bytes": 0,
+     "audio": 0,
+     "sessions": 0
     },
     "standards": {
      "n": 3,
@@ -668,7 +678,7 @@
     }
    ],
    "caches_total": 470282,
-   "other": 167950758810,
+   "other": 154099923093,
    "last": {},
    "last_full": null
   }

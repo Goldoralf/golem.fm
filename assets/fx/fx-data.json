@@ -1,0 +1,582 @@
+{
+ "_": "Lu dans maestrium (lib/golemFx/draw.ts, pages/golem/ossBlocks.ts) par tools/import_fx.py.",
+ "source": {
+  "repo": "golem-fx",
+  "ref": "6911767",
+  "commit": "69117679571c3f8bc13e880c233d4c51e5794d5a"
+ },
+ "blackwork": [
+  "gfx-met",
+  "gfx-emet",
+  "gfx-shem",
+  "gfx-golem"
+ ],
+ "crates": [
+  {
+   "crate": "gfx-acoustic",
+   "blocks": [
+    "acoustic-sim"
+   ],
+   "name": "Acoustic",
+   "presets": 15,
+   "category": "amp",
+   "color": "#552210"
+  },
+  {
+   "crate": "gfx-autowah",
+   "blocks": [
+    "autowah"
+   ],
+   "name": "Autowah",
+   "presets": 13,
+   "category": "filter",
+   "color": "#5ec8e0"
+  },
+  {
+   "crate": "gfx-bassdi",
+   "blocks": [
+    "bass-di"
+   ],
+   "name": "Bass DI",
+   "presets": 13,
+   "category": "preamp",
+   "color": "#b316c0"
+  },
+  {
+   "crate": "gfx-boost",
+   "blocks": [
+    "clean-boost",
+    "volume"
+   ],
+   "name": "Boost",
+   "presets": 6,
+   "category": "utility",
+   "color": "#ffb03a"
+  },
+  {
+   "crate": "gfx-cab",
+   "blocks": [
+    "cab"
+   ],
+   "name": "Cab",
+   "presets": 15,
+   "category": "cab",
+   "color": "#00a898"
+  },
+  {
+   "crate": "gfx-chorus",
+   "blocks": [
+    "chorus"
+   ],
+   "name": "Chorus",
+   "presets": 22,
+   "category": "modulation",
+   "color": "#2ecc71"
+  },
+  {
+   "crate": "gfx-comp",
+   "blocks": [
+    "comp"
+   ],
+   "name": "Comp",
+   "presets": 18,
+   "category": "dynamics",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-correct",
+   "blocks": [
+    "pitch-correct"
+   ],
+   "name": "Correct",
+   "presets": 16,
+   "category": "pitch",
+   "color": "#7a1450"
+  },
+  {
+   "crate": "gfx-crusher",
+   "blocks": [
+    "bitcrusher"
+   ],
+   "name": "Crusher",
+   "presets": 18,
+   "category": "lofi",
+   "color": "#e8336f"
+  },
+  {
+   "crate": "gfx-deesser",
+   "blocks": [
+    "deesser"
+   ],
+   "name": "De-esser",
+   "presets": 8,
+   "category": "dynamics",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-delay",
+   "blocks": [
+    "delay"
+   ],
+   "name": "Delay",
+   "presets": 22,
+   "category": "delay",
+   "color": "#5a7cff"
+  },
+  {
+   "crate": "gfx-detune",
+   "blocks": [
+    "detune"
+   ],
+   "name": "Detune",
+   "presets": 9,
+   "category": "pitch",
+   "color": "#b06cf0"
+  },
+  {
+   "crate": "gfx-dist",
+   "blocks": [
+    "dist"
+   ],
+   "name": "Dist",
+   "presets": 16,
+   "category": "drive",
+   "color": "#c8160e"
+  },
+  {
+   "crate": "gfx-drive",
+   "blocks": [
+    "guitar-drive"
+   ],
+   "name": "Drive",
+   "presets": 24,
+   "category": "drive",
+   "color": "#ff7a3c"
+  },
+  {
+   "crate": "gfx-ducker",
+   "blocks": [
+    "ducker"
+   ],
+   "name": "Ducker",
+   "presets": 15,
+   "category": "dynamics",
+   "color": "#4a5a6e"
+  },
+  {
+   "crate": "gfx-emet",
+   "blocks": [
+    "emet"
+   ],
+   "name": "Emet",
+   "presets": 12,
+   "category": "drive",
+   "color": "#e04a00"
+  },
+  {
+   "crate": "gfx-eq",
+   "blocks": [
+    "eq"
+   ],
+   "name": "EQ",
+   "presets": 21,
+   "category": "eq",
+   "color": "#3d9be9"
+  },
+  {
+   "crate": "gfx-flanger",
+   "blocks": [
+    "flanger-js"
+   ],
+   "name": "Flanger",
+   "presets": 17,
+   "category": "modulation",
+   "color": "#2ecc71"
+  },
+  {
+   "crate": "gfx-formant",
+   "blocks": [
+    "formant"
+   ],
+   "name": "Formant",
+   "presets": 17,
+   "category": "pitch",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-freqshift",
+   "blocks": [
+    "surge-freqshift"
+   ],
+   "name": "Freqshift",
+   "presets": 16,
+   "category": "pitch",
+   "color": "#b06cf0"
+  },
+  {
+   "crate": "gfx-fuzz",
+   "blocks": [
+    "fuzz"
+   ],
+   "name": "Fuzz",
+   "presets": 18,
+   "category": "drive",
+   "color": "#b0602a"
+  },
+  {
+   "crate": "gfx-gate",
+   "blocks": [
+    "gate"
+   ],
+   "name": "Gate",
+   "presets": 14,
+   "category": "dynamics",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-geq",
+   "blocks": [
+    "eq-graphic"
+   ],
+   "name": "Graphic EQ",
+   "presets": 19,
+   "category": "eq",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-glitch",
+   "blocks": [
+    "glitch"
+   ],
+   "name": "Glitch",
+   "presets": 17,
+   "category": "modulation",
+   "color": "#72c000"
+  },
+  {
+   "crate": "gfx-golem",
+   "blocks": [
+    "golem-double"
+   ],
+   "name": "Golem",
+   "presets": 19,
+   "category": "pitch",
+   "color": "#9b4dff"
+  },
+  {
+   "crate": "gfx-grains",
+   "blocks": [
+    "granular"
+   ],
+   "name": "Grains",
+   "presets": 22,
+   "category": "modulation",
+   "color": "#00a84f"
+  },
+  {
+   "crate": "gfx-grit",
+   "blocks": [
+    "grit"
+   ],
+   "name": "Grit",
+   "presets": 15,
+   "category": "lofi",
+   "color": "#e07a3a"
+  },
+  {
+   "crate": "gfx-irfx",
+   "blocks": [
+    "ir-fx"
+   ],
+   "name": "IR FX",
+   "presets": 7,
+   "category": "reverb",
+   "color": "#3d9be9"
+  },
+  {
+   "crate": "gfx-killswitch",
+   "blocks": [
+    "killswitch"
+   ],
+   "name": "Killswitch",
+   "presets": 20,
+   "category": "modulation",
+   "color": "#2ecc71"
+  },
+  {
+   "crate": "gfx-limiter",
+   "blocks": [
+    "limiter"
+   ],
+   "name": "Limiter",
+   "presets": 7,
+   "category": "dynamics",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-mbcomp",
+   "blocks": [
+    "mb-comp"
+   ],
+   "name": "MB Comp",
+   "presets": 15,
+   "category": "dynamics",
+   "color": "#4a5a6e"
+  },
+  {
+   "crate": "gfx-met",
+   "blocks": [
+    "met"
+   ],
+   "name": "Met",
+   "presets": 11,
+   "category": "dynamics",
+   "color": "#4a5a6e"
+  },
+  {
+   "crate": "gfx-morph",
+   "blocks": [
+    "morph"
+   ],
+   "name": "Morph",
+   "presets": 17,
+   "category": "lofi",
+   "color": "#9a0d2a"
+  },
+  {
+   "crate": "gfx-octaver",
+   "blocks": [
+    "octaver"
+   ],
+   "name": "Octaver",
+   "presets": 13,
+   "category": "pitch",
+   "color": "#b06cf0"
+  },
+  {
+   "crate": "gfx-phaser",
+   "blocks": [
+    "phaser-js"
+   ],
+   "name": "Phaser",
+   "presets": 18,
+   "category": "modulation",
+   "color": "#2ecc71"
+  },
+  {
+   "crate": "gfx-pitch",
+   "blocks": [
+    "pitch"
+   ],
+   "name": "Pitch",
+   "presets": 16,
+   "category": "pitch",
+   "color": "#b06cf0"
+  },
+  {
+   "crate": "gfx-pitch-classic",
+   "blocks": [
+    "pitch-shift-js"
+   ],
+   "name": "Pitch Classic",
+   "presets": 6,
+   "category": "pitch",
+   "color": "#b06cf0"
+  },
+  {
+   "crate": "gfx-polysynth",
+   "blocks": [
+    "polysynth"
+   ],
+   "name": "Polysynth",
+   "presets": 14,
+   "category": "pitch",
+   "color": "#ff9ecf"
+  },
+  {
+   "crate": "gfx-radio",
+   "blocks": [
+    "radio"
+   ],
+   "name": "Radio",
+   "presets": 24,
+   "category": "lofi",
+   "color": "#4b5320"
+  },
+  {
+   "crate": "gfx-reverb",
+   "blocks": [
+    "reverb",
+    "reverb-plate",
+    "reverb-room"
+   ],
+   "name": "Reverb",
+   "presets": 22,
+   "category": "reverb",
+   "color": "#5a7cff"
+  },
+  {
+   "crate": "gfx-ringmod",
+   "blocks": [
+    "ringmod",
+    "surge-treemonster"
+   ],
+   "name": "Ringmod",
+   "presets": 18,
+   "category": "modulation",
+   "color": "#c9b000"
+  },
+  {
+   "crate": "gfx-rotary",
+   "blocks": [
+    "rotary"
+   ],
+   "name": "Rotary",
+   "presets": 14,
+   "category": "modulation",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-shem",
+   "blocks": [
+    "shem"
+   ],
+   "name": "Shem",
+   "presets": 10,
+   "category": "drive",
+   "color": "#f0a500"
+  },
+  {
+   "crate": "gfx-shimmer",
+   "blocks": [
+    "reverb-shimmer"
+   ],
+   "name": "Shimmer",
+   "presets": 16,
+   "category": "reverb",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-spectralcomp",
+   "blocks": [
+    "spectral-comp"
+   ],
+   "name": "Spectral Comp",
+   "presets": 18,
+   "category": "dynamics",
+   "color": "#8a94a3"
+  },
+  {
+   "crate": "gfx-stretch",
+   "blocks": [
+    "stretch"
+   ],
+   "name": "Stretch",
+   "presets": 15,
+   "category": "reverb",
+   "color": "#a0a8ff"
+  },
+  {
+   "crate": "gfx-sustainer",
+   "blocks": [
+    "sustainer"
+   ],
+   "name": "Sustainer",
+   "presets": 17,
+   "category": "pitch",
+   "color": "#c4148c"
+  },
+  {
+   "crate": "gfx-swell",
+   "blocks": [
+    "swell"
+   ],
+   "name": "Swell",
+   "presets": 14,
+   "category": "dynamics",
+   "color": "#4a5a6e"
+  },
+  {
+   "crate": "gfx-tape",
+   "blocks": [
+    "tape"
+   ],
+   "name": "Tape",
+   "presets": 19,
+   "category": "lofi",
+   "color": "#d8c8a0"
+  },
+  {
+   "crate": "gfx-transient",
+   "blocks": [
+    "transient"
+   ],
+   "name": "Transient",
+   "presets": 15,
+   "category": "dynamics",
+   "color": "#4a5a6e"
+  },
+  {
+   "crate": "gfx-tremolo",
+   "blocks": [
+    "tremolo"
+   ],
+   "name": "Tremolo",
+   "presets": 16,
+   "category": "modulation",
+   "color": "#2ecc71"
+  },
+  {
+   "crate": "gfx-tuner",
+   "blocks": [
+    "tuner"
+   ],
+   "name": "Tuner",
+   "presets": 14,
+   "category": "utility",
+   "color": "#126e1c"
+  },
+  {
+   "crate": "gfx-vibrato",
+   "blocks": [
+    "vibrato"
+   ],
+   "name": "Vibrato",
+   "presets": 13,
+   "category": "modulation",
+   "color": "#2ecc71"
+  },
+  {
+   "crate": "gfx-vocoder",
+   "blocks": [
+    "vocoder"
+   ],
+   "name": "Vocoder",
+   "presets": 12,
+   "category": "modulation",
+   "color": "#00a84f"
+  },
+  {
+   "crate": "gfx-wah",
+   "blocks": [
+    "wah",
+    "wah-color"
+   ],
+   "name": "Wah",
+   "presets": 15,
+   "category": "filter",
+   "color": "#5ec8e0"
+  },
+  {
+   "crate": "gfx-widener",
+   "blocks": [
+    "widener"
+   ],
+   "name": "Widener",
+   "presets": 16,
+   "category": "utility",
+   "color": "#c0e0f8"
+  }
+ ],
+ "oss": []
+}

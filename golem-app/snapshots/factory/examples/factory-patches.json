@@ -2,21 +2,25 @@
  "name": "factory-patches",
  "title": "Songs ▸ Patches: the factory patches",
  "route": "#/songs/patches",
- "preset": "factory-ambient-metal",
+ "preset": "factory-nu-metal-eight",
  "scene": "B",
  "click": null,
  "state": {
+  "engine": {
+   "id": "ardour",
+   "name": "Golem Engine"
+  },
   "health": {
    "level": "warn",
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1794219163.043
+   "at": 1795303461.887
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1794218966.654,
+   "skipped_at": 1795303283.894,
    "verdict": null
   },
   "startup": {
@@ -25,18 +29,18 @@
   },
   "reaper_connected": true,
   "reaper_running": true,
-  "preset_id": "factory-ambient-metal",
-  "preset_name": "Ambient Metal",
+  "preset_id": "factory-nu-metal-eight",
+  "preset_name": "Low Tide",
   "scene_id": "B",
   "voice_on": false,
   "whammy_on": false,
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.727628767490387,
-   "voice": 0.7608501315116882,
-   "in1": 0.727628767490387,
-   "in2": 0.7608501315116882,
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
    "in3": 0.0
   },
   "clip": {},
@@ -65,25 +69,14 @@
    "ok": true,
    "why": ""
   },
-  "midi": {
-   "ok": true,
-   "issues": [],
-   "fix": "",
-   "ts": "2026-11-09 11:12:39"
-  },
+  "midi": {},
   "rig_check": {
-   "t": 1794219156,
-   "ok": true,
    "checked": 0,
+   "ok": true,
+   "t": 1795303412,
    "issues": []
   },
   "rig_unmounted": [
-   {
-    "id": "guitar-2",
-    "name": "Guitar 2",
-    "input": "—",
-    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
-   },
    {
     "id": "bass-1",
     "name": "Bass",
@@ -99,9 +92,9 @@
   ],
   "rig_error": null,
   "song": {
-   "line": "r:factory:8",
+   "line": "r:factory:12",
    "setlist": "factory",
-   "preset": "factory-ambient-metal",
+   "preset": "factory-nu-metal-eight",
    "title": "Golem Rising",
    "slug": null,
    "bpm": 120,
@@ -109,7 +102,7 @@
    "arrangement": true,
    "band_song": "rs:f3f0252689f96910f01c81be0325855f"
   },
-  "cpu_boost": false,
+  "cpu_boost": true,
   "pedalboard": {
    "id": "unknown",
    "name": "unknown pedalboard",
@@ -483,12 +476,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26566946816,
-   "takes": 161572837,
+   "free": 40559742976,
+   "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14282,
+   "seconds": 23999,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -501,7 +494,7 @@
   "click": {
    "on": false,
    "present": true,
-   "bpm": 120.0
+   "bpm": 120
   },
   "compo": {
    "targets": {},
@@ -512,10 +505,27 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [],
-   "events": []
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-11-22T00:20:20",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
   },
-  "updated": 1794219165.0736933,
+  "updated": 1795303466.2295175,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -532,44 +542,59 @@
   "nav.live",
   "nav.settings",
   "nav.songs",
-  "songs.patch:factory-bass-biamp-grit",
+  "songs.patch:factory-bass-blues-round",
   "songs.patch:factory-bass-funk-slap",
-  "songs.patch:factory-bass-jazz-warm",
-  "songs.patch:factory-bass-metal",
-  "songs.patch:factory-bass-rock-grind",
-  "songs.patch:factory-bass-synth",
-  "songs.patch:factory-bass-vintage-round",
-  "songs.patch:factory-drums-classic-rock",
+  "songs.patch:factory-bass-fuzz",
+  "songs.patch:factory-bass-lab",
+  "songs.patch:factory-bass-metal-grind",
+  "songs.patch:factory-bass-nu-low",
+  "songs.patch:factory-bass-pop-pick",
+  "songs.patch:factory-bass-prog-biamp",
+  "songs.patch:factory-bass-synth-ambient",
+  "songs.patch:factory-bass-upright-jazz",
   "songs.patch:factory-drums-jazz-brushes",
+  "songs.patch:factory-drums-lofi",
   "songs.patch:factory-drums-metal",
   "songs.patch:factory-drums-studio-rock",
+  "songs.patch:factory-drums-vintage-rock",
   "songs.patch:factory-guitar-ambient-djent",
-  "songs.patch:factory-guitar-british-crunch",
-  "songs.patch:factory-guitar-brown-lead",
+  "songs.patch:factory-guitar-eight-string-nu",
   "songs.patch:factory-guitar-funk-clean",
-  "songs.patch:factory-guitar-fuzz-wall",
-  "songs.patch:factory-guitar-gypsy-lead",
+  "songs.patch:factory-guitar-funk-drive",
+  "songs.patch:factory-guitar-fuzz-grunge",
+  "songs.patch:factory-guitar-glass-ambient",
+  "songs.patch:factory-guitar-groove-metal",
+  "songs.patch:factory-guitar-gypsy-acoustic",
   "songs.patch:factory-guitar-hero-lead",
-  "songs.patch:factory-guitar-indie-chime",
-  "songs.patch:factory-guitar-jazz-clean",
-  "songs.patch:factory-guitar-modern-metal",
-  "songs.patch:factory-guitar-singing-clean",
-  "songs.patch:factory-guitar-soaring-lead",
-  "songs.patch:factory-guitar-texas-blues",
-  "songs.patch:factory-keys-80s-epiano",
+  "songs.patch:factory-guitar-jazz-box",
+  "songs.patch:factory-guitar-loop-indie",
+  "songs.patch:factory-guitar-pop-chorus",
+  "songs.patch:factory-guitar-squeal-lead",
+  "songs.patch:factory-guitar-texas-shuffle",
+  "songs.patch:factory-guitar-wailing-blues",
+  "songs.patch:factory-keys-blues-organ",
   "songs.patch:factory-keys-cathedral-piano",
-  "songs.patch:factory-keys-electric-piano",
+  "songs.patch:factory-keys-dark-pad",
+  "songs.patch:factory-keys-electro-pads",
+  "songs.patch:factory-keys-funk-clav",
+  "songs.patch:factory-keys-glass-rhodes",
+  "songs.patch:factory-keys-hero-pad",
   "songs.patch:factory-keys-jazz-piano",
-  "songs.patch:factory-keys-loop-bass-beat",
-  "songs.patch:factory-keys-rock-organ",
-  "songs.patch:factory-keys-synth-lead",
-  "songs.patch:factory-keys-warm-pad",
-  "songs.patch:factory-voice-clean",
+  "songs.patch:factory-keys-loop-synth",
+  "songs.patch:factory-keys-nu-pad",
+  "songs.patch:factory-keys-pop-piano",
+  "songs.patch:factory-keys-strings-wash",
+  "songs.patch:factory-voice-blues-shout",
   "songs.patch:factory-voice-crooner",
+  "songs.patch:factory-voice-ethereal",
+  "songs.patch:factory-voice-funk-rap",
+  "songs.patch:factory-voice-grunge-raw",
   "songs.patch:factory-voice-halo",
-  "songs.patch:factory-voice-metal",
+  "songs.patch:factory-voice-indie-double",
+  "songs.patch:factory-voice-karaoke",
+  "songs.patch:factory-voice-metal-scream",
   "songs.patch:factory-voice-pop-tuned",
-  "songs.patch:factory-voice-rock",
+  "songs.patch:factory-voice-whisper-scream",
   "topbar.brand"
  ],
  "anchors_hidden": []

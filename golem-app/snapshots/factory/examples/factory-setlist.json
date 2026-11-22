@@ -2,21 +2,25 @@
  "name": "factory-setlist",
  "title": "The Factory Golem setlist, Rooftop Prowl loaded",
  "route": "#/songs/setlists/factory",
- "preset": "factory-chill-jazz",
+ "preset": "factory-jazz-club",
  "scene": "A",
  "click": null,
  "state": {
+  "engine": {
+   "id": "ardour",
+   "name": "Golem Engine"
+  },
   "health": {
    "level": "warn",
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1794219193.531
+   "at": 1795303497.193
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1794218966.654,
+   "skipped_at": 1795303283.894,
    "verdict": null
   },
   "startup": {
@@ -25,25 +29,25 @@
   },
   "reaper_connected": true,
   "reaper_running": true,
-  "preset_id": "factory-chill-jazz",
-  "preset_name": "Chill Jazz",
+  "preset_id": "factory-jazz-club",
+  "preset_name": "Blue Lantern Trio",
   "scene_id": "A",
   "voice_on": false,
   "whammy_on": false,
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.7478403449058533,
-   "voice": 0.7865102291107178,
-   "in1": 0.7478403449058533,
-   "in2": 0.7865102291107178,
-   "in3": 0.7870790958404541
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
+   "in3": 0.0
   },
   "clip": {},
-  "tempo": 180,
+  "tempo": 120,
   "stomps": {
    "6": false,
-   "7": false,
+   "7": true,
    "8": false,
    "9": true,
    "10": true
@@ -65,44 +69,39 @@
    "ok": true,
    "why": ""
   },
-  "midi": {
-   "ok": true,
-   "issues": [],
-   "fix": "",
-   "ts": "2026-11-09 11:13:14"
-  },
+  "midi": {},
   "rig_check": {
-   "t": 1794219190,
-   "ok": true,
    "checked": 0,
+   "ok": true,
+   "t": 1795303494,
    "issues": []
   },
   "rig_unmounted": [
-   {
-    "id": "guitar-2",
-    "name": "Rhythm Guitar",
-    "input": "—",
-    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
-   },
    {
     "id": "bass-1",
     "name": "Bass",
     "input": "—",
     "reason": "needs Bass 1, this card has 2 inputs and no Bass 1"
+   },
+   {
+    "id": "voice-1",
+    "name": "Voice",
+    "input": "—",
+    "reason": "needs Voice 1, this card has 2 inputs and no Voice 1"
    }
   ],
   "rig_error": null,
   "song": {
    "line": "r:factory:0",
    "setlist": "factory",
-   "preset": "factory-chill-jazz",
+   "preset": "factory-jazz-club",
    "title": "Rooftop Prowl",
    "slug": null,
-   "bpm": 180,
+   "bpm": 160,
    "backing": null,
    "arrangement": false
   },
-  "cpu_boost": false,
+  "cpu_boost": true,
   "pedalboard": {
    "id": "unknown",
    "name": "unknown pedalboard",
@@ -329,7 +328,7 @@
   "samples": {},
   "drum_switches": {},
   "standard_switches": {
-   "9": {
+   "10": {
     "block": "standard",
     "params": {
      "standard": "rooftop-prowl",
@@ -341,6 +340,8 @@
      "keys": true,
      "bass": true,
      "drums": true,
+     "guitar": false,
+     "pompe": "auto",
      "groove": "auto",
      "kit": "blonde-bop",
      "choruses": 4
@@ -357,6 +358,8 @@
    "keys": true,
    "bass": true,
    "drums": true,
+   "guitar": false,
+   "pompe": "auto",
    "groove": "auto",
    "kit": "blonde-bop",
    "choruses": 4
@@ -369,7 +372,7 @@
   },
   "standard": {
    "playing": false,
-   "standard": null,
+   "standard": false,
    "bar": -1,
    "bars": 0
   },
@@ -382,12 +385,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26565177344,
-   "takes": 161572837,
+   "free": 40558145536,
+   "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14281,
+   "seconds": 23998,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -400,7 +403,7 @@
   "click": {
    "on": false,
    "present": true,
-   "bpm": 180.0
+   "bpm": 160
   },
   "compo": {
    "targets": {},
@@ -411,10 +414,27 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [],
-   "events": []
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-11-22T00:20:20",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
   },
-  "updated": 1794219197.5152335,
+  "updated": 1795303497.681914,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -435,6 +455,10 @@
   "setlists.detail",
   "setlists.kind",
   "setlists.line.1",
+  "setlists.line.10",
+  "setlists.line.11",
+  "setlists.line.12",
+  "setlists.line.13",
   "setlists.line.2",
   "setlists.line.3",
   "setlists.line.4",

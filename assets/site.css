@@ -435,3 +435,9 @@ h1, h2, h3 { line-height: var(--lh-tight); }
 
 /* Un titre pour les lecteurs d'écran et les robots, pas pour l'œil. */
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+/* ═══ /fx — la galerie des pédales (assets/fx/fx.css vient de golem.fm, telle quelle).
+   Il ne manque que l'écart entre les sections, que `.ph` donne là-bas. ═══ */
+.fx .fx-sec { margin-top: var(--space-12); }
+.fx .fx-hero { padding-top: var(--space-6); }
+.fx-lede a { color: var(--text-primary); }

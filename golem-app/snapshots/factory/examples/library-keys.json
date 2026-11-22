@@ -2,21 +2,25 @@
  "name": "library-keys",
  "title": "Library ▸ Keys ▸ Instruments: the rack's piano, e-piano and organ",
  "route": "#/library/keys/instruments",
- "preset": "factory-ambient-metal",
+ "preset": "factory-nu-metal-eight",
  "scene": "B",
  "click": null,
  "state": {
+  "engine": {
+   "id": "ardour",
+   "name": "Golem Engine"
+  },
   "health": {
    "level": "warn",
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1794219289.186
+   "at": 1795303582.86
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1794218966.654,
+   "skipped_at": 1795303283.894,
    "verdict": null
   },
   "startup": {
@@ -25,18 +29,18 @@
   },
   "reaper_connected": true,
   "reaper_running": true,
-  "preset_id": "factory-ambient-metal",
-  "preset_name": "Ambient Metal",
+  "preset_id": "factory-nu-metal-eight",
+  "preset_name": "Low Tide",
   "scene_id": "B",
   "voice_on": false,
   "whammy_on": false,
   "whammy_mode": null,
   "midi_pedals": {},
   "levels": {
-   "guitar": 0.727628767490387,
-   "voice": 0.7638853192329407,
-   "in1": 0.727628767490387,
-   "in2": 0.7638853192329407,
+   "guitar": 0.0,
+   "voice": 0.0,
+   "in1": 0.0,
+   "in2": 0.0,
    "in3": 0.0
   },
   "clip": {},
@@ -65,25 +69,14 @@
    "ok": true,
    "why": ""
   },
-  "midi": {
-   "ok": true,
-   "issues": [],
-   "fix": "",
-   "ts": "2026-11-09 11:14:45"
-  },
+  "midi": {},
   "rig_check": {
-   "t": 1794219285,
-   "ok": true,
    "checked": 0,
+   "ok": true,
+   "t": 1795303581,
    "issues": []
   },
   "rig_unmounted": [
-   {
-    "id": "guitar-2",
-    "name": "Guitar 2",
-    "input": "—",
-    "reason": "needs Guitar 2, this card has 2 inputs and no Guitar 2"
-   },
    {
     "id": "bass-1",
     "name": "Bass",
@@ -99,9 +92,9 @@
   ],
   "rig_error": null,
   "song": {
-   "line": "r:factory:8",
+   "line": "r:factory:12",
    "setlist": "factory",
-   "preset": "factory-ambient-metal",
+   "preset": "factory-nu-metal-eight",
    "title": "Golem Rising",
    "slug": null,
    "bpm": 120,
@@ -109,7 +102,7 @@
    "arrangement": true,
    "band_song": "rs:f3f0252689f96910f01c81be0325855f"
   },
-  "cpu_boost": false,
+  "cpu_boost": true,
   "pedalboard": {
    "id": "unknown",
    "name": "unknown pedalboard",
@@ -133,7 +126,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1794219213.8311615,
+   "t": 1795303514.42628,
    "countin": null
   },
   "backing": {
@@ -484,12 +477,12 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 26548559872,
-   "takes": 161572837,
+   "free": 40553357312,
+   "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 14269,
+   "seconds": 23995,
    "warn_minutes": 15.0
   },
   "transcribe": {
@@ -502,7 +495,7 @@
   "click": {
    "on": false,
    "present": true,
-   "bpm": 120.0
+   "bpm": 120
   },
   "compo": {
    "targets": {},
@@ -513,10 +506,27 @@
    "candidates": []
   },
   "hotplug": {
-   "devices": [],
-   "events": []
+   "devices": [
+    {
+     "id": "II",
+     "name": "AKAI MPK Mini Mk II",
+     "usb": "09e8:0045",
+     "kind": "unknown",
+     "label": "unknown MIDI device",
+     "propose": true
+    }
+   ],
+   "events": [
+    {
+     "at": "2026-11-22T00:20:20",
+     "ev": "plug",
+     "name": "AKAI MPK Mini Mk II",
+     "kind": "unknown",
+     "label": "unknown MIDI device"
+    }
+   ]
   },
-  "updated": 1794219290.4976995,
+  "updated": 1795303587.101012,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -526,7 +536,864 @@
    }
   }
  },
- "reads": {},
+ "reads": {
+  "/api/keys/sounds": {
+   "instruments": [
+    {
+     "type": "piano",
+     "engine": "sfizz",
+     "sounds": []
+    },
+    {
+     "type": "ep",
+     "engine": "dexed",
+     "banks": [
+      {
+       "bank": "synprezfm-02",
+       "programs": [
+        {
+         "sound": "ep:synprezfm-02/0",
+         "name": "*'What'",
+         "n": 0,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/1",
+         "name": "CHINESE 1",
+         "n": 1,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/2",
+         "name": "SCHLBELL",
+         "n": 2,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/3",
+         "name": "5(c^a",
+         "n": 3,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/4",
+         "name": "OB8 PAD",
+         "n": 4,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/5",
+         "name": "VIOLIN  14",
+         "n": 5,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/6",
+         "name": "EXPRESSHUN",
+         "n": 6,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/7",
+         "name": "SYNORGANJL",
+         "n": 7,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/8",
+         "name": "TenVox   5",
+         "n": 8,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/9",
+         "name": "CEMBALO",
+         "n": 9,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/10",
+         "name": "EMU.SND. M",
+         "n": 10,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/11",
+         "name": "SynHarmo1",
+         "n": 11,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/12",
+         "name": "METL KETL",
+         "n": 12,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/13",
+         "name": "PURGATORY",
+         "n": 13,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/14",
+         "name": "DBL ORGY",
+         "n": 14,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/15",
+         "name": "FmRhodes18",
+         "n": 15,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/16",
+         "name": "BlueSword",
+         "n": 16,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/17",
+         "name": "WM3 Maj5th",
+         "n": 17,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/18",
+         "name": "MERMAIDS",
+         "n": 18,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/19",
+         "name": "Xanadu2",
+         "n": 19,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/20",
+         "name": "StringFlex",
+         "n": 20,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/21",
+         "name": "CHIPS 2",
+         "n": 21,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/22",
+         "name": "Formant",
+         "n": 22,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/23",
+         "name": "E.-PIANO",
+         "n": 23,
+         "status": "ready",
+         "clip": "/library/previews/sound-ep-synprezfm-02-23/epiano.opus",
+         "seconds": 21.71,
+         "ref": "keys/epiano",
+         "phrase": "Electric piano comping"
+        },
+        {
+         "sound": "ep:synprezfm-02/24",
+         "name": "Magic Org2",
+         "n": 24,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/25",
+         "name": "HAMMOND2",
+         "n": 25,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/26",
+         "name": "NIGHTLIGHT",
+         "n": 26,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/27",
+         "name": "E.ORGAN 2",
+         "n": 27,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/28",
+         "name": "POWERCLAV",
+         "n": 28,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/29",
+         "name": "Maracas 1",
+         "n": 29,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/30",
+         "name": "Trombone \\",
+         "n": 30,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        },
+        {
+         "sound": "ep:synprezfm-02/31",
+         "name": "KEYSYNTS-A",
+         "n": 31,
+         "status": "none",
+         "clip": null,
+         "seconds": null,
+         "ref": null,
+         "phrase": null
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "organ",
+     "engine": "b3",
+     "sounds": [
+      {
+       "sound": "organ:b3",
+       "name": "Tonewheel",
+       "status": "ready",
+       "clip": "/library/previews/sound-organ-b3/organ.opus",
+       "seconds": 19.71,
+       "ref": "keys/organ",
+       "phrase": "Gospel organ"
+      }
+     ]
+    }
+   ],
+   "synths": [
+    {
+     "sound": "vital:418958eb99d5f217feccdc6020f20e911f291605c949098a2e2644126bcc94c5",
+     "name": "Analog Brass",
+     "id": "Analog_Brass",
+     "author": "unfa",
+     "style": "Pad",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-418958eb99d5f217feccdc6020f20e911f291605c949098a2e2644126bcc94c5/pad.opus",
+     "seconds": 25.91,
+     "ref": "keys/pad",
+     "phrase": "Slow pad"
+    },
+    {
+     "sound": "vital:8e0f6f503fb7eda95fbf58dcab990d4402ab985f073095772438066096d08040",
+     "name": "Combat",
+     "id": "Combat",
+     "author": "unfa",
+     "style": "Bass",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "You Asked For This",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-8e0f6f503fb7eda95fbf58dcab990d4402ab985f073095772438066096d08040/bass.opus",
+     "seconds": 19.71,
+     "ref": "keys/bass",
+     "phrase": "Synth bass"
+    },
+    {
+     "sound": "vital:eab877409d070c7bf54099701f894b8cfa1a14ed2941d91ed15c43289656ead1",
+     "name": "Dark Ambient",
+     "id": "Dark_Ambient",
+     "author": "unfa",
+     "style": "Pad",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-eab877409d070c7bf54099701f894b8cfa1a14ed2941d91ed15c43289656ead1/pad.opus",
+     "seconds": 25.91,
+     "ref": "keys/pad",
+     "phrase": "Slow pad"
+    },
+    {
+     "sound": "vital:3d817f63e13c4c813611807595433bd3d13454cd89e24e8f504cc6fa9a6f6453",
+     "name": "Dark Bouncy Groove",
+     "id": "Dark_Bouncy_Groove",
+     "author": "unfa",
+     "style": "Sequence",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "First time using Vital 1.0.7",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-3d817f63e13c4c813611807595433bd3d13454cd89e24e8f504cc6fa9a6f6453/lead.opus",
+     "seconds": 19.71,
+     "ref": "keys/lead",
+     "phrase": "Synth lead"
+    },
+    {
+     "sound": "vital:9d8d4116027540b5f09745d1d5ec796c0053a7b64a654f5b039d002369b06958",
+     "name": "Hard Synthwave",
+     "id": "Hard_Synthwave",
+     "author": "JH",
+     "style": "Bass",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-9d8d4116027540b5f09745d1d5ec796c0053a7b64a654f5b039d002369b06958/bass.opus",
+     "seconds": 19.71,
+     "ref": "keys/bass",
+     "phrase": "Synth bass"
+    },
+    {
+     "sound": "vital:b8fb749d11d7165c36a97efa048eceebc952ad6f9552081456b32e607038a2a4",
+     "name": "Hardcore Kick",
+     "id": "Hardcore_Kick",
+     "author": "unfa",
+     "style": "Percussion",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": "No phrase fits a Percussion sound.",
+     "status": "none",
+     "clip": null,
+     "seconds": null,
+     "ref": null,
+     "phrase": null
+    },
+    {
+     "sound": "vital:d1585127584c132ee0e45076f782d78362ba9a109754a17c48390af49f042f89",
+     "name": "Kickbass",
+     "id": "Kickbass",
+     "author": "unfa",
+     "style": "Bass",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-d1585127584c132ee0e45076f782d78362ba9a109754a17c48390af49f042f89/bass.opus",
+     "seconds": 19.71,
+     "ref": "keys/bass",
+     "phrase": "Synth bass"
+    },
+    {
+     "sound": "vital:2562cb3cf12d705048347718abe54a8ef389858aafa6d191f6ee5466ff78c4cd",
+     "name": "Koto",
+     "id": "Koto",
+     "author": "unfa",
+     "style": "Lead",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-2562cb3cf12d705048347718abe54a8ef389858aafa6d191f6ee5466ff78c4cd/lead.opus",
+     "seconds": 19.71,
+     "ref": "keys/lead",
+     "phrase": "Synth lead"
+    },
+    {
+     "sound": "vital:c9d9cec1eac0bd4320b7a9a0e0d871d3384c909551053f77b6fb57c32efcf989",
+     "name": "Nasty Growl",
+     "id": "Nasty_Growl",
+     "author": "unfa",
+     "style": "Bass",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-c9d9cec1eac0bd4320b7a9a0e0d871d3384c909551053f77b6fb57c32efcf989/bass.opus",
+     "seconds": 19.71,
+     "ref": "keys/bass",
+     "phrase": "Synth bass"
+    },
+    {
+     "sound": "vital:aa3427dd23de3068ce9317fb031aae52bcadfa574afa544a35a2161d70cf4dc0",
+     "name": "Pianium",
+     "id": "Pianium",
+     "author": "unfa",
+     "style": "Keys",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-aa3427dd23de3068ce9317fb031aae52bcadfa574afa544a35a2161d70cf4dc0/piano.opus",
+     "seconds": 23.31,
+     "ref": "keys/piano",
+     "phrase": "Piano ballad"
+    },
+    {
+     "sound": "vital:14bbfb8015e61d6ebcfb45def87f86929652409df0930e0c9a6e63d58520fa8c",
+     "name": "Power Lead",
+     "id": "Power_Lead",
+     "author": "unfa",
+     "style": "Lead",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.995,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-14bbfb8015e61d6ebcfb45def87f86929652409df0930e0c9a6e63d58520fa8c/lead.opus",
+     "seconds": 19.71,
+     "ref": "keys/lead",
+     "phrase": "Synth lead"
+    },
+    {
+     "sound": "vital:7d0a07aa244ec6c5e5344a39c2e888f1f82b641b360594f90cb5219c1ba16251",
+     "name": "Retro Ambient Pluck",
+     "id": "Retro_Ambient_Pluck",
+     "author": "unfa",
+     "style": "Keys",
+     "pack": "factory",
+     "macros": [
+      "Small",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-7d0a07aa244ec6c5e5344a39c2e888f1f82b641b360594f90cb5219c1ba16251/piano.opus",
+     "seconds": 23.31,
+     "ref": "keys/piano",
+     "phrase": "Piano ballad"
+    },
+    {
+     "sound": "vital:0c2db9a052952359e1df3a5611b21c220415bf8302d1003b87ae269d9ea6669b",
+     "name": "Sci-Fi Computer",
+     "id": "Sci_Fi_Computer",
+     "author": "unfa",
+     "style": "SFX",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": "No phrase fits a SFX sound.",
+     "status": "none",
+     "clip": null,
+     "seconds": null,
+     "ref": null,
+     "phrase": null
+    },
+    {
+     "sound": "vital:0a801b2fe3eba751b49d0b5149c5e5428aa993d56e09133109cabe44b04815bb",
+     "name": "Sci-Fi Piano",
+     "id": "Sci_Fi_Piano",
+     "author": "unfa",
+     "style": "Keys",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-0a801b2fe3eba751b49d0b5149c5e5428aa993d56e09133109cabe44b04815bb/piano.opus",
+     "seconds": 23.31,
+     "ref": "keys/piano",
+     "phrase": "Piano ballad"
+    },
+    {
+     "sound": "vital:5308aa910500b210cdb0c632e3fba7e7aef278819f446b89aa05d8c1b7d589fa",
+     "name": "Sprakly Dreamy Pad",
+     "id": "Sparkly_Dreamy_Pad",
+     "author": "unfa",
+     "style": "Pad",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-5308aa910500b210cdb0c632e3fba7e7aef278819f446b89aa05d8c1b7d589fa/pad.opus",
+     "seconds": 25.91,
+     "ref": "keys/pad",
+     "phrase": "Slow pad"
+    },
+    {
+     "sound": "vital:81f8307c3aceaec2465c596a59f22cec23b946bd8443d635566f065b2adc8382",
+     "name": "Supersaw",
+     "id": "Supersaw",
+     "author": "unfa",
+     "style": "Lead",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-81f8307c3aceaec2465c596a59f22cec23b946bd8443d635566f065b2adc8382/lead.opus",
+     "seconds": 19.71,
+     "ref": "keys/lead",
+     "phrase": "Synth lead"
+    },
+    {
+     "sound": "vital:87a4470db7844fa0a40aa3da2167f606f076f5a403fa065fc45d72eb7288e116",
+     "name": "Trance Pluck",
+     "id": "Trance_Pluck",
+     "author": "unfa",
+     "style": "Lead",
+     "pack": "factory",
+     "macros": [
+      "Macro 1",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-87a4470db7844fa0a40aa3da2167f606f076f5a403fa065fc45d72eb7288e116/lead.opus",
+     "seconds": 19.71,
+     "ref": "keys/lead",
+     "phrase": "Synth lead"
+    },
+    {
+     "sound": "vital:e6c887cbd05446f67aaabf0588cde3f4ce7f77786fd2caffd6186650ce15bd6f",
+     "name": "Vitalium Groove",
+     "id": "Vitalium_Groove",
+     "author": "unfa",
+     "style": "Sequence",
+     "pack": "factory",
+     "macros": [
+      "Acompaniment",
+      "Macro 2",
+      "Macro 3",
+      "Macro 4"
+     ],
+     "macro_vals": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "comments": "",
+     "why": null,
+     "status": "ready",
+     "clip": "/library/previews/sound-vital-e6c887cbd05446f67aaabf0588cde3f4ce7f77786fd2caffd6186650ce15bd6f/lead.opus",
+     "seconds": 19.71,
+     "ref": "keys/lead",
+     "phrase": "Synth lead"
+    }
+   ],
+   "idle": {
+    "current": null,
+    "waiting_for": "in use (screen, 0 s ago)",
+    "rendered": 0,
+    "failed": 0
+   }
+  },
+  "POST /api/library/try/check": {
+   "role": "keys",
+   "sound": "Tonewheel organ",
+   "ok": false,
+   "name": null,
+   "why": "No keyboard is plugged in. Plug one (USB or MIDI): Play it lights up, nothing to restart."
+  }
+ },
  "anchors": [
   "nav.designer",
   "nav.library",
