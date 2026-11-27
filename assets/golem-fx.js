@@ -212,8 +212,35 @@ function draw(d, on) {
   return d.a !== undefined ? G[d.fn](d.a, { ...d.opts, on }) : G[d.fn]({ ...d.opts, on })
 }
 
+const OS_LABEL = { windows: 'Windows', macos: 'macOS', linux: 'Linux' }
+
+/** The visitor's system, from the browser (Windows by default). */
+function guessOs() {
+  const s = `${navigator.platform ?? ''} ${navigator.userAgent}`
+  if (/Mac|iPhone|iPad/i.test(s)) return 'macos'
+  if (/Linux|X11/i.test(s) && !/Android/i.test(s)) return 'linux'
+  return 'windows'
+}
+
+/** The system picker: it sets the download links at the top and under every card. */
+function mountOs(page) {
+  const btns = [...page.querySelectorAll('[data-os]')]
+  if (!btns.length) return
+  const set = (os) => {
+    for (const b of btns) b.setAttribute('aria-pressed', String(b.dataset.os === os))
+    for (const a of page.querySelectorAll(`[data-href-${os}]`)) {
+      a.href = a.getAttribute(`data-href-${os}`)
+      if (a.dataset.osText) a.textContent = `${a.dataset.osText} ${OS_LABEL[os]}`
+      if (a.dataset.osLabel) a.setAttribute('aria-label', `${a.dataset.osLabel} ${OS_LABEL[os]}`)
+    }
+  }
+  for (const b of btns) b.addEventListener('click', () => set(b.dataset.os))
+  set(guessOs())
+}
+
 export function mountFx(page) {
   page.querySelector('.fx-defs').innerHTML = G.defs()
+  mountOs(page)
   mountDemo(page.querySelector('#demo'))
   for (const slot of page.querySelectorAll('.fx-card__slot[data-draw]')) {
     const d = JSON.parse(slot.dataset.draw)

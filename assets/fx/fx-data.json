@@ -2,8 +2,9 @@
  "_": "Lu dans maestrium (lib/golemFx/draw.ts, pages/golem/ossBlocks.ts) par tools/import_fx.py.",
  "source": {
   "repo": "golem-fx",
-  "ref": "6911767",
-  "commit": "69117679571c3f8bc13e880c233d4c51e5794d5a"
+  "ref": "0.8.1",
+  "commit": "7d793400b6681f93a5314d01f4239e3e75a19c8e",
+  "tag": "0.8.1"
  },
  "blackwork": [
   "gfx-met",
@@ -139,7 +140,7 @@
     "dist"
    ],
    "name": "Dist",
-   "presets": 16,
+   "presets": 26,
    "category": "drive",
    "color": "#c8160e"
   },
@@ -344,6 +345,16 @@
    "color": "#9a0d2a"
   },
   {
+   "crate": "gfx-octafuzz",
+   "blocks": [
+    "octafuzz"
+   ],
+   "name": "Octafuzz",
+   "presets": 5,
+   "category": "drive",
+   "color": "#b0602a"
+  },
+  {
    "crate": "gfx-octaver",
    "blocks": [
     "octaver"
@@ -352,6 +363,16 @@
    "presets": 13,
    "category": "pitch",
    "color": "#b06cf0"
+  },
+  {
+   "crate": "gfx-organ",
+   "blocks": [
+    "guitar-organ"
+   ],
+   "name": "Organ",
+   "presets": 14,
+   "category": "pitch",
+   "color": "#8a94a3"
   },
   {
    "crate": "gfx-phaser",
@@ -369,7 +390,7 @@
     "pitch"
    ],
    "name": "Pitch",
-   "presets": 16,
+   "presets": 23,
    "category": "pitch",
    "color": "#b06cf0"
   },

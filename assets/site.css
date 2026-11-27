@@ -381,6 +381,8 @@ h1, h2, h3 { line-height: var(--lh-tight); }
 }
 .ph-btn--amber { background: var(--sect-community); color: var(--text-on-accent); }
 .ph-btn--amber:hover { background: color-mix(in srgb, var(--sect-community) 85%, #fff); }
+.ph-btn--ghost { background: none; border-color: var(--border-strong); color: var(--text-primary); }
+.ph-btn--ghost:hover { border-color: var(--text-primary); }
 
 .ph-cta {
   box-sizing: border-box; margin-top: var(--space-12); padding: var(--space-8);

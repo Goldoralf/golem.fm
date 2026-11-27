@@ -95,3 +95,14 @@
   .fx-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .fx-card__slot { height: 170px; }
 }
+
+/* Le dépôt et le bundle en tête ; la source et le VST3 sous chaque pédale. */
+.fx-get { display: flex; flex-direction: column; gap: 8px; margin-top: var(--space-3); }
+.fx-get__row { display: flex; gap: 10px 12px; flex-wrap: wrap; align-items: center; }
+.fx-card__links { display: flex; gap: 6px; justify-content: center; flex-wrap: wrap; }
+.fx-card__links a {
+  font: 600 11px var(--font-mono); padding: 4px 9px; border-radius: 999px; text-decoration: none;
+  border: 1px solid var(--border-subtle); color: var(--text-secondary);
+}
+.fx-card__links a:hover { border-color: var(--text-primary); color: var(--text-primary); }
+.fx-bw .fx-card__links a { border-color: #2a2a30; }
