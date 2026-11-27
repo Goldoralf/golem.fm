@@ -2,9 +2,9 @@
  "_": "Lu dans maestrium (lib/golemFx/draw.ts, pages/golem/ossBlocks.ts) par tools/import_fx.py.",
  "source": {
   "repo": "golem-fx",
-  "ref": "0.8.1",
-  "commit": "7d793400b6681f93a5314d01f4239e3e75a19c8e",
-  "tag": "0.8.1"
+  "ref": "0.8.2",
+  "commit": "11675a20289f65e167e9d99f9ce2a900d0d699a3",
+  "tag": "0.8.2"
  },
  "blackwork": [
   "gfx-met",
@@ -372,7 +372,7 @@
    "name": "Organ",
    "presets": 14,
    "category": "pitch",
-   "color": "#8a94a3"
+   "color": "#b06ad4"
   },
   {
    "crate": "gfx-phaser",
