@@ -15,13 +15,18 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1795303567.715
+   "at": 1795794164.566
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1795303283.894,
+   "skipped_at": 1795793880.577,
    "verdict": null
+  },
+  "display": {
+   "animations": "auto",
+   "still_tiles": "pedals",
+   "fullscreen": true
   },
   "startup": {
    "policy": "bank0",
@@ -60,7 +65,7 @@
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": 8.0,
+  "latency_ms": null,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -71,10 +76,10 @@
   },
   "midi": {},
   "rig_check": {
-   "checked": 0,
+   "t": 1795794147,
+   "issues": [],
    "ok": true,
-   "t": 1795303551,
-   "issues": []
+   "checked": 0
   },
   "rig_unmounted": [
    {
@@ -126,7 +131,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1795303514.42628,
+   "t": 1795794113.4727938,
    "countin": null
   },
   "backing": {
@@ -477,19 +482,13 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 40555180032,
+   "free": 53539102720,
    "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 23996,
+   "seconds": 33013,
    "warn_minutes": 15.0
-  },
-  "transcribe": {
-   "available": false,
-   "current": null,
-   "queue": [],
-   "last": {}
   },
   "foot_select": null,
   "click": {
@@ -514,9 +513,26 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
+    },
+    {
+     "id": "Nitro",
+     "name": "Alesis‭ Alesis Nitro",
+     "usb": "13b2:009c",
+     "kind": "drums",
+     "match": "Alesis Nitro",
+     "label": "drum module — Alesis Nitro",
+     "bound": false,
+     "propose": true
     }
    ],
    "events": [
+    {
+     "at": "2026-10-23T01:20:17",
+     "ev": "plug",
+     "name": "Alesis‭ Alesis Nitro",
+     "kind": "drums",
+     "label": "drum module — Alesis Nitro"
+    },
     {
      "at": "2026-11-22T00:20:20",
      "ev": "plug",
@@ -526,7 +542,7 @@
     }
    ]
   },
-  "updated": 1795303570.3144314,
+  "updated": 1795794164.568074,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -538,18 +554,18 @@
  },
  "reads": {
   "/api/health/facts": {
-   "at": 1795303567.715,
-   "since_start_s": 350.7,
+   "at": 1795794164.566,
+   "since_start_s": 350.1,
    "verdict": {
     "level": "warn",
     "title": "Playing is safe. One thing to look at.",
-    "text": "Setlist on the foot: “Factory Golem” · 66 blocks will not play here across 13 of 13 presets: 1 need a plugin not installed on this Linux machine, 65 to download",
+    "text": "Setlist on the foot: “Factory Golem” · 65 blocks will not play here across 13 of 13 presets: 65 to download",
     "counts": {
-     "ok": 9,
+     "ok": 10,
      "warn": 1,
      "bad": 0,
      "wait": 3,
-     "total": 13
+     "total": 14
     }
    },
    "facts": [
@@ -557,14 +573,14 @@
      "id": "engine",
      "name": "Engine",
      "level": "ok",
-     "text": "Golem Engine golem-engine-9.9-g3 · running · talking to the bridge",
+     "text": "Golem Engine golem-engine-9.9-g5 · running · talking to the bridge",
      "source": "reaper_running · reaper_connected"
     },
     {
      "id": "audio",
      "name": "Sound card",
      "level": "ok",
-     "text": "V276 · 192 samples · 8.0 ms",
+     "text": "Audio · 192 samples",
      "source": "audio_metrics · .clock.json"
     },
     {
@@ -586,13 +602,13 @@
      "name": "Playing",
      "level": "ok",
      "text": "“Low Tide” · 0 files loaded and checked",
-     "source": ".rig-check.json 00:25 · .livemap.json"
+     "source": ".rig-check.json 16:42 · .livemap.json"
     },
     {
      "id": "setlist",
      "name": "Setlist on the foot",
      "level": "warn",
-     "text": "“Factory Golem” · 66 blocks will not play here across 13 of 13 presets: 1 need a plugin not installed on this Linux machine, 65 to download",
+     "text": "“Factory Golem” · 65 blocks will not play here across 13 of 13 presets: 65 to download",
      "source": "blocks/status · setlist",
      "fix": {
       "label": "Patches →",
@@ -631,9 +647,9 @@
       },
       {
        "preset": "Iron Thicket",
-       "missing": 7,
+       "missing": 6,
        "download": 6,
-       "unavailable": 1
+       "unavailable": 0
       },
       {
        "preset": "Paper Satellites",
@@ -653,14 +669,14 @@
      "id": "plugins",
      "name": "Plugins",
      "level": "ok",
-     "text": "70 of 70 block plugins found by Golem Engine",
+     "text": "72 of 72 block plugins found by Golem Engine",
      "source": ".engine-plugins.json"
     },
     {
      "id": "disk",
      "name": "Disk",
      "level": "ok",
-     "text": "41 GB free of 205 GB",
+     "text": "54 GB free of 205 GB",
      "source": "disk"
     },
     {
@@ -692,7 +708,7 @@
      "id": "cpu",
      "name": "CPU budget",
      "level": "wait",
-     "text": "not calibrated yet — golem measures each block when the rack is idle (in use (screen, 0 s ago))",
+     "text": "not calibrated yet — golem measures each block when the rack is idle (in use (screen, 1 s ago))",
      "source": "config/cpu-profile.json"
     },
     {
@@ -701,18 +717,25 @@
      "level": "ok",
      "text": "nothing changed: same Golem Engine, plugins, card, rate, buffer",
      "source": "environment snapshot"
+    },
+    {
+     "id": "display",
+     "name": "Display",
+     "level": "ok",
+     "text": "animations: auto — still on this computer, moving on tablets",
+     "source": "config/display.json · xruns"
     }
    ],
    "guard": {
     "free": false,
-    "why": "in use (screen, 4 s ago)",
-    "idle_s": 4.7,
+    "why": "in use (screen, 1 s ago)",
+    "idle_s": 1.4,
     "src": "screen"
    },
    "first_check": {
     "pending": false,
     "done_at": null,
-    "skipped_at": 1795303283.894,
+    "skipped_at": 1795793880.577,
     "verdict": null
    }
   },
@@ -724,7 +747,7 @@
    "report": null,
    "error": null,
    "at": null,
-   "now": 1795303570.397
+   "now": 1795794165.424
   },
   "/api/system": {
    "platform": "linux",
@@ -767,9 +790,9 @@
    "engine": {
     "id": "ardour",
     "name": "Golem Engine",
-    "version": "golem-engine-9.9-g3"
+    "version": "golem-engine-9.9-g5"
    },
-   "audio_dsp_load": 58.3,
+   "audio_dsp_load": 74.2,
    "audio_backend": "Dummy",
    "audio_live_buffer": true
   }
@@ -779,6 +802,7 @@
   "health.fact:audio",
   "health.fact:cpu",
   "health.fact:disk",
+  "health.fact:display",
   "health.fact:dropouts",
   "health.fact:engine",
   "health.fact:environment",
@@ -789,7 +813,6 @@
   "health.fact:plugins",
   "health.fact:scripts",
   "health.fact:setlist",
-  "health.guard",
   "health.incidents",
   "health.now",
   "health.verdict",
@@ -807,5 +830,6 @@
   "tab.sys",
   "topbar.brand"
  ],
- "anchors_hidden": []
+ "anchors_hidden": [],
+ "screen": "a6460529decbdca1"
 }

@@ -15,13 +15,18 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1795303512.326
+   "at": 1795794109.209
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1795303283.894,
+   "skipped_at": 1795793880.577,
    "verdict": null
+  },
+  "display": {
+   "animations": "auto",
+   "still_tiles": "pedals",
+   "fullscreen": true
   },
   "startup": {
    "policy": "bank0",
@@ -60,7 +65,7 @@
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": 8.0,
+  "latency_ms": null,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -71,10 +76,10 @@
   },
   "midi": {},
   "rig_check": {
-   "checked": 0,
+   "t": 1795794102,
+   "issues": [],
    "ok": true,
-   "t": 1795303513,
-   "issues": []
+   "checked": 0
   },
   "rig_unmounted": [
    {
@@ -433,19 +438,13 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 40558145536,
+   "free": 53543948288,
    "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 23998,
+   "seconds": 33016,
    "warn_minutes": 15.0
-  },
-  "transcribe": {
-   "available": false,
-   "current": null,
-   "queue": [],
-   "last": {}
   },
   "foot_select": null,
   "click": {
@@ -470,9 +469,26 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
+    },
+    {
+     "id": "Nitro",
+     "name": "Alesis‭ Alesis Nitro",
+     "usb": "13b2:009c",
+     "kind": "drums",
+     "match": "Alesis Nitro",
+     "label": "drum module — Alesis Nitro",
+     "bound": false,
+     "propose": true
     }
    ],
    "events": [
+    {
+     "at": "2026-10-23T01:20:17",
+     "ev": "plug",
+     "name": "Alesis‭ Alesis Nitro",
+     "kind": "drums",
+     "label": "drum module — Alesis Nitro"
+    },
     {
      "at": "2026-11-22T00:20:20",
      "ev": "plug",
@@ -482,7 +498,7 @@
     }
    ]
   },
-  "updated": 1795303514.1782088,
+  "updated": 1795794112.970503,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -2107,8 +2123,7 @@
          "usb": false,
          "rec_mode": "tracks_di",
          "mix": true,
-         "count_in": 0,
-         "transcribe": "manual"
+         "count_in": 0
         },
         "foot": 9
        },
@@ -2126,7 +2141,6 @@
         "type": "compo",
         "params": {
          "keep_s": 30,
-         "transcribe": true,
          "foot_person": null,
          "persons": {}
         }
@@ -2172,7 +2186,7 @@
     }
    },
    "scene": "B",
-   "edit_rev": 25
+   "edit_rev": 26
   },
   "POST /api/backing/drawer": {
    "own": {
@@ -2506,10 +2520,9 @@
      "label": null
     },
     {
-     "state": "unavailable",
-     "why": "Aasimonster: its samples are not installed on this machine",
-     "reason": "plugin",
-     "alternatives": [],
+     "state": "ready",
+     "why": null,
+     "stand_in": "Red Zeppelin plays Aasimonster here",
      "lane": "drums-1",
      "id": "kit",
      "type": "drumkit",
@@ -2625,13 +2638,13 @@
     }
    ],
    "summary": {
-    "missing": 7,
+    "missing": 6,
     "download": {
      "n": 6,
      "bytes": 0,
      "unknown": 6
     },
-    "unavailable": 1,
+    "unavailable": 0,
     "empty": 0
    },
    "caps": {
@@ -2685,5 +2698,6 @@
  "anchors_hidden": [
   "designer.menu",
   "designer.saved"
- ]
+ ],
+ "screen": "dce17749ad5b35f4"
 }

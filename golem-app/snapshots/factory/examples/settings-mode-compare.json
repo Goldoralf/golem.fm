@@ -15,13 +15,18 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1795303476.92
+   "at": 1795794078.961
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1795303283.894,
+   "skipped_at": 1795793880.577,
    "verdict": null
+  },
+  "display": {
+   "animations": "auto",
+   "still_tiles": "pedals",
+   "fullscreen": true
   },
   "startup": {
    "policy": "bank0",
@@ -60,7 +65,7 @@
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": 8.0,
+  "latency_ms": null,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -71,10 +76,10 @@
   },
   "midi": {},
   "rig_check": {
-   "checked": 0,
+   "t": 1795794016,
+   "issues": [],
    "ok": true,
-   "t": 1795303412,
-   "issues": []
+   "checked": 0
   },
   "rig_unmounted": [
    {
@@ -476,19 +481,13 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 40559742976,
+   "free": 53544812544,
    "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 23999,
+   "seconds": 33017,
    "warn_minutes": 15.0
-  },
-  "transcribe": {
-   "available": false,
-   "current": null,
-   "queue": [],
-   "last": {}
   },
   "foot_select": null,
   "click": {
@@ -513,9 +512,26 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
+    },
+    {
+     "id": "Nitro",
+     "name": "Alesis‭ Alesis Nitro",
+     "usb": "13b2:009c",
+     "kind": "drums",
+     "match": "Alesis Nitro",
+     "label": "drum module — Alesis Nitro",
+     "bound": false,
+     "propose": true
     }
    ],
    "events": [
+    {
+     "at": "2026-10-23T01:20:17",
+     "ev": "plug",
+     "name": "Alesis‭ Alesis Nitro",
+     "kind": "drums",
+     "label": "drum module — Alesis Nitro"
+    },
     {
      "at": "2026-11-22T00:20:20",
      "ev": "plug",
@@ -525,7 +541,7 @@
     }
    ]
   },
-  "updated": 1795303479.8172405,
+  "updated": 1795794082.391328,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -577,9 +593,9 @@
    "engine": {
     "id": "ardour",
     "name": "Golem Engine",
-    "version": "golem-engine-9.9-g3"
+    "version": "golem-engine-9.9-g5"
    },
-   "audio_dsp_load": 72.2,
+   "audio_dsp_load": 74.3,
    "audio_backend": "Dummy",
    "audio_live_buffer": true
   }
@@ -600,5 +616,6 @@
   "tab.sys",
   "topbar.brand"
  ],
- "anchors_hidden": []
+ "anchors_hidden": [],
+ "screen": "e24c4948630e13c7"
 }

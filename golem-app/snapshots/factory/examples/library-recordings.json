@@ -15,13 +15,18 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1795303602.966
+   "at": 1795794195.304
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1795303283.894,
+   "skipped_at": 1795793880.577,
    "verdict": null
+  },
+  "display": {
+   "animations": "auto",
+   "still_tiles": "pedals",
+   "fullscreen": true
   },
   "startup": {
    "policy": "bank0",
@@ -60,7 +65,7 @@
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": 8.0,
+  "latency_ms": null,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -71,10 +76,10 @@
   },
   "midi": {},
   "rig_check": {
-   "checked": 0,
+   "t": 1795794182,
+   "issues": [],
    "ok": true,
-   "t": 1795303588,
-   "issues": []
+   "checked": 0
   },
   "rig_unmounted": [
    {
@@ -126,7 +131,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1795303514.42628,
+   "t": 1795794113.4727938,
    "countin": null
   },
   "backing": {
@@ -477,19 +482,13 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 40553357312,
+   "free": 53523734528,
    "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 23995,
+   "seconds": 33002,
    "warn_minutes": 15.0
-  },
-  "transcribe": {
-   "available": false,
-   "current": null,
-   "queue": [],
-   "last": {}
   },
   "foot_select": null,
   "click": {
@@ -514,9 +513,26 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
+    },
+    {
+     "id": "Nitro",
+     "name": "Alesis‭ Alesis Nitro",
+     "usb": "13b2:009c",
+     "kind": "drums",
+     "match": "Alesis Nitro",
+     "label": "drum module — Alesis Nitro",
+     "bound": false,
+     "propose": true
     }
    ],
    "events": [
+    {
+     "at": "2026-10-23T01:20:17",
+     "ev": "plug",
+     "name": "Alesis‭ Alesis Nitro",
+     "kind": "drums",
+     "label": "drum module — Alesis Nitro"
+    },
     {
      "at": "2026-11-22T00:20:20",
      "ev": "plug",
@@ -526,7 +542,7 @@
     }
    ]
   },
-  "updated": 1795303603.3677325,
+  "updated": 1795794195.1412697,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -539,14 +555,14 @@
  "reads": {
   "/api/state": {
    "boot": {
-    "t0": 1795303217.1715343,
+    "t0": 1795793814.538051,
     "steps": {
-     "reaper": 1795303219.865,
-     "preset": 1795303221.601,
-     "osc": 1795303223.397,
-     "audio": 1795303224.406
+     "reaper": 1795793817.151,
+     "preset": 1795793818.915,
+     "osc": 1795793820.681,
+     "audio": 1795793821.689
     },
-    "done": 1795303224.406,
+    "done": 1795793821.689,
     "failed": null,
     "why": "start",
     "last_took": 7.2,
@@ -567,7 +583,7 @@
       "ok": false
      }
     },
-    "now": 1795303603.363,
+    "now": 1795794196.494,
     "os": "Linux"
    },
    "engine": {
@@ -579,13 +595,18 @@
     "title": "Playing is safe. One thing to look at.",
     "bad": 0,
     "warn": 1,
-    "at": 1795303602.966
+    "at": 1795794195.304
    },
    "first_check": {
     "pending": false,
     "done_at": null,
-    "skipped_at": 1795303283.894,
+    "skipped_at": 1795793880.577,
     "verdict": null
+   },
+   "display": {
+    "animations": "auto",
+    "still_tiles": "pedals",
+    "fullscreen": true
    },
    "startup": {
     "policy": "bank0",
@@ -624,7 +645,7 @@
     "block": "exp1"
    },
    "live_lock": false,
-   "latency_ms": 8.0,
+   "latency_ms": null,
    "audio_metrics": {},
    "xruns": 0,
    "xruns_recent": 0,
@@ -635,10 +656,10 @@
    },
    "midi": {},
    "rig_check": {
-    "checked": 0,
+    "t": 1795794182,
+    "issues": [],
     "ok": true,
-    "t": 1795303588,
-    "issues": []
+    "checked": 0
    },
    "rig_unmounted": [
     {
@@ -690,7 +711,7 @@
     "slots": [],
     "len": 0.0,
     "pos": 0.0,
-    "t": 1795303514.42628,
+    "t": 1795794113.4727938,
     "countin": null
    },
    "backing": {
@@ -1041,19 +1062,13 @@
    "perf_error": "",
    "perf_countin": null,
    "disk": {
-    "free": 40553357312,
+    "free": 53523734528,
     "takes": 0,
     "rate": 1440000,
     "lanes": 5,
     "measured": false,
-    "seconds": 23995,
+    "seconds": 33002,
     "warn_minutes": 15.0
-   },
-   "transcribe": {
-    "available": false,
-    "current": null,
-    "queue": [],
-    "last": {}
    },
    "foot_select": null,
    "click": {
@@ -1070,27 +1085,10 @@
     "candidates": []
    },
    "hotplug": {
-    "devices": [
-     {
-      "id": "II",
-      "name": "AKAI MPK Mini Mk II",
-      "usb": "09e8:0045",
-      "kind": "unknown",
-      "label": "unknown MIDI device",
-      "propose": true
-     }
-    ],
-    "events": [
-     {
-      "at": "2026-11-22T00:20:20",
-      "ev": "plug",
-      "name": "AKAI MPK Mini Mk II",
-      "kind": "unknown",
-      "label": "unknown MIDI device"
-     }
-    ]
+    "devices": [],
+    "events": []
    },
-   "updated": 1795303603.2683477,
+   "updated": 1795794195.1412697,
    "profile": "desktop",
    "ui": {
     "windows": 0,
@@ -1114,5 +1112,6 @@
   "tab.tracks",
   "topbar.brand"
  ],
- "anchors_hidden": []
+ "anchors_hidden": [],
+ "screen": "592d40f79cabc46e"
 }

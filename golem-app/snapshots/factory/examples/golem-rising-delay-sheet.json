@@ -15,13 +15,18 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1795303426.651
+   "at": 1795794028.761
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1795303283.894,
+   "skipped_at": 1795793880.577,
    "verdict": null
+  },
+  "display": {
+   "animations": "auto",
+   "still_tiles": "pedals",
+   "fullscreen": true
   },
   "startup": {
    "policy": "bank0",
@@ -60,7 +65,7 @@
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": 8.0,
+  "latency_ms": null,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -71,10 +76,10 @@
   },
   "midi": {},
   "rig_check": {
-   "checked": 0,
+   "t": 1795794016,
+   "issues": [],
    "ok": true,
-   "t": 1795303412,
-   "issues": []
+   "checked": 0
   },
   "rig_unmounted": [
    {
@@ -476,19 +481,13 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 40561557504,
+   "free": 53545459712,
    "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 24001,
+   "seconds": 33017,
    "warn_minutes": 15.0
-  },
-  "transcribe": {
-   "available": false,
-   "current": null,
-   "queue": [],
-   "last": {}
   },
   "foot_select": null,
   "click": {
@@ -513,9 +512,26 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
+    },
+    {
+     "id": "Nitro",
+     "name": "Alesis‭ Alesis Nitro",
+     "usb": "13b2:009c",
+     "kind": "drums",
+     "match": "Alesis Nitro",
+     "label": "drum module — Alesis Nitro",
+     "bound": false,
+     "propose": true
     }
    ],
    "events": [
+    {
+     "at": "2026-10-23T01:20:17",
+     "ev": "plug",
+     "name": "Alesis‭ Alesis Nitro",
+     "kind": "drums",
+     "label": "drum module — Alesis Nitro"
+    },
     {
      "at": "2026-11-22T00:20:20",
      "ev": "plug",
@@ -525,7 +541,7 @@
     }
    ]
   },
-  "updated": 1795303428.7424283,
+  "updated": 1795794027.9437966,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -2788,8 +2804,7 @@
          "usb": false,
          "rec_mode": "tracks_di",
          "mix": true,
-         "count_in": 0,
-         "transcribe": "manual"
+         "count_in": 0
         }
        },
        {
@@ -2806,7 +2821,6 @@
         "type": "compo",
         "params": {
          "keep_s": 30,
-         "transcribe": true,
          "foot_person": null,
          "persons": {}
         }
@@ -3321,5 +3335,6 @@
  "anchors_hidden": [
   "designer.menu",
   "designer.saved"
- ]
+ ],
+ "screen": "384724e9e6c9cbb7"
 }

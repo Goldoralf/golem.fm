@@ -15,13 +15,18 @@
    "title": "Playing is safe. One thing to look at.",
    "bad": 0,
    "warn": 1,
-   "at": 1795303572.725
+   "at": 1795794164.566
   },
   "first_check": {
    "pending": false,
    "done_at": null,
-   "skipped_at": 1795303283.894,
+   "skipped_at": 1795793880.577,
    "verdict": null
+  },
+  "display": {
+   "animations": "auto",
+   "still_tiles": "pedals",
+   "fullscreen": true
   },
   "startup": {
    "policy": "bank0",
@@ -60,7 +65,7 @@
    "block": "exp1"
   },
   "live_lock": false,
-  "latency_ms": 8.0,
+  "latency_ms": null,
   "audio_metrics": {},
   "xruns": 0,
   "xruns_recent": 0,
@@ -71,10 +76,10 @@
   },
   "midi": {},
   "rig_check": {
-   "checked": 0,
+   "t": 1795794147,
+   "issues": [],
    "ok": true,
-   "t": 1795303551,
-   "issues": []
+   "checked": 0
   },
   "rig_unmounted": [
    {
@@ -126,7 +131,7 @@
    "slots": [],
    "len": 0.0,
    "pos": 0.0,
-   "t": 1795303514.42628,
+   "t": 1795794113.4727938,
    "countin": null
   },
   "backing": {
@@ -477,19 +482,13 @@
   "perf_error": "",
   "perf_countin": null,
   "disk": {
-   "free": 40555180032,
+   "free": 53539102720,
    "takes": 0,
    "rate": 1440000,
    "lanes": 5,
    "measured": false,
-   "seconds": 23996,
+   "seconds": 33013,
    "warn_minutes": 15.0
-  },
-  "transcribe": {
-   "available": false,
-   "current": null,
-   "queue": [],
-   "last": {}
   },
   "foot_select": null,
   "click": {
@@ -514,9 +513,26 @@
      "kind": "unknown",
      "label": "unknown MIDI device",
      "propose": true
+    },
+    {
+     "id": "Nitro",
+     "name": "Alesis‭ Alesis Nitro",
+     "usb": "13b2:009c",
+     "kind": "drums",
+     "match": "Alesis Nitro",
+     "label": "drum module — Alesis Nitro",
+     "bound": false,
+     "propose": true
     }
    ],
    "events": [
+    {
+     "at": "2026-10-23T01:20:17",
+     "ev": "plug",
+     "name": "Alesis‭ Alesis Nitro",
+     "kind": "drums",
+     "label": "drum module — Alesis Nitro"
+    },
     {
      "at": "2026-11-22T00:20:20",
      "ev": "plug",
@@ -526,7 +542,7 @@
     }
    ]
   },
-  "updated": 1795303572.9928606,
+  "updated": 1795794167.3451679,
   "profile": "desktop",
   "ui": {
    "windows": 0,
@@ -540,8 +556,8 @@
   "/api/storage": {
    "disk": {
     "total": 205166764032,
-    "used": 154115002368,
-    "free": 40555307008
+    "used": 141139517440,
+    "free": 53530791936
    },
    "music": {
     "amps": 0,
@@ -550,7 +566,7 @@
     "presets": 240247,
     "patches": 632915,
     "banks": 14104,
-    "settings": 195640,
+    "settings": 195594,
     "kits": 8919014,
     "synths": 0,
     "grooves": 7101,
@@ -559,7 +575,7 @@
     "standards": 2623,
     "vocals": 0
    },
-   "music_total": 10483218,
+   "music_total": 10483172,
    "counts": {
     "presets": {
      "n": 13,
@@ -606,12 +622,12 @@
     },
     "blockpresets": {
      "n": 0,
-     "factory": 807,
+     "factory": 843,
      "bytes": 0
     },
     "settings": {
      "n": 20,
-     "bytes": 195640
+     "bytes": 195594
     },
     "synths": {
      "n": 0,
@@ -678,7 +694,7 @@
     }
    ],
    "caches_total": 470282,
-   "other": 154099923093,
+   "other": 141124438211,
    "last": {},
    "last_full": null
   }
@@ -704,5 +720,6 @@
  ],
  "anchors_hidden": [
   "storage.backup"
- ]
+ ],
+ "screen": "365a2b4867c1b992"
 }

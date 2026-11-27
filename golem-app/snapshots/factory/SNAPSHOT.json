@@ -1,9 +1,12 @@
 {
  "kind": "factory",
  "name": "factory",
- "commit": "4cdf4951deba74b3872cb8f735f727b4ba671080",
- "catalog_version": 51,
- "made": "2026-11-22",
+ "commit": "60b5277c23666aa6910a3917d37eaa52879a6dde",
+ "catalog_version": 52,
+ "made": "2026-11-27",
+ "shell": {
+  "version": "v0.7.3-9-g60b5277c"
+ },
  "reads": [
   "/api/anim-packs",
   "/api/app-build",
@@ -213,6 +216,8 @@
   "/api/storage",
   "/api/system",
   "/api/system/autostart",
+  "/api/system/display",
+  "/api/system/golem-engine",
   "/api/system/harden",
   "/api/system/health",
   "/api/system/libraries",
@@ -237,6 +242,7 @@
   "settings-mode",
   "reference-soundcard",
   "reference-pedalboard",
+  "reference-drums",
   "settings-mode-compare",
   "factory-songs",
   "factory-content",
@@ -282,9 +288,308 @@
   "companion-now",
   "companion-song",
   "companion-rec",
-  "reference-drums",
   "reference-drums-bound"
  ],
+ "examples_failed": [],
+ "screens": {
+  "golem-rising-live": "f222fec232a8c35c",
+  "golem-rising-designer": "dcfef0efa028f5ce",
+  "golem-rising-amp-sheet": "ccb41c47e9f94fd8",
+  "golem-rising-delay-sheet": "384724e9e6c9cbb7",
+  "golem-rising-scenes-sheet": "829c635936549bc5",
+  "golem-rising-scene-sheet": "6ca03993fb12c8db",
+  "golem-rising-keys": "e684c4f5f2f8c014",
+  "reference-controllers": "8f71852acc680138",
+  "golem-rising-delay-presets": "384724e9e6c9cbb7",
+  "golem-rising-delay-assign": "ce5efa1f249f1b5f",
+  "factory-patches": "1d57751807db8f14",
+  "library-amps": "e39de672c93b66ae",
+  "settings-mode": "a59cedeefd354917",
+  "reference-soundcard": "10851dbd867f6f40",
+  "reference-pedalboard": "c3a03f92bdaf5d85",
+  "reference-drums": "ad7c44079215deae",
+  "settings-mode-compare": "e24c4948630e13c7",
+  "factory-songs": "3be8e506ada5246f",
+  "factory-content": "3ef260a61ce2beb9",
+  "metal-for-all-designer": "4eae7f01325386eb",
+  "blues-night-live": "6988368f2704d9be",
+  "factory-setlist": "22f79a1db245b3d3",
+  "factory-setlist-line": "2b006d8f6a4f8d5f",
+  "golem-rising-song": "91b6aaabdefde560",
+  "golem-rising-config": "47921d472da80967",
+  "metal-for-all-drums": "dce17749ad5b35f4",
+  "loop-station-live": "1ff142908cfa2d6e",
+  "golem-rising-mixer": "5a5e7893da3bc01b",
+  "golem-rising-assign": "26489317c2cc00e2",
+  "golem-rising-rehearsal": "68ec27683b254098",
+  "golem-rising-concert": "de9b044dfb11f94a",
+  "settings-mode-gig": "a37489adebfc3780",
+  "factory-setlists": "b07afb7b7e29bf9d",
+  "factory-setlist-banks": "94ea777a2d193cca",
+  "golem-rising-songs-picker": "b208bde48d5fab2a",
+  "golem-rising-setlist-picker": "2b3567c23232ac82",
+  "golem-rising-part-sheet": "5253f6080b6b99a0",
+  "golem-rising-rehearsal-chorus": "51d6d8ba5c5f3874",
+  "factory-health": "a6460529decbdca1",
+  "factory-storage": "365a2b4867c1b992",
+  "factory-backups": "c90675f1ef39ab80",
+  "factory-standards": "cc24af8e796df6ec",
+  "standard-rooftop-prowl": "b9b788a4a4007e6a",
+  "library-keys": "704257622317d9fd",
+  "library-grooves": "bb17db7df8cee3e9",
+  "library-kits": "5af806f3ab67cdc8",
+  "library-samples": "4e9f6eeb3a720459",
+  "library-backings": "893ef054c2036111",
+  "library-vocals": "b5403794da3ae710",
+  "library-recordings": "592d40f79cabc46e",
+  "connect-tone3000": "bc47a86e1231d4b7",
+  "connect-golemfm": "bfdae5ce371489ca",
+  "connect-devices": "c779fd9d1d5b5536",
+  "engines-separation": "cfb2365d7f53b10c",
+  "golem-rising-riff": "755f2332caa3dfd5",
+  "first-check": "a0baf2a4d695156d",
+  "first-check-input": "41b8bea6d23e879a",
+  "first-check-done": "2f137304aafc94a3",
+  "companion-now": "b53cd281529a501f",
+  "companion-song": "d651390ca3318a5a",
+  "companion-rec": "718597157806db56",
+  "reference-drums-bound": "e743f8f4da33f319"
+ },
+ "sections": {
+  "companion": {
+   "pages": [
+    "/app/m.html?tab=live&mode=now",
+    "/app/m.html?tab=live&mode=control",
+    "/app/m.html?tab=live&mode=rec",
+    "/app/m.html?tab=song",
+    "/app/m.html?tab=system",
+    "/app/m.html?tab=system&page=connect",
+    "/app/m.html?tab=system&page=pair",
+    "/app/m.html?tab=system&page=golem.fm"
+   ],
+   "examples": [
+    "companion-now",
+    "companion-song",
+    "companion-rec"
+   ]
+  },
+  "designer": {
+   "pages": [
+    "#/designer",
+    "#/designer/config"
+   ],
+   "examples": [
+    "golem-rising-designer",
+    "golem-rising-amp-sheet",
+    "golem-rising-delay-sheet",
+    "golem-rising-scenes-sheet",
+    "golem-rising-scene-sheet",
+    "golem-rising-keys",
+    "golem-rising-delay-presets",
+    "golem-rising-delay-assign",
+    "metal-for-all-designer",
+    "golem-rising-config",
+    "metal-for-all-drums",
+    "golem-rising-riff"
+   ]
+  },
+  "first-check": {
+   "pages": [],
+   "examples": [
+    "first-check",
+    "first-check-input",
+    "first-check-done"
+   ]
+  },
+  "library/drums": {
+   "pages": [
+    "#/library/drums/drums",
+    "#/library/drums/kits",
+    "#/library/drums/grooves"
+   ],
+   "examples": [
+    "library-grooves",
+    "library-kits"
+   ]
+  },
+  "library/keys": {
+   "pages": [
+    "#/library/keys/synth",
+    "#/library/keys/instruments"
+   ],
+   "examples": [
+    "library-keys"
+   ]
+  },
+  "library/samples": {
+   "pages": [
+    "#/library/samples/short",
+    "#/library/samples/songs"
+   ],
+   "examples": [
+    "library-samples"
+   ]
+  },
+  "library/tones": {
+   "pages": [
+    "#/library/tones/amps",
+    "#/library/tones/pedals",
+    "#/library/tones/cabs",
+    "#/library/tones/outboard"
+   ],
+   "examples": [
+    "library-amps"
+   ]
+  },
+  "library/tracks": {
+   "pages": [
+    "#/library/tracks/backing",
+    "#/library/tracks/vocals",
+    "#/library/tracks/standards",
+    "#/library/tracks/recordings"
+   ],
+   "examples": [
+    "factory-standards",
+    "standard-rooftop-prowl",
+    "library-backings",
+    "library-vocals",
+    "library-recordings"
+   ]
+  },
+  "live": {
+   "pages": [
+    "#/live"
+   ],
+   "examples": [
+    "golem-rising-live",
+    "blues-night-live",
+    "loop-station-live",
+    "golem-rising-mixer",
+    "golem-rising-assign",
+    "golem-rising-rehearsal",
+    "golem-rising-concert",
+    "golem-rising-songs-picker",
+    "golem-rising-setlist-picker",
+    "golem-rising-rehearsal-chorus"
+   ]
+  },
+  "settings/about": {
+   "pages": [
+    "#/system/about/golem",
+    "#/system/about/engine",
+    "#/system/about/libs"
+   ],
+   "examples": []
+  },
+  "settings/connect": {
+   "pages": [
+    "#/system/connect/wifi",
+    "#/system/connect/devices",
+    "#/system/connect/golemfm",
+    "#/system/connect/tone3000"
+   ],
+   "examples": [
+    "connect-tone3000",
+    "connect-golemfm",
+    "connect-devices"
+   ]
+  },
+  "settings/content": {
+   "pages": [
+    "#/system/content/storage",
+    "#/system/content/factory"
+   ],
+   "examples": [
+    "factory-content",
+    "factory-storage",
+    "factory-backups"
+   ]
+  },
+  "settings/engines": {
+   "pages": [
+    "#/system/engines/audio",
+    "#/system/engines/separation"
+   ],
+   "examples": [
+    "engines-separation"
+   ]
+  },
+  "settings/gear": {
+   "pages": [
+    "#/system/gear/sound",
+    "#/system/gear/controllers",
+    "#/system/gear/pedals",
+    "#/system/gear/board",
+    "#/system/gear/drums"
+   ],
+   "examples": [
+    "reference-controllers",
+    "reference-soundcard",
+    "reference-pedalboard",
+    "reference-drums",
+    "reference-drums-bound"
+   ]
+  },
+  "settings/mode": {
+   "pages": [
+    "#/system/mode",
+    "#/system/mode/compare"
+   ],
+   "examples": [
+    "settings-mode",
+    "settings-mode-compare",
+    "settings-mode-gig"
+   ]
+  },
+  "settings/sys": {
+   "pages": [
+    "#/system/sys",
+    "#/system/sys/health",
+    "#/system/sys/cores",
+    "#/system/sys/display"
+   ],
+   "examples": [
+    "factory-health"
+   ]
+  },
+  "songs": {
+   "pages": [
+    "#/songs",
+    "#/songs/patches",
+    "#/songs/presets",
+    "#/songs/setlists",
+    "#/songs/songs/rs%3Af3f0252689f96910f01c81be0325855f",
+    "#/songs/setlists/factory",
+    "#/songs/setlists/factory/r:factory:0",
+    "#/songs/setlists/factory/r:factory:1",
+    "#/songs/setlists/factory-bass",
+    "#/songs/setlists/factory-bass/r:factory-bass:upright-jazz",
+    "#/songs/setlists/factory-bass/r:factory-bass:blues-round",
+    "#/songs/setlists/factory-drums",
+    "#/songs/setlists/factory-drums/r:factory-drums:jazz-brushes",
+    "#/songs/setlists/factory-drums/r:factory-drums:vintage-rock",
+    "#/songs/setlists/factory-guitar",
+    "#/songs/setlists/factory-guitar/r:factory-guitar:jazz-box",
+    "#/songs/setlists/factory-guitar/r:factory-guitar:texas-shuffle",
+    "#/songs/setlists/factory-keys",
+    "#/songs/setlists/factory-keys/r:factory-keys:jazz-piano",
+    "#/songs/setlists/factory-keys/r:factory-keys:blues-organ",
+    "#/songs/setlists/factory-voice",
+    "#/songs/setlists/factory-voice/r:factory-voice:karaoke",
+    "#/songs/setlists/factory-voice/r:factory-voice:crooner"
+   ],
+   "examples": [
+    "factory-patches",
+    "factory-songs",
+    "factory-setlist",
+    "factory-setlist-line",
+    "golem-rising-song",
+    "factory-setlists",
+    "factory-setlist-banks",
+    "golem-rising-part-sheet"
+   ]
+  }
+ },
  "assets": {
   "/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/cover": {
    "file": "assets/api/backing/asset/rs%3Af3f0252689f96910f01c81be0325855f/cover",
@@ -2536,12 +2841,61 @@
   "seen": [
    "MPK Mini",
    "Nitro",
-   "Volt 276",
-   "fcb1010"
+   "Volt 276"
   ],
   "missing": [],
-  "complete": true
+  "complete": true,
+  "declared": {
+   "commit": "4cdf4951deba74b3872cb8f735f727b4ba671080",
+   "made": "2026-11-22",
+   "how": "assembled from the entries the maintainer's rack returned in earlier snapshots (the MPK on 2026-11-22, the Nitro on 2026-10-23, unbound then bound). To re-record with the hardware plugged when the Gear pages change shape: shape_warnings in SNAPSHOT.json says when."
+  }
  },
+ "reference_kit": [
+  {
+   "what": "the reference rack: Universal Audio Volt 276 (FCB1010 UnO2 on its MIDI port), AKAI MPK Mini Mk II, Alesis Nitro — both USB devices plugged together",
+   "recorded": {
+    "commit": "4cdf4951deba74b3872cb8f735f727b4ba671080",
+    "made": "2026-11-22",
+    "how": "assembled from the entries the maintainer's rack returned in earlier snapshots (the MPK on 2026-11-22, the Nitro on 2026-10-23, unbound then bound). To re-record with the hardware plugged when the Gear pages change shape: shape_warnings in SNAPSHOT.json says when."
+   },
+   "reads": [
+    "/api/cards",
+    "/api/controllers",
+    "/api/devices",
+    "/api/soundcard"
+   ],
+   "state": [
+    "hotplug"
+   ],
+   "examples": [
+    "reference-drums-bound"
+   ],
+   "media": 0
+  },
+  {
+   "what": "the demo take of Library ▸ Tracks ▸ Recordings, kept as recorded",
+   "recorded": {
+    "commit": "4cdf4951deba74b3872cb8f735f727b4ba671080",
+    "made": "2026-11-22",
+    "how": "taken from the published snapshot"
+   },
+   "reads": [
+    "/api/loop-peaks/perf-20261104-142828/DI-Sandbox-Input-2.wav",
+    "/api/loop-peaks/perf-20261104-142828/Drums.wav",
+    "/api/loop-peaks/perf-20261104-142828/Input-2merge.wav",
+    "/api/loop-peaks/perf-20261104-142828/Mix.wav",
+    "/api/loop-peaks/perf-20261104-142828/Standard-Bass.wav",
+    "/api/loop-peaks/perf-20261104-142828/Standard-Drums.wav",
+    "/api/loop-peaks/perf-20261104-142828/Standard-Keys.wav",
+    "/api/loops"
+   ],
+   "state": [],
+   "examples": [],
+   "media": 7
+  }
+ ],
+ "kit_warnings": [],
  "post_reads": [
   "/api/blocks/status",
   "/api/backing/drawer",
@@ -2558,6 +2912,7 @@
  },
  "pages": {
   "#/live": [
+   "/api/anim-packs",
    "/api/app-build",
    "/api/auth/whoami",
    "/api/cpu/estimate-many?ids=factory-jazz-club",
@@ -2863,6 +3218,14 @@
    "/api/system",
    "/api/system/update"
   ],
+  "#/system/sys/display": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/system",
+   "/api/system/display",
+   "/api/system/update"
+  ],
   "#/system/gear/sound": [
    "/api/app-build",
    "/api/auth/whoami",
@@ -2980,7 +3343,16 @@
   "#/system/about/golem": [
    "/api/app-build",
    "/api/auth/whoami",
+   "/api/effects",
    "/api/factory/captures",
+   "/api/system/libraries",
+   "/api/system/update"
+  ],
+  "#/system/about/engine": [
+   "/api/app-build",
+   "/api/auth/whoami",
+   "/api/factory/captures",
+   "/api/system/golem-engine",
    "/api/system/update"
   ],
   "#/system/about/libs": [
@@ -3183,7 +3555,7 @@
    "/api/presets",
    "/api/setlists"
   ],
-  "/app/m.html?tab=now": [
+  "/app/m.html?tab=live&mode=now": [
    "/api/auth/whoami",
    "/api/backing/catalog",
    "/api/cpu/estimate-many?ids=factory-jazz-club",
@@ -3193,15 +3565,16 @@
    "/api/presets",
    "/api/setlists"
   ],
-  "/app/m.html?tab=song": [
+  "/app/m.html?tab=live&mode=control": [
    "/api/auth/whoami",
    "/api/backing/catalog",
    "/api/effects",
+   "/api/foot-list",
    "/api/lane/mine?role=Guitar",
    "/api/presets",
    "/api/setlists"
   ],
-  "/app/m.html?tab=rec": [
+  "/app/m.html?tab=live&mode=rec": [
    "/api/auth/whoami",
    "/api/backing/catalog",
    "/api/effects",
@@ -3210,6 +3583,54 @@
    "/api/presets",
    "/api/setlists",
    "/api/take/flags"
+  ],
+  "/app/m.html?tab=song": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/foot-list",
+   "/api/lane/mine?role=Guitar",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "/app/m.html?tab=system": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/golemfm/status",
+   "/api/lane/mine?role=Guitar",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "/app/m.html?tab=system&page=connect": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/connect/where",
+   "/api/effects",
+   "/api/golemfm/status",
+   "/api/lane/mine?role=Guitar",
+   "/api/presets",
+   "/api/setlists",
+   "/api/system"
+  ],
+  "/app/m.html?tab=system&page=pair": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/band",
+   "/api/effects",
+   "/api/golemfm/status",
+   "/api/lane/mine?role=Guitar",
+   "/api/presets",
+   "/api/setlists"
+  ],
+  "/app/m.html?tab=system&page=golem.fm": [
+   "/api/auth/whoami",
+   "/api/backing/catalog",
+   "/api/effects",
+   "/api/golemfm/status",
+   "/api/lane/mine?role=Guitar",
+   "/api/presets",
+   "/api/setlists"
   ]
  },
  "anchors": {
@@ -3667,6 +4088,7 @@
     "health.fact:audio",
     "health.fact:cpu",
     "health.fact:disk",
+    "health.fact:display",
     "health.fact:dropouts",
     "health.fact:engine",
     "health.fact:environment",
@@ -3677,7 +4099,6 @@
     "health.fact:plugins",
     "health.fact:scripts",
     "health.fact:setlist",
-    "health.guard",
     "health.incidents",
     "health.now",
     "health.verdict",
@@ -3696,6 +4117,21 @@
     "topbar.brand"
    ],
    "#/system/sys/cores": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/sys/display": [
     "nav.designer",
     "nav.library",
     "nav.live",
@@ -3921,6 +4357,21 @@
     "topbar.brand"
    ],
    "#/system/about/golem": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
+   "#/system/about/engine": [
     "nav.designer",
     "nav.library",
     "nav.live",
@@ -4866,6 +5317,21 @@
     "tab.sys",
     "topbar.brand"
    ],
+   "reference-drums": [
+    "nav.designer",
+    "nav.library",
+    "nav.live",
+    "nav.settings",
+    "nav.songs",
+    "tab.about",
+    "tab.connect",
+    "tab.content",
+    "tab.engines",
+    "tab.gear",
+    "tab.mode",
+    "tab.sys",
+    "topbar.brand"
+   ],
    "settings-mode-compare": [
     "mode.table",
     "nav.designer",
@@ -5485,6 +5951,7 @@
     "health.fact:audio",
     "health.fact:cpu",
     "health.fact:disk",
+    "health.fact:display",
     "health.fact:dropouts",
     "health.fact:engine",
     "health.fact:environment",
@@ -5495,7 +5962,6 @@
     "health.fact:plugins",
     "health.fact:scripts",
     "health.fact:setlist",
-    "health.guard",
     "health.incidents",
     "health.now",
     "health.verdict",
@@ -5786,21 +6252,6 @@
    "companion-now": [],
    "companion-song": [],
    "companion-rec": [],
-   "reference-drums": [
-    "nav.designer",
-    "nav.library",
-    "nav.live",
-    "nav.settings",
-    "nav.songs",
-    "tab.about",
-    "tab.connect",
-    "tab.content",
-    "tab.engines",
-    "tab.gear",
-    "tab.mode",
-    "tab.sys",
-    "topbar.brand"
-   ],
    "reference-drums-bound": [
     "nav.designer",
     "nav.library",
@@ -6027,6 +6478,8 @@
   "/api/storage",
   "/api/system",
   "/api/system/autostart",
+  "/api/system/display",
+  "/api/system/golem-engine",
   "/api/system/harden",
   "/api/system/health",
   "/api/system/libraries",
@@ -6040,53 +6493,5 @@
  "refused": [],
  "absent": [
   "/api/cpu/estimate?preset=sandbox"
- ],
- "grafted": {
-  "take": {
-   "from": "1d2f9ddbfaf768c1ef675f7feac6e8afd67bcf68",
-   "takes": [
-    "perf-20261104-142828"
-   ],
-   "tracks": [
-    {
-     "track": "/api/loop/perf-20261104-142828/DI-Sandbox-Input-2.wav",
-     "sha256": "01b337350c53af2abd4d0eb2fafeed2132bf60bea48dcf68e8a7ec6ab0dfbe8d"
-    },
-    {
-     "track": "/api/loop/perf-20261104-142828/Drums.wav",
-     "sha256": "887cf85ea1074300e73a1b63c46acab1bf38321a85bb0edb95a1769288fd025a"
-    },
-    {
-     "track": "/api/loop/perf-20261104-142828/Input-2merge.wav",
-     "sha256": "13f06169db13f4668e0f1ba8597762d04034e1a50b2f652f243fd2cd2d93319a"
-    },
-    {
-     "track": "/api/loop/perf-20261104-142828/Mix.wav",
-     "sha256": "c1b4511ddec3f540b8e15debed867e63cd54a761ad6d98c3536dbb73070d5d0e"
-    },
-    {
-     "track": "/api/loop/perf-20261104-142828/Standard-Bass.wav",
-     "sha256": "ff9d6cd31299fc2a088b80ee30a45f07e5894566fc157331e8dce101932270d7"
-    },
-    {
-     "track": "/api/loop/perf-20261104-142828/Standard-Drums.wav",
-     "sha256": "c38a62481dc40f2a19a4c59d6a0922f25749ac7650cff162bc847ae7a0deed57"
-    },
-    {
-     "track": "/api/loop/perf-20261104-142828/Standard-Keys.wav",
-     "sha256": "38bd7d7ac7bfb6a72e0099097e006432bed3445bd6d318a84fcd5b4baf87e324"
-    }
-   ],
-   "why": "the demo take is kept as it is: its reads and its encoded tracks come from the published snapshot, nothing is re-encoded"
-  },
-  "hardware_from": "90d0e67bafd1272333f0e620a46e902ce5d5b2ff",
-  "devices": [
-   "Nitro"
-  ],
-  "examples": [
-   "reference-drums",
-   "reference-drums-bound"
-  ],
-  "why": "the reference gear does not change between shells; the examples of the gear unplugged that day come from the last published factory snapshot (same hardware)"
- }
+ ]
 }
